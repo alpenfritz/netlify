@@ -1,0 +1,3533 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: false
+  },
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"],
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    equationNumbers: {
+      autoNumber: "AMS",
+    },
+    unicode: {
+      fonts: "STIXGeneral,'Arial Unicode MS'"
+    }
+  },
+  showProcessingMessages: false
+});
+</script>
+<script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.4/sequence-diagram-min.js"></script>
+<script type="text/javascript">// flowchart, v1.3.4
+// Copyright (c)2014 Adriano Raiano (adrai).
+// Distributed under MIT license
+// http://adrai.github.io/flowchart.js
+!function(){function a(b,c){if(!b||"function"==typeof b)return c;var d={};for(var e in c)d[e]=c[e];for(e in b)b[e]&&(d[e]="object"==typeof d[e]?a(d[e],b[e]):b[e]);return d}function b(a,b){if("function"==typeof Object.create)a.super_=b,a.prototype=Object.create(b.prototype,{constructor:{value:a,enumerable:!1,writable:!0,configurable:!0}});else{a.super_=b;var c=function(){};c.prototype=b.prototype,a.prototype=new c,a.prototype.constructor=a}}function c(a,b,c){var d,e,f="M{0},{1}";for(d=2,e=2*c.length+2;e>d;d+=2)f+=" L{"+d+"},{"+(d+1)+"}";var g=[b.x,b.y];for(d=0,e=c.length;e>d;d++)g.push(c[d].x),g.push(c[d].y);var h=a.paper.path(f,g);h.attr("stroke",a.options["element-color"]),h.attr("stroke-width",a.options["line-width"]);var i=a.options.font,j=a.options["font-family"],k=a.options["font-weight"];return i&&h.attr({font:i}),j&&h.attr({"font-family":j}),k&&h.attr({"font-weight":k}),h}function d(a,b,c,d){var e,f;"[object Array]"!==Object.prototype.toString.call(c)&&(c=[c]);var g="M{0},{1}";for(e=2,f=2*c.length+2;f>e;e+=2)g+=" L{"+e+"},{"+(e+1)+"}";var h=[b.x,b.y];for(e=0,f=c.length;f>e;e++)h.push(c[e].x),h.push(c[e].y);var i=a.paper.path(g,h);i.attr({stroke:a.options["line-color"],"stroke-width":a.options["line-width"],"arrow-end":a.options["arrow-end"]});var j=a.options.font,k=a.options["font-family"],l=a.options["font-weight"];if(j&&i.attr({font:j}),k&&i.attr({"font-family":k}),l&&i.attr({"font-weight":l}),d){var m=!1,n=a.paper.text(0,0,d),o=!1,p=c[0];b.y===p.y&&(o=!0);var q=0,r=0;m?(q=b.x>p.x?b.x-(b.x-p.x)/2:p.x-(p.x-b.x)/2,r=b.y>p.y?b.y-(b.y-p.y)/2:p.y-(p.y-b.y)/2,o?(q-=n.getBBox().width/2,r-=a.options["text-margin"]):(q+=a.options["text-margin"],r-=n.getBBox().height/2)):(q=b.x,r=b.y,o?(q+=a.options["text-margin"]/2,r-=a.options["text-margin"]):(q+=a.options["text-margin"]/2,r+=a.options["text-margin"])),n.attr({"text-anchor":"start","font-size":a.options["font-size"],fill:a.options["font-color"],x:q,y:r}),j&&n.attr({font:j}),k&&n.attr({"font-family":k}),l&&n.attr({"font-weight":l})}return i}function e(a,b,c,d,e,f,g,h){var i,j,k,l,m,n={x:null,y:null,onLine1:!1,onLine2:!1};return i=(h-f)*(c-a)-(g-e)*(d-b),0===i?n:(j=b-f,k=a-e,l=(g-e)*j-(h-f)*k,m=(c-a)*j-(d-b)*k,j=l/i,k=m/i,n.x=a+j*(c-a),n.y=b+j*(d-b),j>0&&1>j&&(n.onLine1=!0),k>0&&1>k&&(n.onLine2=!0),n)}function f(a,b){b=b||{},this.paper=new Raphael(a),this.options=r.defaults(b,q),this.symbols=[],this.lines=[],this.start=null}function g(a,b,c){this.chart=a,this.group=this.chart.paper.set(),this.symbol=c,this.connectedTo=[],this.symbolType=b.symbolType,this.flowstate=b.flowstate||"future",this.next_direction=b.next&&b.direction_next?b.direction_next:void 0,this.text=this.chart.paper.text(0,0,b.text),b.key&&(this.text.node.id=b.key+"t"),this.text.node.setAttribute("class",this.getAttr("class")+"t"),this.text.attr({"text-anchor":"start",x:this.getAttr("text-margin"),fill:this.getAttr("font-color"),"font-size":this.getAttr("font-size")});var d=this.getAttr("font"),e=this.getAttr("font-family"),f=this.getAttr("font-weight");d&&this.text.attr({font:d}),e&&this.text.attr({"font-family":e}),f&&this.text.attr({"font-weight":f}),b.link&&this.text.attr("href",b.link),b.target&&this.text.attr("target",b.target);var g=this.getAttr("maxWidth");if(g){for(var h=b.text.split(" "),i="",j=0,k=h.length;k>j;j++){var l=h[j];this.text.attr("text",i+" "+l),i+=this.text.getBBox().width>g?"\n"+l:" "+l}this.text.attr("text",i.substring(1))}if(this.group.push(this.text),c){var m=this.getAttr("text-margin");c.attr({fill:this.getAttr("fill"),stroke:this.getAttr("element-color"),"stroke-width":this.getAttr("line-width"),width:this.text.getBBox().width+2*m,height:this.text.getBBox().height+2*m}),c.node.setAttribute("class",this.getAttr("class")),b.link&&c.attr("href",b.link),b.target&&c.attr("target",b.target),b.key&&(c.node.id=b.key),this.group.push(c),c.insertBefore(this.text),this.text.attr({y:c.getBBox().height/2}),this.initialize()}}function h(a,b){var c=a.paper.rect(0,0,0,0,20);b=b||{},b.text=b.text||"Start",g.call(this,a,b,c)}function i(a,b){var c=a.paper.rect(0,0,0,0,20);b=b||{},b.text=b.text||"End",g.call(this,a,b,c)}function j(a,b){var c=a.paper.rect(0,0,0,0);b=b||{},g.call(this,a,b,c)}function k(a,b){var c=a.paper.rect(0,0,0,0);b=b||{},g.call(this,a,b,c),c.attr({width:this.text.getBBox().width+4*this.getAttr("text-margin")}),this.text.attr({x:2*this.getAttr("text-margin")});var d=a.paper.rect(0,0,0,0);d.attr({x:this.getAttr("text-margin"),stroke:this.getAttr("element-color"),"stroke-width":this.getAttr("line-width"),width:this.text.getBBox().width+2*this.getAttr("text-margin"),height:this.text.getBBox().height+2*this.getAttr("text-margin"),fill:this.getAttr("fill")}),b.key&&(d.node.id=b.key+"i");var e=this.getAttr("font"),f=this.getAttr("font-family"),h=this.getAttr("font-weight");e&&d.attr({font:e}),f&&d.attr({"font-family":f}),h&&d.attr({"font-weight":h}),b.link&&d.attr("href",b.link),b.target&&d.attr("target",b.target),this.group.push(d),d.insertBefore(this.text),this.initialize()}function l(a,b){b=b||{},g.call(this,a,b),this.textMargin=this.getAttr("text-margin"),this.text.attr({x:3*this.textMargin});var d=this.text.getBBox().width+4*this.textMargin,e=this.text.getBBox().height+2*this.textMargin,f=this.textMargin,h=e/2,i={x:f,y:h},j=[{x:f-this.textMargin,y:e},{x:f-this.textMargin+d,y:e},{x:f-this.textMargin+d+2*this.textMargin,y:0},{x:f-this.textMargin+2*this.textMargin,y:0},{x:f,y:h}],k=c(a,i,j);k.attr({stroke:this.getAttr("element-color"),"stroke-width":this.getAttr("line-width"),fill:this.getAttr("fill")}),b.link&&k.attr("href",b.link),b.target&&k.attr("target",b.target),b.key&&(k.node.id=b.key),k.node.setAttribute("class",this.getAttr("class")),this.text.attr({y:k.getBBox().height/2}),this.group.push(k),k.insertBefore(this.text),this.initialize()}function m(a,b){b=b||{},g.call(this,a,b),this.textMargin=this.getAttr("text-margin"),this.yes_direction="bottom",this.no_direction="right",b.yes&&b.direction_yes&&b.no&&!b.direction_no?"right"===b.direction_yes?(this.no_direction="bottom",this.yes_direction="right"):(this.no_direction="right",this.yes_direction="bottom"):b.yes&&!b.direction_yes&&b.no&&b.direction_no?"right"===b.direction_no?(this.yes_direction="bottom",this.no_direction="right"):(this.yes_direction="right",this.no_direction="bottom"):(this.yes_direction="bottom",this.no_direction="right"),this.yes_direction=this.yes_direction||"bottom",this.no_direction=this.no_direction||"right",this.text.attr({x:2*this.textMargin});var d=this.text.getBBox().width+3*this.textMargin;d+=d/2;var e=this.text.getBBox().height+2*this.textMargin;e+=e/2,e=Math.max(.5*d,e);var f=d/4,h=e/4;this.text.attr({x:f+this.textMargin/2});var i={x:f,y:h},j=[{x:f-d/4,y:h+e/4},{x:f-d/4+d/2,y:h+e/4+e/2},{x:f-d/4+d,y:h+e/4},{x:f-d/4+d/2,y:h+e/4-e/2},{x:f-d/4,y:h+e/4}],k=c(a,i,j);k.attr({stroke:this.getAttr("element-color"),"stroke-width":this.getAttr("line-width"),fill:this.getAttr("fill")}),b.link&&k.attr("href",b.link),b.target&&k.attr("target",b.target),b.key&&(k.node.id=b.key),k.node.setAttribute("class",this.getAttr("class")),this.text.attr({y:k.getBBox().height/2}),this.group.push(k),k.insertBefore(this.text),this.initialize()}function n(a){function b(a){var b=a.indexOf("(")+1,c=a.indexOf(")");return b>=0&&c>=0?d.symbols[a.substring(0,b-1)]:d.symbols[a]}function c(a){var b="next",c=a.indexOf("(")+1,d=a.indexOf(")");return c>=0&&d>=0&&(b=D.substring(c,d),b.indexOf(",")<0&&"yes"!==b&&"no"!==b&&(b="next, "+b)),b}a=a||"",a=a.trim();for(var d={symbols:{},start:null,drawSVG:function(a,b){function c(a){if(g[a.key])return g[a.key];switch(a.symbolType){case"start":g[a.key]=new h(e,a);break;case"end":g[a.key]=new i(e,a);break;case"operation":g[a.key]=new j(e,a);break;case"inputoutput":g[a.key]=new l(e,a);break;case"subroutine":g[a.key]=new k(e,a);break;case"condition":g[a.key]=new m(e,a);break;default:return new Error("Wrong symbol type!")}return g[a.key]}var d=this;this.diagram&&this.diagram.clean();var e=new f(a,b);this.diagram=e;var g={};!function n(a,b,f){var g=c(a);return d.start===a?e.startWith(g):b&&f&&!b.pathOk&&(b instanceof m?(f.yes===a&&b.yes(g),f.no===a&&b.no(g)):b.then(g)),g.pathOk?g:(g instanceof m?(a.yes&&n(a.yes,g,a),a.no&&n(a.no,g,a)):a.next&&n(a.next,g,a),g)}(this.start),e.render()},clean:function(){this.diagram.clean()}},e=[],g=0,n=1,o=a.length;o>n;n++)if("\n"===a[n]&&"\\"!==a[n-1]){var p=a.substring(g,n);g=n+1,e.push(p.replace(/\\\n/g,"\n"))}g<a.length&&e.push(a.substr(g));for(var q=1,r=e.length;r>q;){var s=e[q];s.indexOf(": ")<0&&s.indexOf("(")<0&&s.indexOf(")")<0&&s.indexOf("->")<0&&s.indexOf("=>")<0?(e[q-1]+="\n"+s,e.splice(q,1),r--):q++}for(;e.length>0;){var t=e.splice(0,1)[0];if(t.indexOf("=>")>=0){var u,v=t.split("=>"),w={key:v[0],symbolType:v[1],text:null,link:null,target:null,flowstate:null};if(w.symbolType.indexOf(": ")>=0&&(u=w.symbolType.split(": "),w.symbolType=u[0],w.text=u[1]),w.text&&w.text.indexOf(":>")>=0?(u=w.text.split(":>"),w.text=u[0],w.link=u[1]):w.symbolType.indexOf(":>")>=0&&(u=w.symbolType.split(":>"),w.symbolType=u[0],w.link=u[1]),w.symbolType.indexOf("\n")>=0&&(w.symbolType=w.symbolType.split("\n")[0]),w.link){var x=w.link.indexOf("[")+1,y=w.link.indexOf("]");x>=0&&y>=0&&(w.target=w.link.substring(x,y),w.link=w.link.substring(0,x-1))}if(w.text&&w.text.indexOf("|")>=0){var z=w.text.split("|");w.text=z[0],w.flowstate=z[1].trim()}d.symbols[w.key]=w}else if(t.indexOf("->")>=0)for(var A=t.split("->"),B=0,C=A.length;C>B;B++){var D=A[B],E=b(D),F=c(D),G=null;if(F.indexOf(",")>=0){var H=F.split(",");F=H[0],G=H[1].trim()}if(d.start||(d.start=E),C>B+1){var I=A[B+1];E[F]=b(I),E["direction_"+F]=G,G=null}}}return d}Array.prototype.indexOf||(Array.prototype.indexOf=function(a){"use strict";if(null===this)throw new TypeError;var b=Object(this),c=b.length>>>0;if(0===c)return-1;var d=0;if(arguments.length>0&&(d=Number(arguments[1]),d!=d?d=0:0!==d&&1/0!=d&&d!=-1/0&&(d=(d>0||-1)*Math.floor(Math.abs(d)))),d>=c)return-1;for(var e=d>=0?d:Math.max(c-Math.abs(d),0);c>e;e++)if(e in b&&b[e]===a)return e;return-1}),Array.prototype.lastIndexOf||(Array.prototype.lastIndexOf=function(a){"use strict";if(null===this)throw new TypeError;var b=Object(this),c=b.length>>>0;if(0===c)return-1;var d=c;arguments.length>1&&(d=Number(arguments[1]),d!=d?d=0:0!==d&&d!=1/0&&d!=-(1/0)&&(d=(d>0||-1)*Math.floor(Math.abs(d))));for(var e=d>=0?Math.min(d,c-1):c-Math.abs(d);e>=0;e--)if(e in b&&b[e]===a)return e;return-1}),String.prototype.trim||(String.prototype.trim=function(){return this.replace(/^\s+|\s+$/g,"")});var o=this,p={};"undefined"!=typeof module&&module.exports?module.exports=p:o.flowchart=o.flowchart||p;var q={x:0,y:0,"line-width":3,"line-length":50,"text-margin":10,"font-size":14,"font-color":"black","line-color":"black","element-color":"black",fill:"white","yes-text":"yes","no-text":"no","arrow-end":"block","class":"flowchart",symbols:{start:{},end:{},condition:{},inputoutput:{},operation:{},subroutine:{}}},r={defaults:a,inherits:b};f.prototype.handle=function(a){this.symbols.indexOf(a)<=-1&&this.symbols.push(a);var b=this;return a instanceof m?(a.yes=function(c){return a.yes_symbol=c,a.no_symbol&&(a.pathOk=!0),b.handle(c)},a.no=function(c){return a.no_symbol=c,a.yes_symbol&&(a.pathOk=!0),b.handle(c)}):a.then=function(c){return a.next=c,a.pathOk=!0,b.handle(c)},a},f.prototype.startWith=function(a){return this.start=a,this.handle(a)},f.prototype.render=function(){var a,b=0,c=0,d=0,e=0,f=0,g=0;for(d=0,e=this.symbols.length;e>d;d++)a=this.symbols[d],a.width>b&&(b=a.width),a.height>c&&(c=a.height);for(d=0,e=this.symbols.length;e>d;d++)a=this.symbols[d],a.shiftX(this.options.x+(b-a.width)/2+this.options["line-width"]),a.shiftY(this.options.y+(c-a.height)/2+this.options["line-width"]);for(this.start.render(),d=0,e=this.symbols.length;e>d;d++)a=this.symbols[d],a.renderLines();for(f=this.maxXFromLine,d=0,e=this.symbols.length;e>d;d++){a=this.symbols[d];var h=a.getX()+a.width,i=a.getY()+a.height;h>f&&(f=h),i>g&&(g=i)}this.paper.setSize(f+this.options["line-width"],g+this.options["line-width"])},f.prototype.clean=function(){if(this.paper){var a=this.paper.canvas;a.parentNode.removeChild(a)}},g.prototype.getAttr=function(a){if(!this.chart)return void 0;var b,c=this.chart.options?this.chart.options[a]:void 0,d=this.chart.options.symbols?this.chart.options.symbols[this.symbolType][a]:void 0;return this.chart.options.flowstate&&this.chart.options.flowstate[this.flowstate]&&(b=this.chart.options.flowstate[this.flowstate][a]),b||d||c},g.prototype.initialize=function(){this.group.transform("t"+this.getAttr("line-width")+","+this.getAttr("line-width")),this.width=this.group.getBBox().width,this.height=this.group.getBBox().height},g.prototype.getCenter=function(){return{x:this.getX()+this.width/2,y:this.getY()+this.height/2}},g.prototype.getX=function(){return this.group.getBBox().x},g.prototype.getY=function(){return this.group.getBBox().y},g.prototype.shiftX=function(a){this.group.transform("t"+(this.getX()+a)+","+this.getY())},g.prototype.setX=function(a){this.group.transform("t"+a+","+this.getY())},g.prototype.shiftY=function(a){this.group.transform("t"+this.getX()+","+(this.getY()+a))},g.prototype.setY=function(a){this.group.transform("t"+this.getX()+","+a)},g.prototype.getTop=function(){var a=this.getY(),b=this.getX()+this.width/2;return{x:b,y:a}},g.prototype.getBottom=function(){var a=this.getY()+this.height,b=this.getX()+this.width/2;return{x:b,y:a}},g.prototype.getLeft=function(){var a=this.getY()+this.group.getBBox().height/2,b=this.getX();return{x:b,y:a}},g.prototype.getRight=function(){var a=this.getY()+this.group.getBBox().height/2,b=this.getX()+this.group.getBBox().width;return{x:b,y:a}},g.prototype.render=function(){if(this.next){var a=this.getAttr("line-length");if("right"===this.next_direction){var b=this.getRight();if(this.next.getLeft(),!this.next.isPositioned){this.next.setY(b.y-this.next.height/2),this.next.shiftX(this.group.getBBox().x+this.width+a);var c=this;!function e(){for(var b,d=!1,f=0,g=c.chart.symbols.length;g>f;f++){b=c.chart.symbols[f];var h=Math.abs(b.getCenter().x-c.next.getCenter().x);if(b.getCenter().y>c.next.getCenter().y&&h<=c.next.width/2){d=!0;break}}d&&(c.next.setX(b.getX()+b.width+a),e())}(),this.next.isPositioned=!0,this.next.render()}}else{var d=this.getBottom();this.next.getTop(),this.next.isPositioned||(this.next.shiftY(this.getY()+this.height+a),this.next.setX(d.x-this.next.width/2),this.next.isPositioned=!0,this.next.render())}}},g.prototype.renderLines=function(){this.next&&(this.next_direction?this.drawLineTo(this.next,"",this.next_direction):this.drawLineTo(this.next))},g.prototype.drawLineTo=function(a,b,c){this.connectedTo.indexOf(a)<0&&this.connectedTo.push(a);var f,g=this.getCenter().x,h=this.getCenter().y,i=(this.getTop(),this.getRight()),j=this.getBottom(),k=this.getLeft(),l=a.getCenter().x,m=a.getCenter().y,n=a.getTop(),o=a.getRight(),p=(a.getBottom(),a.getLeft()),q=g===l,r=h===m,s=m>h,t=h>m,u=g>l,v=l>g,w=0,x=this.getAttr("line-length"),y=this.getAttr("line-width");if(c&&"bottom"!==c||!q||!s)if(c&&"right"!==c||!r||!v)if(c&&"left"!==c||!r||!u)if(c&&"right"!==c||!q||!t)if(c&&"right"!==c||!q||!s)if(c&&"bottom"!==c||!u)if(c&&"bottom"!==c||!v)if(c&&"right"===c&&u)f=d(this.chart,i,[{x:i.x+x/2,y:i.y},{x:i.x+x/2,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.rightStart=!0,a.topEnd=!0,w=i.x+x/2;else if(c&&"right"===c&&v)f=d(this.chart,i,[{x:n.x,y:i.y},{x:n.x,y:n.y}],b),this.rightStart=!0,a.topEnd=!0,w=i.x+x/2;else if(c&&"bottom"===c&&q&&t)f=d(this.chart,j,[{x:j.x,y:j.y+x/2},{x:i.x+x/2,y:j.y+x/2},{x:i.x+x/2,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.bottomStart=!0,a.topEnd=!0,w=j.x+x/2;else if("left"===c&&q&&t){var z=k.x-x/2;p.x<k.x&&(z=p.x-x/2),f=d(this.chart,k,[{x:z,y:k.y},{x:z,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.leftStart=!0,a.topEnd=!0,w=k.x}else"left"===c&&(f=d(this.chart,k,[{x:n.x+(k.x-n.x)/2,y:k.y},{x:n.x+(k.x-n.x)/2,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.leftStart=!0,a.topEnd=!0,w=k.x);else f=d(this.chart,j,[{x:j.x,y:j.y+x/2},{x:j.x+(j.x-n.x)/2,y:j.y+x/2},{x:j.x+(j.x-n.x)/2,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.bottomStart=!0,a.topEnd=!0,w=j.x+(j.x-n.x)/2;else f=this.leftEnd&&t?d(this.chart,j,[{x:j.x,y:j.y+x/2},{x:j.x+(j.x-n.x)/2,y:j.y+x/2},{x:j.x+(j.x-n.x)/2,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b):d(this.chart,j,[{x:j.x,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.bottomStart=!0,a.topEnd=!0,w=j.x+(j.x-n.x)/2;else f=d(this.chart,i,[{x:i.x+x/2,y:i.y},{x:i.x+x/2,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.rightStart=!0,a.topEnd=!0,w=i.x+x/2;else f=d(this.chart,i,[{x:i.x+x/2,y:i.y},{x:i.x+x/2,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.rightStart=!0,a.topEnd=!0,w=i.x+x/2;else f=d(this.chart,k,o,b),this.leftStart=!0,a.rightEnd=!0,w=o.x;else f=d(this.chart,i,p,b),this.rightStart=!0,a.leftEnd=!0,w=p.x;else f=d(this.chart,j,n,b),this.bottomStart=!0,a.topEnd=!0,w=j.x;if(f){for(var A=0,B=this.chart.lines.length;B>A;A++)for(var C,D=this.chart.lines[A],E=D.attr("path"),F=f.attr("path"),G=0,H=E.length-1;H>G;G++){var I=[];I.push(["M",E[G][1],E[G][2]]),I.push(["L",E[G+1][1],E[G+1][2]]);for(var J=I[0][1],K=I[0][2],L=I[1][1],M=I[1][2],N=0,O=F.length-1;O>N;N++){var P=[];P.push(["M",F[N][1],F[N][2]]),P.push(["L",F[N+1][1],F[N+1][2]]);var Q=P[0][1],R=P[0][2],S=P[1][1],T=P[1][2],U=e(J,K,L,M,Q,R,S,T);if(U.onLine1&&U.onLine2){var V;R===T?Q>S?(V=["L",U.x+2*y,R],F.splice(N+1,0,V),V=["C",U.x+2*y,R,U.x,R-4*y,U.x-2*y,R],F.splice(N+2,0,V),f.attr("path",F)):(V=["L",U.x-2*y,R],F.splice(N+1,0,V),V=["C",U.x-2*y,R,U.x,R-4*y,U.x+2*y,R],F.splice(N+2,0,V),f.attr("path",F)):R>T?(V=["L",Q,U.y+2*y],F.splice(N+1,0,V),V=["C",Q,U.y+2*y,Q+4*y,U.y,Q,U.y-2*y],F.splice(N+2,0,V),f.attr("path",F)):(V=["L",Q,U.y-2*y],F.splice(N+1,0,V),V=["C",Q,U.y-2*y,Q+4*y,U.y,Q,U.y+2*y],F.splice(N+2,0,V),f.attr("path",F)),N+=2,C+=2}}}this.chart.lines.push(f)}(!this.chart.maxXFromLine||this.chart.maxXFromLine&&w>this.chart.maxXFromLine)&&(this.chart.maxXFromLine=w)},r.inherits(h,g),r.inherits(i,g),r.inherits(j,g),r.inherits(k,g),r.inherits(l,g),l.prototype.getLeft=function(){var a=this.getY()+this.group.getBBox().height/2,b=this.getX()+this.textMargin;return{x:b,y:a}},l.prototype.getRight=function(){var a=this.getY()+this.group.getBBox().height/2,b=this.getX()+this.group.getBBox().width-this.textMargin;return{x:b,y:a}},r.inherits(m,g),m.prototype.render=function(){this.yes_direction&&(this[this.yes_direction+"_symbol"]=this.yes_symbol),this.no_direction&&(this[this.no_direction+"_symbol"]=this.no_symbol);var a=this.getAttr("line-length");if(this.bottom_symbol){var b=this.getBottom();this.bottom_symbol.getTop(),this.bottom_symbol.isPositioned||(this.bottom_symbol.shiftY(this.getY()+this.height+a),this.bottom_symbol.setX(b.x-this.bottom_symbol.width/2),this.bottom_symbol.isPositioned=!0,this.bottom_symbol.render())}if(this.right_symbol){var c=this.getRight();if(this.right_symbol.getLeft(),!this.right_symbol.isPositioned){this.right_symbol.setY(c.y-this.right_symbol.height/2),this.right_symbol.shiftX(this.group.getBBox().x+this.width+a);var d=this;!function e(){for(var b,c=!1,f=0,g=d.chart.symbols.length;g>f;f++){b=d.chart.symbols[f];var h=Math.abs(b.getCenter().x-d.right_symbol.getCenter().x);if(b.getCenter().y>d.right_symbol.getCenter().y&&h<=d.right_symbol.width/2){c=!0;break}}c&&(d.right_symbol.setX(b.getX()+b.width+a),e())}(),this.right_symbol.isPositioned=!0,this.right_symbol.render()}}},m.prototype.renderLines=function(){this.yes_symbol&&this.drawLineTo(this.yes_symbol,this.getAttr("yes-text"),this.yes_direction),this.no_symbol&&this.drawLineTo(this.no_symbol,this.getAttr("no-text"),this.no_direction)},p.parse=n}();
+</script>
+<script type="text/javascript">
+(function (win, doc) {
+  function onReady(fn) {
+    if (doc.addEventListener) {
+      doc.addEventListener('DOMContentLoaded', fn);
+    } else {
+      doc.attachEvent('onreadystatechange', function() {
+        if (doc.readyState === 'interactive')
+          fn();
+      });
+    }
+  }
+
+  win.convertUML = function(className, converter, settings) {
+    var charts = doc.querySelectorAll("pre." + className),
+        arr = [],
+        i, j, maxItem, diagaram, text, curNode;
+
+    // Is there a settings object?
+    if (settings === void 0) {
+        settings = {};
+    }
+
+    // Make sure we are dealing with an array
+    for(i = 0, maxItem = charts.length; i < maxItem; i++) arr.push(charts[i])
+
+    // Find the UML source element and get the text
+    for (i = 0, maxItem = arr.length; i < maxItem; i++) {
+        childEl = arr[i].firstChild;
+        parentEl = childEl.parentNode;
+        text = "";
+        for (j = 0; j < childEl.childNodes.length; j++) {
+            curNode = childEl.childNodes[j];
+            whitespace = /^\s*$/;
+            if (curNode.nodeName === "#text" && !(whitespace.test(curNode.nodeValue))) {
+                text = curNode.nodeValue;
+                break;
+            }
+        }
+
+        // Do UML conversion and replace source
+        el = doc.createElement('div');
+        el.className = className;
+        parentEl.parentNode.insertBefore(el, parentEl);
+        parentEl.parentNode.removeChild(parentEl);
+        diagram = converter.parse(text);
+        diagram.drawSVG(el, settings);
+    }
+  }
+
+  onReady(function(){convertUML('uml-flowchart', flowchart);});
+  onReady(function(){convertUML('uml-sequence-diagram', Diagram, {theme: 'simple'});});
+})(window, document)
+</script>
+<title>ds03-getting-cleaning-data</title></head><body><article class="markdown-body"><hr>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<ul>
+<li><a href="#1-data-science-pipeline">1. Data Science Pipeline</a></li>
+<li><a href="#2-processing-data">2. Processing Data</a></li>
+<li><a href="#3-components-of-tidy-data">3. Components of Tidy Data</a>
+<ul>
+<li><a href="#31-things-you-should-have">3.1. Things you should have</a></li>
+<li><a href="#32-the-code-book">3.2. The Code Book</a></li>
+<li><a href="#33-the-instruction-list">3.3. The Instruction List</a></li>
+</ul>
+</li>
+<li><a href="#4-downloading-files">4. Downloading files</a>
+<ul>
+<li><a href="#41-getset-working-directory-in-r">4.1. Get/set working directory in R</a></li>
+<li><a href="#42-checking-for-and-creating-directories">4.2. Checking for and creating directories</a></li>
+<li><a href="#43-getting-data-from-the-internet">4.3. Getting data from the internet</a></li>
+</ul>
+</li>
+<li><a href="#5-reading-local-files">5. Reading Local Files</a></li>
+<li><a href="#6-reading-excel-files-xlsx-package">6. Reading Excel Files {<code>xlsx</code> package}</a></li>
+<li><a href="#7-reading-xml">7. Reading XML</a>
+<ul>
+<li><a href="#71-tags-elements-and-attributes">7.1. Tags, elements and attributes</a></li>
+<li><a href="#72-read-the-file-into-r-xml-package">7.2. Read the file into R {<code>xml</code> package}</a></li>
+<li><a href="#73-xpath-language">7.3. XPath Language</a></li>
+<li><a href="#74-reading-html-source-code-using-htmltreeparse">7.4. Reading HTML source code using <code>htmlTreeParse</code></a></li>
+</ul>
+</li>
+<li><a href="#8-reading-json">8. Reading JSON</a>
+<ul>
+<li><a href="#81-read-data-from-json-jsonlite-package">8.1. Read data from JSON {<code>jsonlite</code> package}</a></li>
+<li><a href="#82-writing-data-frames-to-json">8.2. Writing data frames to JSON</a></li>
+</ul>
+</li>
+<li><a href="#9-the-datatable-package">9. The <code>data.table</code> Package</a>
+<ul>
+<li><a href="#91-create-data-tables-just-like-data-frames">9.1. Create data tables just like data frames</a></li>
+<li><a href="#92-subsetting-with-data-tables">9.2. Subsetting with data tables</a></li>
+</ul>
+</li>
+<li><a href="#10-reading-from-mysql-rmysql-package">10. Reading from MySQL {<code>RMySQL</code> package}</a>
+<ul>
+<li><a href="#101-connect-to-a-mysql-server">10.1. Connect to a MySql Server</a></li>
+<li><a href="#102-list-tables-in-a-specific-db">10.2. List tables in a specific DB</a></li>
+<li><a href="#103-some-table-operations">10.3. Some Table Operations</a></li>
+</ul>
+</li>
+<li><a href="#11-reading-from-hdf5-rhdf5-package">11. Reading from HDF5 (<code>rhdf5</code> package)</a>
+<ul>
+<li><a href="#111-install-the-r-hdf5-package">11.1. Install the R HDF5 package</a></li>
+<li><a href="#112-writing-to-hdf5">11.2. Writing to HDF5</a></li>
+<li><a href="#113-reading-data">11.3. Reading data</a></li>
+</ul>
+</li>
+<li><a href="#12-reading-from-the-web">12. Reading from the Web</a>
+<ul>
+<li><a href="#121-getting-data-off-webpages-using-readlines">12.1. Getting data off webpages using <code>readLines</code></a></li>
+<li><a href="#122-parsing-with-xml">12.2. Parsing with XML</a></li>
+<li><a href="#123-using-get-from-the-httr-package">12.3. Using <code>GET</code> from the {<code>httr</code> package}</a></li>
+</ul>
+</li>
+<li><a href="#13-reading-from-apis">13. Reading from APIs</a></li>
+<li><a href="#14-reading-from-other-sources">14. Reading from Other Sources</a>
+<ul>
+<li><a href="#141-interacting-more-directly-with-files">14.1. Interacting more directly with files</a></li>
+<li><a href="#142-foreign-package">14.2. {<code>foreign</code> package}</a></li>
+<li><a href="#143-other-database-packages">14.3. Other database packages</a></li>
+<li><a href="#144-reading-images">14.4. Reading images</a></li>
+<li><a href="#145-reading-gis-data-geoinformation">14.5. Reading GIS data (Geoinformation)</a></li>
+<li><a href="#146-reading-music-data">14.6. Reading music data</a></li>
+</ul>
+</li>
+<li><a href="#15-subsetting-and-sorting">15. Subsetting and Sorting</a>
+<ul>
+<li><a href="#151-subsetting">15.1. Subsetting</a></li>
+<li><a href="#152-sorting">15.2. Sorting</a></li>
+<li><a href="#153-ordering">15.3. Ordering</a></li>
+<li><a href="#154-adding-rows-and-columns">15.4. Adding rows and columns</a></li>
+</ul>
+</li>
+<li><a href="#16-summarizing-data">16. Summarizing Data</a>
+<ul>
+<li><a href="#161-first-look-at-the-data">16.1. First look at the data</a></li>
+<li><a href="#162-quantiles-of-quantitative-variables">16.2. Quantiles of quantitative variables</a></li>
+<li><a href="#163-make-table">16.3. Make table</a></li>
+<li><a href="#164-check-for-missing-values">16.4. Check for missing values</a></li>
+<li><a href="#165-row-and-column-sums">16.5. Row and column sums</a></li>
+<li><a href="#166-values-with-specific-characteristics">16.6. Values with specific characteristics</a></li>
+<li><a href="#167-cross-tabs-using-xtabs--flat-tables-using-ftable">16.7. Cross tabs using <code>xtabs</code> &amp; Flat tables using <code>ftable</code></a></li>
+<li><a href="#168-size-of-a-data-set">16.8. Size of a data set</a></li>
+</ul>
+</li>
+<li><a href="#17-creating-new-variables">17. Creating New Variables</a>
+<ul>
+<li><a href="#171-creating-sequences">17.1. Creating sequences</a></li>
+<li><a href="#172-subsetting-variables">17.2. Subsetting variables</a></li>
+<li><a href="#173-creating-binary-variables">17.3. Creating binary variables</a></li>
+<li><a href="#174-creating-categorical-variables">17.4. Creating categorical variables</a></li>
+<li><a href="#175-creating-factor-variables">17.5. Creating factor variables</a></li>
+<li><a href="#176-using-the-mutate-function-in-plyr-package">17.6. Using the <code>mutate</code> function in {<code>plyr</code> package}</a></li>
+<li><a href="#177-common-transforms">17.7. Common transforms</a></li>
+</ul>
+</li>
+<li><a href="#18-reshaping-data">18. Reshaping Data</a>
+<ul>
+<li><a href="#181-melting-data-frames-wide--to-long-format-data">18.1. Melting data frames (Wide- to long-format data)</a></li>
+<li><a href="#182-casting-data-frames-long--to-wide-format-data">18.2. Casting data frames (Long- to wide-format data)</a></li>
+<li><a href="#183-averaging-values">18.3. Averaging values</a></li>
+</ul>
+</li>
+<li><a href="#19-managing-data-frames-with-dplyr-package">19. Managing Data Frames with {<code>dplyr</code> package}</a>
+<ul>
+<li><a href="#191-dplyr-verbs">19.1. dplyr Verbs</a></li>
+<li><a href="#192-select">19.2. <code>select</code></a></li>
+<li><a href="#193-filter">19.3. <code>filter</code></a></li>
+<li><a href="#194-arrange">19.4. <code>arrange</code></a></li>
+<li><a href="#195-rename">19.5. <code>rename</code></a></li>
+<li><a href="#196-mutate">19.6. <code>mutate</code></a></li>
+<li><a href="#197-group_by-and-summarize">19.7. <code>group_by</code> and <code>summarize</code></a></li>
+<li><a href="#198-%%">19.8. <code>%&gt;%</code></a></li>
+</ul>
+</li>
+<li><a href="#20-merging-data">20. Merging data</a>
+<ul>
+<li><a href="#201-merge">20.1. <code>merge</code></a></li>
+<li><a href="#202-using-join-in-the-plyr-package">20.2. Using <code>join</code> in the {<code>plyr</code> package}</a></li>
+<li><a href="#203-multiple-data-frames-using-join_all">20.3. Multiple data frames using <code>join_all</code></a></li>
+</ul>
+</li>
+<li><a href="#21-tidying-data-with-tidyr-package-and-readr-package">21. Tidying Data with {<code>tidyr</code> package} and {<code>readr</code> package}</a>
+<ul>
+<li><a href="#211-first-problem-column-headers-that-are-values-not-variable-names">21.1. First problem: column headers that are values, not variable names</a></li>
+<li><a href="#212-second-problem-when-multiple-variables-are-stored-in-one-column">21.2. Second problem: when multiple variables are stored in one column</a></li>
+<li><a href="#213-third-problem-when-variables-are-stored-in-both-rows-and-columns">21.3. Third problem: when variables are stored in both rows and columns</a></li>
+<li><a href="#214-fourth-problem-when-multiple-observational-units-are-stored-in-the-same-table">21.4. Fourth problem: when multiple observational units are stored in the same table</a></li>
+<li><a href="#215-fifth-problem-when-a-single-observational-unit-is-stored-in-multiple-tables">21.5. Fifth problem: when a single observational unit is stored in multiple tables</a></li>
+</ul>
+</li>
+<li><a href="#22-editing-text-variables">22. Editing Text Variables</a>
+<ul>
+<li><a href="#221-fixing-character-vectors">22.1. Fixing character vectors</a></li>
+<li><a href="#222-finding-values">22.2. Finding values</a></li>
+<li><a href="#223-more-useful-string-functions">22.3. More useful string functions</a></li>
+</ul>
+</li>
+<li><a href="#23-regular-expressions">23. Regular Expressions</a>
+<ul>
+<li><a href="#231-more-examples">23.1. More Examples</a></li>
+</ul>
+</li>
+<li><a href="#24-working-with-dates">24. Working with Dates</a>
+<ul>
+<li><a href="#241-formatting-dates">24.1. Formatting Dates</a></li>
+<li><a href="#242-creating-dates">24.2. Creating Dates</a></li>
+<li><a href="#243-conversions">24.3. Conversions</a></li>
+<li><a href="#244-lubridate-package">24.4. {<code>lubridate</code> package}</a></li>
+</ul>
+</li>
+<li><a href="#25-data-resources">25. Data Resources</a>
+<ul>
+<li><a href="#251-open-government-sites">25.1. Open Government Sites</a></li>
+<li><a href="#252-others">25.2. Others</a></li>
+<li><a href="#253-collections-by-data-scientists">25.3. Collections by data scientists</a></li>
+<li><a href="#254-more-specialized-collections">25.4. More specialized collections</a></li>
+<li><a href="#255-some-apis-with-r-interfaces">25.5. Some API's with R interfaces</a></li>
+</ul>
+</li>
+</ul>
+
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://github.com/DataScienceSpecialization/courses/tree/master/03_GettingData">Coursera Data Science Getting and Cleaning Data</a></li>
+<li><a href="http://sux13.github.io/DataScienceSpCourseNotes/3_GETDATA/Getting_and_Cleaning_Data_Course_Notes.html">Xing Su Notes</a></li>
+</ul>
+<h2 id="1-data-science-pipeline">1. Data Science Pipeline</h2>
+<p>Raw data* -&gt; Processing script* -&gt; tidy data* -&gt; data analysis -&gt; data communication</p>
+<h2 id="2-processing-data">2. Processing Data</h2>
+<ul>
+<li>Processing can include merging, subsetting, transformin, etc.</li>
+<li>There may be standards for processing</li>
+<li><strong>All steps should be recorded</strong></li>
+</ul>
+<h2 id="3-components-of-tidy-data">3. Components of Tidy Data</h2>
+<h3 id="31-things-you-should-have">3.1. Things you should have</h3>
+<ol>
+<li>The raw data</li>
+<li>A tidy data set</li>
+<li>A code book describing each variable and its values in the tidy data set</li>
+<li>An explicit and exact recipe you used to go from 1 -&gt; 2, 3</li>
+</ol>
+<h3 id="32-the-code-book">3.2. The Code Book</h3>
+<ol>
+<li>Information about the variables( including units!) in the data set not contained in the tidy data</li>
+<li>Information about the summary choices you made</li>
+<li>Information about the experimental study design you used</li>
+</ol>
+<ul>
+<li>Other important tips
+<ul>
+<li>A common format for this document, eg. Word/text file</li>
+<li>There should be a section called "Study design" that has a thorough description of how you collected the data</li>
+<li>There must be section called "Code book" that describes each variable and its units</li>
+</ul>
+</li>
+</ul>
+<h3 id="33-the-instruction-list">3.3. The Instruction List</h3>
+<ul>
+<li>Ideally a computer script (eg. R or python)</li>
+<li>The input for the script is the raw data</li>
+<li>The output is the processed, tidy data</li>
+<li>There are no parameters to the script</li>
+</ul>
+<p>In some cases it will not be possible to script every step. In that case you should provide instructions like:</p>
+<ol>
+<li>Step 1: take the raw file, run version 3.1.2 of summarize software with parameters a=1, b=2, c=3</li>
+<li>Step 2: run the software seperately for each sample</li>
+<li>Step 3: take the column three of outputfile.out for each sample and that is the corresponding row in the output data set</li>
+</ol>
+<h2 id="4-downloading-files">4. Downloading files</h2>
+<h3 id="41-getset-working-directory-in-r">4.1. Get/set working directory in R</h3>
+<ul>
+<li><code>getwd()</code> and <code>setwd()</code></li>
+<li>Be aware of relative vs absolute paths
+<ul>
+<li><strong>Relative</strong>: <code>setwd("./data")</code>, <code>setwd("../")</code></li>
+<li><strong>Absolute</strong>: <code>setwd("/Usres/jtleek/data/")</code></li>
+</ul>
+</li>
+<li>In windows <code>setwd("C:\\Users\\Andrew\\Downloads")</code></li>
+</ul>
+<h3 id="42-checking-for-and-creating-directories">4.2. Checking for and creating directories</h3>
+<ul>
+<li><code>file.exists("directoryName")</code> will check to see if the directory exists</li>
+<li><code>dir.create("directoryName")</code> will create a directory if it doesn't exist</li>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> <span class="pl-k">if</span> (<span class="pl-k">!</span>file.exists(<span class="pl-s"><span class="pl-pds">"</span>data<span class="pl-pds">"</span></span>)) {
+ 	dir.create(<span class="pl-s"><span class="pl-pds">"</span>data<span class="pl-pds">"</span></span>)
+ }</pre></div>
+</li>
+</ul>
+<h3 id="43-getting-data-from-the-internet">4.3. Getting data from the internet</h3>
+<ul>
+<li><code>download.file()</code>
+<ul>
+<li>Important parameters are <strong><em>url</em></strong>, <strong><em>destfile</em></strong>, <strong><em>method</em></strong></li>
+<li>Useful for downloading tab-limited, csv, and other files</li>
+</ul>
+</li>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">fileUrl</span> <span class="pl-k">&lt;-</span> <span class="pl-s"><span class="pl-pds">"</span>https://data.baltimorecity.gov/api/views/dz54-2aru/rows.csv?accessType=DOWNLOAD<span class="pl-pds">"</span></span>
+ download.file(<span class="pl-smi">fileUrl</span>, <span class="pl-v">destfile</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>cameras.csv<span class="pl-pds">"</span></span>)
+
+ <span class="pl-smi">dateDownloaded</span> <span class="pl-k">&lt;-</span> date()</pre></div>
+</li>
+</ul>
+<h2 id="5-reading-local-files">5. Reading Local Files</h2>
+<ul>
+<li><code>read.table()</code>
+<ul>
+<li>Important parameters are <strong><em>file</em></strong>, <strong><em>header</em></strong>, <strong><em>sep</em></strong>, <strong><em>row.names</em></strong>, <strong><em>nrows</em></strong></li>
+<li>Reads the data into RAM - big data can cause problems</li>
+<li>More important parameters are <strong><em>quote</em></strong>, <strong><em>na.strings</em></strong>, <strong><em>skip</em></strong>
+<ul>
+<li>biggest trouble with reading flat files are quotation marks ` or " placed in data values -&gt; setting <code>quote=""</code> resolves these</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Related: <code>read.csv()</code>, <code>read.csv2()</code></li>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">cameraData</span> <span class="pl-k">&lt;-</span> read.table(<span class="pl-s"><span class="pl-pds">"</span>./data/cameras.csv<span class="pl-pds">"</span></span>, <span class="pl-v">sep</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>,<span class="pl-pds">"</span></span>, <span class="pl-v">header</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>)
+ head(<span class="pl-smi">cameraData</span>)
+ 
+ <span class="pl-c"><span class="pl-c">#</span> read.csv sets sep="," and header=TRUE</span>
+ <span class="pl-smi">cameraData</span> <span class="pl-k">&lt;-</span> read.csv(<span class="pl-s"><span class="pl-pds">"</span>./data/cameras.csv<span class="pl-pds">"</span></span>)
+ head(<span class="pl-smi">cameraData</span>)</pre></div>
+</li>
+</ul>
+<h2 id="6-reading-excel-files-xlsx-package">6. Reading Excel Files {<code>xlsx</code> package}</h2>
+<ul>
+<li><code>read.xlsx()</code>, <code>read.xlsx2()</code>
+<ul>
+<li>Reading specific rows and columns with <strong><em>colIndex</em></strong> and <strong><em>rowIndex</em></strong> parameters</li>
+</ul>
+</li>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> library(<span class="pl-smi">xlsx</span>)
+ <span class="pl-smi">cameraData</span> <span class="pl-k">&lt;-</span> read.xlsx(<span class="pl-s"><span class="pl-pds">"</span>./data/cameras.xlsx<span class="pl-pds">"</span></span>, <span class="pl-v">sheetIndex</span><span class="pl-k">=</span><span class="pl-c1">1</span>, <span class="pl-v">header</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)
+ head(<span class="pl-smi">cameraData</span>)</pre></div>
+</li>
+<li><code>write.xlsx()</code>, function to write out an Excel file</li>
+<li>Also: <code>XLConnect</code> package (More Info: <a href="https://cran.r-project.org/web/packages/XLConnect/vignettes/XLConnect.pdf">XLConnect vignette</a>)</li>
+</ul>
+<h2 id="7-reading-xml">7. Reading XML</h2>
+<ul>
+<li>Extensible markup language</li>
+<li>Extracting XML is the basis for most web scraping</li>
+<li>Components:
+<ul>
+<li>Markup: labels that give the text structure</li>
+<li>Content: the actual text of the document</li>
+</ul>
+</li>
+</ul>
+<h3 id="71-tags-elements-and-attributes">7.1. Tags, elements and attributes</h3>
+<ul>
+<li>Tags correspond to general labels
+<ul>
+<li>Start tags <code>&lt;section&gt;</code></li>
+<li>End tags <code>&lt;/section&gt;</code></li>
+<li>Empty tags <code>&lt;line-break /&gt;</code></li>
+</ul>
+</li>
+<li>Elements are specific examples of tags
+<ul>
+<li><code>&lt;Greeting&gt; Hello, world &lt;/Greeting&gt;</code></li>
+</ul>
+</li>
+<li>Attributes are components of the label
+<ul>
+<li><code>&lt;ime src="jeff.jpg" alt="instructor"/&gt;</code></li>
+<li><code>&lt;step number="3"&gt; Connect A to B. &lt;/step&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="72-read-the-file-into-r-xml-package">7.2. Read the file into R {<code>xml</code> package}</h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> library(<span class="pl-smi">XML</span>)
+ <span class="pl-smi">fileUrl</span> <span class="pl-k">&lt;-</span> <span class="pl-s"><span class="pl-pds">"</span>http://www.w3schools.com/xml/simple.xml<span class="pl-pds">"</span></span>
+ <span class="pl-smi">doc</span> <span class="pl-k">&lt;-</span> xmlTreeParse(<span class="pl-smi">fileUrl</span>,<span class="pl-v">useInternal</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)
+ <span class="pl-smi">rootNode</span> <span class="pl-k">&lt;-</span> xmlRoot(<span class="pl-smi">doc</span>)
+ xmlName(<span class="pl-smi">rootNode</span>)
+ names(<span class="pl-smi">rootNode</span>)</pre></div>
+</li>
+<li>Look into xml
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">rootNode</span>[[<span class="pl-c1">1</span>]]
+ <span class="pl-smi">rootNode</span>[[<span class="pl-c1">1</span>]][[<span class="pl-c1">1</span>]]</pre></div>
+</li>
+</ul>
+<h3 id="73-xpath-language">7.3. XPath Language</h3>
+<ul>
+<li><code>/node</code> Top level node</li>
+<li><code>//node</code> Node at any level</li>
+<li><code>node[@attr-name]</code> Node with an attribute name</li>
+<li><code>node[@attr-name='bob']</code> Node with attribute name attr-name='bob'</li>
+<li>Official XML tutorials <a href="http://www.omegahat.org/RSXML/shortIntro.pdf">short</a>, <a href="http://www.omegahat.org/RSXML/Tour.pdf">long</a></li>
+<li>More Info on XML R Package: <a href="http://www.stat.berkeley.edu/%7Estatcur/Workshop2/Presentations/XML.pdf">Berkley XML</a></li>
+<li>Exploring elements in xml:
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span> Get xmlValue in each element by</span>
+ <span class="pl-c"><span class="pl-c">#</span> applying a function to each element in xml</span>
+ xmlSApply(<span class="pl-smi">rootNode</span>,<span class="pl-smi">xmlValue</span>)
+ 
+ <span class="pl-c"><span class="pl-c">#</span> Get specific items</span>
+ xpathSApply(<span class="pl-smi">rootNode</span>,<span class="pl-s"><span class="pl-pds">"</span>//name<span class="pl-pds">"</span></span>,<span class="pl-smi">xmlValue</span>)
+ xpathSApply(<span class="pl-smi">rootNode</span>,<span class="pl-s"><span class="pl-pds">"</span>//price<span class="pl-pds">"</span></span>,<span class="pl-smi">xmlValue</span>)</pre></div>
+</li>
+</ul>
+<h3 id="74-reading-html-source-code-using-htmltreeparse">7.4. Reading HTML source code using <code>htmlTreeParse</code></h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">fileUrl</span> <span class="pl-k">&lt;-</span> <span class="pl-s"><span class="pl-pds">"</span>http://espn.go.com/nfl/team/_/name/bal/baltimore-ravens<span class="pl-pds">"</span></span>
+ <span class="pl-smi">doc</span> <span class="pl-k">&lt;-</span> htmlTreeParse(<span class="pl-smi">fileUrl</span>,<span class="pl-v">useInternal</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)
+ <span class="pl-smi">scores</span> <span class="pl-k">&lt;-</span> xpathSApply(<span class="pl-smi">doc</span>,<span class="pl-s"><span class="pl-pds">"</span>//li[@class='score']<span class="pl-pds">"</span></span>,<span class="pl-smi">xmlValue</span>)
+ <span class="pl-smi">teams</span> <span class="pl-k">&lt;-</span> xpathSApply(<span class="pl-smi">doc</span>,<span class="pl-s"><span class="pl-pds">"</span>//li[@class='team-name']<span class="pl-pds">"</span></span>,<span class="pl-smi">xmlValue</span>)
+ <span class="pl-smi">scores</span>
+ <span class="pl-smi">teams</span></pre></div>
+</li>
+</ul>
+<h2 id="8-reading-json">8. Reading JSON</h2>
+<ul>
+<li>Javascript Object Notation</li>
+<li>Data stored as
+<ul>
+<li>Numbers (double)</li>
+<li>Strings (double quoted)</li>
+<li>Boolean</li>
+<li>Array (ordered, comma seperated encloded in square brackets [])</li>
+<li>Object (unordered, comma seperated collectionof key:value pairs in curley brackets{})</li>
+</ul>
+</li>
+<li><a href="https://www.r-bloggers.com/new-package-jsonlite-a-smarter-json-encoderdecoder/">Jsonlite R package Tutorial</a></li>
+</ul>
+<h3 id="81-read-data-from-json-jsonlite-package">8.1. Read data from JSON {<code>jsonlite</code> package}</h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> library(<span class="pl-smi">jsonlite</span>)
+ <span class="pl-smi">jsonData</span> <span class="pl-k">&lt;-</span> fromJSON(<span class="pl-s"><span class="pl-pds">"</span>https://api.github.com/users/jtleek/repos<span class="pl-pds">"</span></span>)
+ names(<span class="pl-smi">jsonData</span>)</pre></div>
+</li>
+<li>Look into json
+<div class="highlight highlight-source-r"><pre> names(<span class="pl-smi">jsonData</span><span class="pl-k">$</span><span class="pl-smi">owner</span>)
+ <span class="pl-smi">jsonData</span><span class="pl-k">$</span><span class="pl-smi">owner</span><span class="pl-k">$</span><span class="pl-smi">login</span></pre></div>
+</li>
+</ul>
+<h3 id="82-writing-data-frames-to-json">8.2. Writing data frames to JSON</h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">myjson</span> <span class="pl-k">&lt;-</span> toJSON(<span class="pl-smi">iris</span>, <span class="pl-v">pretty</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)
+ cat(<span class="pl-smi">myjson</span>)</pre></div>
+</li>
+<li>Convert back from JSON:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">iris2</span> <span class="pl-k">&lt;-</span> fromJSON(<span class="pl-smi">myjson</span>)
+ head(<span class="pl-smi">iris2</span>)</pre></div>
+</li>
+</ul>
+<h2 id="9-the-datatable-package">9. The <code>data.table</code> Package</h2>
+<h3 id="91-create-data-tables-just-like-data-frames">9.1. Create data tables just like data frames</h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> library(<span class="pl-smi">data.table</span>)
+ <span class="pl-v">DF</span> <span class="pl-k">=</span> <span class="pl-k">data.frame</span>(<span class="pl-v">x</span><span class="pl-k">=</span>rnorm(<span class="pl-c1">9</span>),<span class="pl-v">y</span><span class="pl-k">=</span>rep(c(<span class="pl-s"><span class="pl-pds">"</span>a<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>b<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>c<span class="pl-pds">"</span></span>),<span class="pl-v">each</span><span class="pl-k">=</span><span class="pl-c1">3</span>),<span class="pl-v">z</span><span class="pl-k">=</span>rnorm(<span class="pl-c1">9</span>))
+ head(<span class="pl-smi">DF</span>,<span class="pl-c1">3</span>)
+
+ <span class="pl-v">DT</span> <span class="pl-k">=</span> data.table(<span class="pl-v">x</span><span class="pl-k">=</span>rnorm(<span class="pl-c1">9</span>),<span class="pl-v">y</span><span class="pl-k">=</span>rep(c(<span class="pl-s"><span class="pl-pds">"</span>a<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>b<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>c<span class="pl-pds">"</span></span>),<span class="pl-v">each</span><span class="pl-k">=</span><span class="pl-c1">3</span>),<span class="pl-v">z</span><span class="pl-k">=</span>rnorm(<span class="pl-c1">9</span>))
+ head(<span class="pl-smi">DT</span>,<span class="pl-c1">3</span>)</pre></div>
+</li>
+<li>See all the data tables in memory:
+<div class="highlight highlight-source-r"><pre> tables()</pre></div>
+</li>
+<li><a href="http://stackoverflow.com/questions/13618488/what-you-can-do-with-data-frame-that-you-cant-in-data-table">Here is a list of differences between data.table and data.frame</a></li>
+</ul>
+<h3 id="92-subsetting-with-data-tables">9.2. Subsetting with data tables</h3>
+<ul>
+<li><strong>Row Subsetting</strong>:
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span># Row subsetting</span>
+ <span class="pl-smi">DT</span>[<span class="pl-c1">2</span>,]
+ <span class="pl-smi">DT</span>[<span class="pl-smi">DT</span><span class="pl-k">$</span><span class="pl-smi">y</span><span class="pl-k">==</span><span class="pl-s"><span class="pl-pds">"</span>a<span class="pl-pds">"</span></span>,]
+ <span class="pl-smi">DT</span>[c(<span class="pl-c1">2</span>,<span class="pl-c1">3</span>)]</pre></div>
+</li>
+<li><strong>Column subsetting</strong> in data.table
+<ul>
+<li>The subsetting function is modified for data.table</li>
+<li>The argument you pass after the comma is called an "expression"</li>
+<li>In R an <strong>expression</strong> is a collection of statements enclosed in curley brackets
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span># expressions in R are enclosed by curly brackets</span>
+ {
+ 	<span class="pl-v">x</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>
+ 	<span class="pl-v">y</span> <span class="pl-k">=</span> <span class="pl-c1">2</span>
+ }
+ 
+ <span class="pl-v">k</span> <span class="pl-k">=</span> {print(<span class="pl-c1">10</span>); <span class="pl-c1">5</span>}
+ print(<span class="pl-smi">k</span>)</pre></div>
+</li>
+<li><strong>Calculating values for variables with expressions</strong>
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span># examples of expressions passed to data table</span>
+ <span class="pl-smi">DT</span>[,<span class="pl-k">list</span>(mean(<span class="pl-smi">x</span>),sum(<span class="pl-smi">z</span>))]
+ <span class="pl-smi">DT</span>[,table(<span class="pl-smi">y</span>)]</pre></div>
+</li>
+<li><strong>Adding new columns</strong>
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">DT</span>[,<span class="pl-smi">w</span><span class="pl-k">:</span><span class="pl-k">=</span><span class="pl-smi">z</span><span class="pl-k">^</span><span class="pl-c1">2</span>]</pre></div>
+</li>
+<li>Be careful when copying a data table (for real copying use copy() function):
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span># Be careful with copying data tables</span>
+ <span class="pl-smi">DT2</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">DT</span>
+ <span class="pl-smi">DT</span>[, <span class="pl-smi">y</span><span class="pl-k">:</span><span class="pl-k">=</span> <span class="pl-c1">2</span>]
+
+ head(<span class="pl-smi">DT</span>,<span class="pl-v">n</span><span class="pl-k">=</span><span class="pl-c1">3</span>)
+ head(<span class="pl-smi">DT2</span>,<span class="pl-v">n</span><span class="pl-k">=</span><span class="pl-c1">3</span>)</pre></div>
+</li>
+<li><strong>Different operations</strong>:
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span># Multiple operations using expressions</span>
+ <span class="pl-smi">DT</span>[,<span class="pl-smi">m</span><span class="pl-k">:</span><span class="pl-k">=</span> {<span class="pl-smi">tmp</span> <span class="pl-k">&lt;-</span> (<span class="pl-smi">x</span><span class="pl-k">+</span><span class="pl-smi">z</span>); log2(<span class="pl-smi">tmp</span><span class="pl-k">+</span><span class="pl-c1">5</span>)}]
+
+ <span class="pl-c"><span class="pl-c">#</span># plyr like operations</span>
+ <span class="pl-smi">DT</span>[,<span class="pl-smi">a</span><span class="pl-k">:</span><span class="pl-k">=</span><span class="pl-smi">x</span><span class="pl-k">&gt;</span><span class="pl-c1">0</span>]
+ <span class="pl-smi">DT</span>[,<span class="pl-smi">b</span><span class="pl-k">:</span><span class="pl-k">=</span> mean(<span class="pl-smi">x</span><span class="pl-k">+</span><span class="pl-smi">w</span>),<span class="pl-v">by</span><span class="pl-k">=</span><span class="pl-smi">a</span>] 		<span class="pl-c"><span class="pl-c">#</span> take mean of x+w grouped by a</span></pre></div>
+</li>
+<li><strong>Special variables</strong> <code>.N</code>:
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span># Special Variables:</span>
+ <span class="pl-c"><span class="pl-c">#</span># count the number of occurences of a,b,c</span>
+ set.seed(<span class="pl-c1">123</span>);
+ <span class="pl-smi">DT</span> <span class="pl-k">&lt;-</span> data.table(<span class="pl-v">x</span><span class="pl-k">=</span>sample(<span class="pl-c1">letters</span>[<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">3</span>], <span class="pl-c1">1E5</span>, <span class="pl-c1">TRUE</span>))
+ <span class="pl-smi">DT</span>[, .<span class="pl-smi">N</span>, <span class="pl-v">by</span><span class="pl-k">=</span><span class="pl-smi">x</span>]</pre></div>
+</li>
+<li><strong>Keys</strong>
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span># Keys</span>
+ <span class="pl-smi">DT</span> <span class="pl-k">&lt;-</span> data.table(<span class="pl-v">x</span><span class="pl-k">=</span>rep(c(<span class="pl-s"><span class="pl-pds">"</span>a<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>b<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>c<span class="pl-pds">"</span></span>),<span class="pl-v">each</span><span class="pl-k">=</span><span class="pl-c1">100</span>), <span class="pl-v">y</span><span class="pl-k">=</span>rnorm(<span class="pl-c1">300</span>))
+ setkey(<span class="pl-smi">DT</span>, <span class="pl-smi">x</span>)
+ <span class="pl-smi">DT</span>[<span class="pl-s"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span>]</pre></div>
+Using keys to join tables
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span>#Joins</span>
+ <span class="pl-smi">DT1</span> <span class="pl-k">&lt;-</span> data.table(<span class="pl-v">x</span><span class="pl-k">=</span>c(<span class="pl-s"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>b<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>dt1<span class="pl-pds">'</span></span>), <span class="pl-v">y</span><span class="pl-k">=</span><span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">4</span>)
+ <span class="pl-smi">DT2</span> <span class="pl-k">&lt;-</span> data.table(<span class="pl-v">x</span><span class="pl-k">=</span>c(<span class="pl-s"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>b<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>dt2<span class="pl-pds">'</span></span>), <span class="pl-v">z</span><span class="pl-k">=</span><span class="pl-c1">5</span><span class="pl-k">:</span><span class="pl-c1">7</span>)
+ setkey(<span class="pl-smi">DT1</span>, <span class="pl-smi">x</span>); setkey(<span class="pl-smi">DT2</span>, <span class="pl-smi">x</span>)
+ merge(<span class="pl-smi">DT1</span>, <span class="pl-smi">DT2</span>)</pre></div>
+</li>
+<li><strong>Fast reading</strong> using <code>fread()</code>
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span># Fast reading</span>
+ <span class="pl-smi">big_df</span> <span class="pl-k">&lt;-</span> <span class="pl-k">data.frame</span>(<span class="pl-v">x</span><span class="pl-k">=</span>rnorm(<span class="pl-c1">1E6</span>), <span class="pl-v">y</span><span class="pl-k">=</span>rnorm(<span class="pl-c1">1E6</span>))
+ <span class="pl-smi">file</span> <span class="pl-k">&lt;-</span> tempfile()
+ write.table(<span class="pl-smi">big_df</span>, <span class="pl-v">file</span><span class="pl-k">=</span><span class="pl-smi">file</span>, <span class="pl-v">row.names</span><span class="pl-k">=</span><span class="pl-c1">FALSE</span>, <span class="pl-v">col.names</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>, <span class="pl-v">sep</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span><span class="pl-cce">\t</span><span class="pl-pds">"</span></span>, <span class="pl-v">quote</span><span class="pl-k">=</span><span class="pl-c1">FALSE</span>)
+ system.time(fread(<span class="pl-smi">file</span>))
+
+ system.time(read.table(<span class="pl-smi">file</span>, <span class="pl-v">header</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>, <span class="pl-v">sep</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span><span class="pl-cce">\t</span><span class="pl-pds">"</span></span>))</pre></div>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="10-reading-from-mysql-rmysql-package">10. Reading from MySQL {<code>RMySQL</code> package}</h2>
+<ul>
+<li><a href="http://www.ahschulz.de/2013/07/23/installing-rmysql-under-windows/">Installing RMySQL on Windows</a></li>
+<li><a href="http://www.pantz.org/software/mysql/mysqlcommands.html">List of MySQL commands</a></li>
+<li><a href="https://www.r-bloggers.com/mysql-and-r/">MySQL and R</a></li>
+</ul>
+<h3 id="101-connect-to-a-mysql-server">10.1. Connect to a MySql Server</h3>
+<div class="highlight highlight-source-r"><pre><span class="pl-smi">ucscDb</span> <span class="pl-k">&lt;-</span> dbConnect(MySQL(), <span class="pl-v">user</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>genome<span class="pl-pds">"</span></span>, <span class="pl-v">host</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>genome-mysql.cse.ucsc.edu<span class="pl-pds">"</span></span>)
+<span class="pl-smi">result</span> <span class="pl-k">&lt;-</span> dbGetQuery(<span class="pl-smi">ucscDb</span>,<span class="pl-s"><span class="pl-pds">"</span>show databases;<span class="pl-pds">"</span></span>)	<span class="pl-c"><span class="pl-c">#</span> list all Dbs</span>
+dbDisconnect(<span class="pl-smi">ucscDb</span>)				<span class="pl-c"><span class="pl-c">#</span> don't forget to close the connection</span></pre></div>
+<h3 id="102-list-tables-in-a-specific-db">10.2. List tables in a specific DB</h3>
+<div class="highlight highlight-source-r"><pre><span class="pl-smi">hg19</span> <span class="pl-k">&lt;-</span> dbConnect(MySQL(), <span class="pl-v">user</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>genome<span class="pl-pds">"</span></span>, <span class="pl-v">db</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>hg19<span class="pl-pds">"</span></span>,
+                     <span class="pl-v">host</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>genome-mysql.cse.ucsc.edu<span class="pl-pds">"</span></span>)
+<span class="pl-smi">allTables</span> <span class="pl-k">&lt;-</span> dbListTables(<span class="pl-smi">hg19</span>)		<span class="pl-c"><span class="pl-c">#</span> list all tables</span>
+length(<span class="pl-smi">allTables</span>)</pre></div>
+<h3 id="103-some-table-operations">10.3. Some Table Operations</h3>
+<ul>
+<li><strong>List all fields in a table</strong>:
+<div class="highlight highlight-source-r"><pre> dbListFields(<span class="pl-smi">hg19</span>,<span class="pl-s"><span class="pl-pds">"</span>affyU133Plus2<span class="pl-pds">"</span></span>)			<span class="pl-c"><span class="pl-c">#</span> list all fields in a table</span>
+ dbGetQuery(<span class="pl-smi">hg19</span>, <span class="pl-s"><span class="pl-pds">"</span>select count(*) from affyU133Plus2<span class="pl-pds">"</span></span>)	<span class="pl-c"><span class="pl-c">#</span> get dimensions of a specific tables</span></pre></div>
+</li>
+<li><strong>Read from a table</strong>:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">affyData</span> <span class="pl-k">&lt;-</span> dbReadTable(<span class="pl-smi">hg19</span>, <span class="pl-s"><span class="pl-pds">"</span>affyU133Plus2<span class="pl-pds">"</span></span>)		<span class="pl-c"><span class="pl-c">#</span> read from the table</span>
+ head(<span class="pl-smi">affyData</span>)</pre></div>
+</li>
+<li><strong>Select a specific subset</strong>:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">query</span> <span class="pl-k">&lt;-</span> dbSendQuery(<span class="pl-smi">hg19</span>, <span class="pl-s"><span class="pl-pds">"</span>select * from affyU133Plus2 where misMatches between 1 and 3<span class="pl-pds">"</span></span>)
+ <span class="pl-smi">affyMis</span> <span class="pl-k">&lt;-</span> fetch(<span class="pl-smi">query</span>)
+ quantile(<span class="pl-smi">affyMis</span><span class="pl-k">$</span><span class="pl-smi">misMatches</span>)
+
+ <span class="pl-smi">affyMisSmall</span> <span class="pl-k">&lt;-</span> fetch(<span class="pl-smi">query</span>,<span class="pl-v">n</span><span class="pl-k">=</span><span class="pl-c1">10</span>)
+ dbClearResult(<span class="pl-smi">query</span>)
+ dim(<span class="pl-smi">affyMisSmall</span>)</pre></div>
+</li>
+</ul>
+<h2 id="11-reading-from-hdf5-rhdf5-package">11. Reading from HDF5 (<code>rhdf5</code> package)</h2>
+<ul>
+<li>Heirarchical data format</li>
+<li><em>groups</em> containing zero or more dta sets and metadata
+<ul>
+<li>Have a <em>group header</em> with group name and list of attributes</li>
+<li>Have a <em>group symbol table</em> with a list of objects in group</li>
+</ul>
+</li>
+<li><em>datasets</em> multidimensional array of data elements with metadata
+<ul>
+<li>Have a <em>header</em> with name, datatype, dataspace, and storage layout</li>
+<li>Have a <em>data array</em> with the data</li>
+</ul>
+</li>
+<li><a href="http://www.bioconductor.org/packages/release/bioc/vignettes/rhdf5/inst/doc/rhdf5.pdf">HDF5 and R Tutorial</a></li>
+</ul>
+<h3 id="111-install-the-r-hdf5-package">11.1. Install the R HDF5 package</h3>
+<div class="highlight highlight-source-r"><pre>source(<span class="pl-s"><span class="pl-pds">"</span>http://bioconductor.org/biocLite.R<span class="pl-pds">"</span></span>)
+biocLite(<span class="pl-s"><span class="pl-pds">"</span>rhdf5<span class="pl-pds">"</span></span>)</pre></div>
+<h3 id="112-writing-to-hdf5">11.2. Writing to HDF5</h3>
+<ul>
+<li>
+<p><strong>Create groups</strong>:</p>
+<div class="highlight highlight-source-r"><pre> library(<span class="pl-smi">rhdf5</span>)
+ <span class="pl-smi">created</span> <span class="pl-k">&lt;-</span> h5createFile(<span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>)
+ <span class="pl-smi">created</span>
+
+ <span class="pl-smi">created</span> <span class="pl-k">&lt;-</span> h5createGroup(<span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>foo<span class="pl-pds">"</span></span>)
+ <span class="pl-smi">created</span> <span class="pl-k">&lt;-</span> h5createGroup(<span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>baa<span class="pl-pds">"</span></span>)
+ <span class="pl-smi">created</span> <span class="pl-k">&lt;-</span> h5createGroup(<span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>foo/foobaa<span class="pl-pds">"</span></span>)
+ h5ls(<span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>)</pre></div>
+</li>
+<li>
+<p><strong>Write to groups</strong>:</p>
+<div class="highlight highlight-source-r"><pre> <span class="pl-v">A</span> <span class="pl-k">=</span> <span class="pl-k">matrix</span>(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">10</span>,<span class="pl-v">nr</span><span class="pl-k">=</span><span class="pl-c1">5</span>,<span class="pl-v">nc</span><span class="pl-k">=</span><span class="pl-c1">2</span>)
+ h5write(<span class="pl-smi">A</span>, <span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>foo/A<span class="pl-pds">"</span></span>)
+ 
+ <span class="pl-v">B</span> <span class="pl-k">=</span> <span class="pl-k">array</span>(seq(<span class="pl-c1">0.1</span>,<span class="pl-c1">2.0</span>,<span class="pl-v">by</span><span class="pl-k">=</span><span class="pl-c1">0.1</span>),<span class="pl-v">dim</span><span class="pl-k">=</span>c(<span class="pl-c1">5</span>,<span class="pl-c1">2</span>,<span class="pl-c1">2</span>))
+ attr(<span class="pl-smi">B</span>, <span class="pl-s"><span class="pl-pds">"</span>scale<span class="pl-pds">"</span></span>) <span class="pl-k">&lt;-</span> <span class="pl-s"><span class="pl-pds">"</span>liter<span class="pl-pds">"</span></span>
+ h5write(<span class="pl-smi">B</span>, <span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>foo/foobaa/B<span class="pl-pds">"</span></span>)
+ h5ls(<span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>)</pre></div>
+</li>
+<li>
+<p><strong>Write a data set</strong>:</p>
+<ul>
+<li>Write to top level rather to a group:
+<div class="highlight highlight-source-r"><pre> <span class="pl-v">df</span> <span class="pl-k">=</span> <span class="pl-k">data.frame</span>(<span class="pl-c1">1L</span><span class="pl-k">:</span><span class="pl-c1">5L</span>,seq(<span class="pl-c1">0</span>,<span class="pl-c1">1</span>,<span class="pl-v">length.out</span><span class="pl-k">=</span><span class="pl-c1">5</span>),
+                 c(<span class="pl-s"><span class="pl-pds">"</span>ab<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>cde<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>fghi<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>a<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>s<span class="pl-pds">"</span></span>), <span class="pl-v">stringsAsFactors</span><span class="pl-k">=</span><span class="pl-c1">FALSE</span>)
+ h5write(<span class="pl-smi">df</span>, <span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>df<span class="pl-pds">"</span></span>)
+ h5ls(<span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>)</pre></div>
+</li>
+<li>Writing chunks (ie. specific subset):
+<div class="highlight highlight-source-r"><pre> h5write(c(<span class="pl-c1">12</span>, <span class="pl-c1">13</span>, <span class="pl-c1">14</span>), <span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>foo/A<span class="pl-pds">"</span></span>, <span class="pl-v">index</span><span class="pl-k">=</span><span class="pl-k">list</span>(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">3</span>,<span class="pl-c1">1</span>))
+ h5read(<span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>foo/A<span class="pl-pds">"</span></span>)</pre></div>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="113-reading-data">11.3. Reading data</h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span># Reading data</span>
+ <span class="pl-v">readA</span> <span class="pl-k">=</span> h5read(<span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>foo/A<span class="pl-pds">"</span></span>)
+ <span class="pl-v">readB</span> <span class="pl-k">=</span> h5read(<span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>foo/foobaa/B<span class="pl-pds">"</span></span>)
+ <span class="pl-v">readdf</span><span class="pl-k">=</span> h5read(<span class="pl-s"><span class="pl-pds">"</span>example.h5<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>df<span class="pl-pds">"</span></span>)
+ <span class="pl-smi">readA</span></pre></div>
+</li>
+</ul>
+<h2 id="12-reading-from-the-web">12. Reading from the Web</h2>
+<ul>
+<li><strong>Webscraping</strong>: Programmatically extracting data from the HTML code of websites</li>
+</ul>
+<h3 id="121-getting-data-off-webpages-using-readlines">12.1. Getting data off webpages using <code>readLines</code></h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> <span class="pl-v">con</span> <span class="pl-k">=</span> url(<span class="pl-s"><span class="pl-pds">"</span>http://scholar.google.com/citations?user=HI-I6C0AAAAJ&amp;hl=en<span class="pl-pds">"</span></span>)
+ <span class="pl-v">htmlCode</span> <span class="pl-k">=</span> readLines(<span class="pl-smi">con</span>)
+ close(<span class="pl-smi">con</span>)
+ <span class="pl-smi">htmlCode</span></pre></div>
+</li>
+</ul>
+<h3 id="122-parsing-with-xml">12.2. Parsing with XML</h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> library(<span class="pl-smi">XML</span>)
+ <span class="pl-smi">url</span> <span class="pl-k">&lt;-</span> <span class="pl-s"><span class="pl-pds">"</span>http://scholar.google.com/citations?user=HI-I6C0AAAAJ&amp;hl=en<span class="pl-pds">"</span></span>
+ <span class="pl-smi">html</span> <span class="pl-k">&lt;-</span> htmlTreeParse(<span class="pl-smi">url</span>, <span class="pl-v">useInternalNodes</span><span class="pl-k">=</span><span class="pl-c1">T</span>)
+
+ xpathSApply(<span class="pl-smi">html</span>, <span class="pl-s"><span class="pl-pds">"</span>//title<span class="pl-pds">"</span></span>, <span class="pl-smi">xmlValue</span>)
+ xpathSApply(<span class="pl-smi">html</span>, <span class="pl-s"><span class="pl-pds">"</span>//td[@class='gsc_a_c']<span class="pl-pds">"</span></span>, <span class="pl-smi">xmlValue</span>)</pre></div>
+</li>
+</ul>
+<h3 id="123-using-get-from-the-httr-package">12.3. Using <code>GET</code> from the {<code>httr</code> package}</h3>
+<ul>
+<li><strong>httr help file</strong> has useful <a href="https://cran.r-project.org/web/packages/httr/httr.pdf">examples</a></li>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> library(<span class="pl-smi">httr</span>)
+ <span class="pl-v">html2</span> <span class="pl-k">=</span> GET(<span class="pl-smi">url</span>)
+ <span class="pl-v">content2</span> <span class="pl-k">=</span> content(<span class="pl-smi">html2</span>,<span class="pl-v">as</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span>)
+ <span class="pl-v">parsedHtml</span> <span class="pl-k">=</span> htmlParse(<span class="pl-smi">content2</span>,<span class="pl-v">asText</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)
+ xpathSApply(<span class="pl-smi">parsedHtml</span>, <span class="pl-s"><span class="pl-pds">"</span>//title<span class="pl-pds">"</span></span>, <span class="pl-smi">xmlValue</span>)</pre></div>
+</li>
+<li><strong>Accessing websites with passwords</strong>:
+<div class="highlight highlight-source-r"><pre> <span class="pl-v">pg2</span> <span class="pl-k">=</span> GET(<span class="pl-s"><span class="pl-pds">"</span>http://httpbin.org/basic-auth/user/passwd<span class="pl-pds">"</span></span>,
+           authenticate(<span class="pl-s"><span class="pl-pds">"</span>user<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>passwd<span class="pl-pds">"</span></span>))
+ <span class="pl-smi">pg2</span>
+ names(<span class="pl-smi">pg2</span>)</pre></div>
+</li>
+<li><strong>Using handles</strong> (to store cookies, so don't need to authenticate each time):
+<div class="highlight highlight-source-r"><pre> <span class="pl-v">google</span> <span class="pl-k">=</span> handle(<span class="pl-s"><span class="pl-pds">"</span>http://google.com<span class="pl-pds">"</span></span>)
+ <span class="pl-v">pg1</span> <span class="pl-k">=</span> GET(<span class="pl-v">handle</span><span class="pl-k">=</span><span class="pl-smi">google</span>,<span class="pl-v">path</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>/<span class="pl-pds">"</span></span>)
+ <span class="pl-v">pg2</span> <span class="pl-k">=</span> GET(<span class="pl-v">handle</span><span class="pl-k">=</span><span class="pl-smi">google</span>,<span class="pl-v">path</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>search<span class="pl-pds">"</span></span>)</pre></div>
+</li>
+<li>httr allows <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code> requests if you are authorized</li>
+</ul>
+<h2 id="13-reading-from-apis">13. Reading from APIs</h2>
+<ul>
+<li>Example using Twitter API (<a href="https://dev.twitter.com/rest/reference/get/search/tweets">https://dev.twitter.com/rest/reference/get/search/tweets</a>):
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span># Accressing Twitter from R</span>
+ library(<span class="pl-smi">httr</span>)
+ <span class="pl-v">myapp</span> <span class="pl-k">=</span> oauth_app(<span class="pl-s"><span class="pl-pds">"</span>twitter<span class="pl-pds">"</span></span>,
+                   <span class="pl-v">key</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>yourConsumerKeyHere<span class="pl-pds">"</span></span>,
+                   <span class="pl-v">secret</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>yourConsumerSecretHere<span class="pl-pds">"</span></span>)
+ <span class="pl-v">sig</span> <span class="pl-k">=</span> sign_oauth1.0(<span class="pl-smi">myapp</span>,
+                     <span class="pl-v">token</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>yourTokenHere<span class="pl-pds">"</span></span>,
+                     <span class="pl-v">token_secret</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>yourTokenSecretHere<span class="pl-pds">"</span></span>)
+ <span class="pl-v">homeTL</span> <span class="pl-k">=</span> GET(<span class="pl-s"><span class="pl-pds">"</span>https://api.twitter.com/1.1/statuses/home_timeline.json<span class="pl-pds">"</span></span>, <span class="pl-smi">sig</span>)
+
+ <span class="pl-c"><span class="pl-c">#</span># Converting the json object</span>
+ library(<span class="pl-smi">jsonlite</span>)
+ <span class="pl-v">json1</span> <span class="pl-k">=</span> content(<span class="pl-smi">homeTL</span>)
+ <span class="pl-v">json2</span> <span class="pl-k">=</span> <span class="pl-e">jsonlite</span><span class="pl-k">::</span>fromJSON(toJSON(<span class="pl-smi">json1</span>))
+ <span class="pl-smi">json2</span>[<span class="pl-c1">1</span>,<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">4</span>]</pre></div>
+</li>
+</ul>
+<h2 id="14-reading-from-other-sources">14. Reading from Other Sources</h2>
+<h3 id="141-interacting-more-directly-with-files">14.1. Interacting more directly with files</h3>
+<ul>
+<li><code>file</code> - open a connection to a text file</li>
+<li><code>url</code> - open a connection to a url</li>
+<li><code>gzfile</code> - open a connection to a .gz file</li>
+<li><code>bzfile</code> - open a connection to a .bz2 file</li>
+<li><code>?connection</code> for more information</li>
+<li>REMEMBER to close connections</li>
+</ul>
+<h3 id="142-foreign-package">14.2. {<code>foreign</code> package}</h3>
+<ul>
+<li>Loads data from Minitab, S, SAS, SPSS, Stata, Systat, etc.</li>
+<li>Basic functions <code>read.foo</code>
+<ul>
+<li><code>read.arff</code> (Weka)</li>
+<li><code>read.dta</code> (Stata)</li>
+<li><code>read.mtp</code> (Minitab)</li>
+<li><code>read.octave</code> (Octave)</li>
+<li><code>read.spss</code> (SPSS)</li>
+<li><code>read.xport</code> (SAS)</li>
+</ul>
+</li>
+<li><a href="https://cran.r-project.org/web/packages/foreign/foreign.pdf"><strong>foreign package help file</strong></a></li>
+</ul>
+<h3 id="143-other-database-packages">14.3. Other database packages</h3>
+<ul>
+<li>{<code>RPostresSQL</code> package}: PostgreSQL (<a href="https://cran.r-project.org/web/packages/RPostgreSQL/RPostgreSQL.pdf">Link</a>)</li>
+<li>{<code>RODBC</code> package}: multiple databases including PostgreSQL, MySQL, Microsoft Access, SQLite (<a href="https://cran.r-project.org/web/packages/RODBC/RODBC.pdf">Link</a>)</li>
+<li>{<code>RMongo</code> package}: MongoDB (<a href="https://cran.r-project.org/web/packages/RMongo/RMongo.pdf">Link</a>)
+<ul>
+<li><a href="https://www.r-bloggers.com/r-and-mongodb/">MongoDB Tutorial</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="144-reading-images">14.4. Reading images</h3>
+<ul>
+<li>{<code>jpeg</code> package}: <a href="https://cran.r-project.org/web/packages/jpeg/index.html">Link</a></li>
+<li>{<code>readbitmap</code> package}: <a href="https://cran.r-project.org/web/packages/readbitmap/index.html">Link</a></li>
+<li>{<code>png</code> package}: <a href="https://cran.r-project.org/web/packages/png/index.html">Link</a></li>
+<li>{<code>EBImage</code> Bioconductor package}: <a href="http://www.bioconductor.org/packages/2.13/bioc/html/EBImage.html">Link</a></li>
+</ul>
+<h3 id="145-reading-gis-data-geoinformation">14.5. Reading GIS data (Geoinformation)</h3>
+<ul>
+<li>{<code>rdgal</code> package}: <a href="https://cran.r-project.org/web/packages/rgdal/index.html">Link</a></li>
+<li>{<code>rgeos</code> package}: <a href="https://cran.r-project.org/web/packages/rgeos/index.html">Link</a></li>
+<li>{<code>raster</code> package}: <a href="https://cran.r-project.org/web/packages/raster/index.html">Link</a></li>
+</ul>
+<h3 id="146-reading-music-data">14.6. Reading music data</h3>
+<ul>
+<li>{<code>tuneR</code> package}: <a href="https://cran.r-project.org/web/packages/tuneR/">Link</a></li>
+<li>{<code>seewave</code> package} <a href="http://rug.mnhn.fr/seewave/">Link</a></li>
+</ul>
+<h2 id="15-subsetting-and-sorting">15. Subsetting and Sorting</h2>
+<ul>
+<li><a href="http://www.biostat.jhsph.edu/%7Eajaffe/lec_winterR/Lecture%202.pdf">Tutorial on Subsetting and Sorting</a></li>
+</ul>
+<h3 id="151-subsetting">15.1. Subsetting</h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> set.seed(<span class="pl-c1">13435</span>)
+ <span class="pl-smi">X</span> <span class="pl-k">&lt;-</span> <span class="pl-k">data.frame</span>(<span class="pl-s"><span class="pl-pds">"</span>var1<span class="pl-pds">"</span></span><span class="pl-k">=</span>sample(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">5</span>), <span class="pl-s"><span class="pl-pds">"</span>var2<span class="pl-pds">"</span></span><span class="pl-k">=</span>sample(<span class="pl-c1">6</span><span class="pl-k">:</span><span class="pl-c1">10</span>), <span class="pl-s"><span class="pl-pds">"</span>var3<span class="pl-pds">"</span></span><span class="pl-k">=</span>sample(<span class="pl-c1">11</span><span class="pl-k">:</span><span class="pl-c1">15</span>))
+ <span class="pl-smi">X</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">X</span>[sample(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">5</span>),]
+ <span class="pl-smi">X</span><span class="pl-k">$</span><span class="pl-smi">var2</span>[c(<span class="pl-c1">1</span>,<span class="pl-c1">3</span>)] <span class="pl-k">=</span> <span class="pl-c1">NA</span>
+ <span class="pl-smi">X</span>
+
+ <span class="pl-smi">X</span>[,<span class="pl-c1">1</span>]
+ <span class="pl-smi">X</span>[,<span class="pl-s"><span class="pl-pds">"</span>var1<span class="pl-pds">"</span></span>]
+ <span class="pl-smi">X</span>[<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">2</span>,<span class="pl-s"><span class="pl-pds">"</span>var2<span class="pl-pds">"</span></span>]
+
+ <span class="pl-smi">X</span>[(<span class="pl-smi">X</span><span class="pl-k">$</span><span class="pl-smi">var1</span> <span class="pl-k">&lt;</span><span class="pl-k">=</span> <span class="pl-c1">3</span> <span class="pl-k">&amp;</span> <span class="pl-smi">X</span><span class="pl-k">$</span><span class="pl-smi">var3</span> <span class="pl-k">&gt;</span> <span class="pl-c1">11</span>), ]
+ <span class="pl-smi">X</span>[(<span class="pl-smi">X</span><span class="pl-k">$</span><span class="pl-smi">var1</span> <span class="pl-k">&lt;</span><span class="pl-k">=</span> <span class="pl-c1">3</span> <span class="pl-k">|</span> <span class="pl-smi">X</span><span class="pl-k">$</span><span class="pl-smi">var3</span> <span class="pl-k">&gt;</span> <span class="pl-c1">15</span>), ]</pre></div>
+</li>
+<li>Dealing with missing values:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">X</span>[which(<span class="pl-smi">X</span><span class="pl-k">$</span><span class="pl-smi">var2</span> <span class="pl-k">&gt;</span> <span class="pl-c1">8</span>), ]    <span class="pl-c"><span class="pl-c">#</span> which() returns idx where condition is T</span></pre></div>
+</li>
+</ul>
+<h3 id="152-sorting">15.2. Sorting</h3>
+<ul>
+<li>The result of <code>sort()</code> is a sorted vector consisting of elements of the original (unsorted) vector</li>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> sort(<span class="pl-smi">X</span><span class="pl-k">$</span><span class="pl-smi">var1</span>)
+ sort(<span class="pl-smi">X</span><span class="pl-k">$</span><span class="pl-smi">var1</span>, <span class="pl-v">decreasing</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>)
+ sort(<span class="pl-smi">X</span><span class="pl-k">$</span><span class="pl-smi">var2</span>, <span class="pl-v">na.last</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>)</pre></div>
+</li>
+</ul>
+<h3 id="153-ordering">15.3. Ordering</h3>
+<ul>
+<li>The result of <code>order()</code> is a vector with the ordered <strong>indices</strong> of the original (unsorted) vector</li>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">X</span>[order(<span class="pl-smi">X</span><span class="pl-k">$</span><span class="pl-smi">var1</span>), ]      		<span class="pl-c"><span class="pl-c">#</span> order by var1</span>
+ <span class="pl-smi">X</span>[order(<span class="pl-smi">X</span><span class="pl-k">$</span><span class="pl-smi">var1</span>, <span class="pl-smi">X</span><span class="pl-k">$</span><span class="pl-smi">var3</span>), ]      <span class="pl-c"><span class="pl-c">#</span> order by var1, then by var3</span></pre></div>
+</li>
+<li>Using {<code>plyr</code> package}:
+<div class="highlight highlight-source-r"><pre> library(<span class="pl-smi">plyr</span>)
+ arrange(<span class="pl-smi">X</span>, <span class="pl-smi">var1</span>)
+ arrange(<span class="pl-smi">X</span>, desc(<span class="pl-smi">var1</span>))</pre></div>
+</li>
+</ul>
+<h3 id="154-adding-rows-and-columns">15.4. Adding rows and columns</h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">X</span><span class="pl-k">$</span><span class="pl-smi">var4</span> <span class="pl-k">&lt;-</span> rnorm(<span class="pl-c1">5</span>)
+
+ <span class="pl-c"><span class="pl-c">#</span> alternatively:</span>
+ <span class="pl-smi">Y</span> <span class="pl-k">&lt;-</span> cbind(<span class="pl-smi">X</span>, rnorm(<span class="pl-c1">5</span>))</pre></div>
+</li>
+</ul>
+<h2 id="16-summarizing-data">16. Summarizing Data</h2>
+<h3 id="161-first-look-at-the-data">16.1. First look at the data</h3>
+<div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> Look at a bit of the data</span>
+head(<span class="pl-smi">restData</span>, <span class="pl-v">n</span> <span class="pl-k">=</span> <span class="pl-c1">3</span>)
+tail(<span class="pl-smi">restData</span>, <span class="pl-v">n</span> <span class="pl-k">=</span> <span class="pl-c1">3</span>)
+
+<span class="pl-c"><span class="pl-c">#</span> Make summary</span>
+summary(<span class="pl-smi">restData</span>)
+
+<span class="pl-c"><span class="pl-c">#</span> More in depth information</span>
+str((<span class="pl-smi">restData</span>))</pre></div>
+<h3 id="162-quantiles-of-quantitative-variables">16.2. Quantiles of quantitative variables</h3>
+<div class="highlight highlight-source-r"><pre>quantile(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">councilDistrict</span>, <span class="pl-v">na.rm</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>)
+quantile(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">councilDistrict</span>, <span class="pl-v">probs</span> <span class="pl-k">=</span> c(<span class="pl-c1">0.5</span>, <span class="pl-c1">0.75</span>, <span class="pl-c1">0.9</span>))</pre></div>
+<h3 id="163-make-table">16.3. Make table</h3>
+<div class="highlight highlight-source-r"><pre>table(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipCode</span>,<span class="pl-v">useNA</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>ifany<span class="pl-pds">"</span></span>)
+table(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">councilDistrict</span>, <span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipCode</span>)</pre></div>
+<h3 id="164-check-for-missing-values">16.4. Check for missing values</h3>
+<div class="highlight highlight-source-r"><pre>sum(is.na(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">councilDistrict</span>))
+any(is.na(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">councilDistrict</span>))
+all(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipCode</span> <span class="pl-k">&gt;</span> <span class="pl-c1">0</span>)</pre></div>
+<h3 id="165-row-and-column-sums">16.5. Row and column sums</h3>
+<div class="highlight highlight-source-r"><pre>colSums(is.na(<span class="pl-smi">restData</span>))
+all(colSums(is.na(<span class="pl-smi">restData</span>))<span class="pl-k">==</span><span class="pl-c1">0</span>)    <span class="pl-c"><span class="pl-c">#</span> no missing values</span></pre></div>
+<h3 id="166-values-with-specific-characteristics">16.6. Values with specific characteristics</h3>
+<div class="highlight highlight-source-r"><pre>table(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipCode</span> <span class="pl-k">%in%</span> c(<span class="pl-s"><span class="pl-pds">"</span>21212<span class="pl-pds">"</span></span>))
+table(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipCode</span> <span class="pl-k">%in%</span> c(<span class="pl-s"><span class="pl-pds">"</span>21212<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>21213<span class="pl-pds">"</span></span>))
+
+<span class="pl-smi">restData</span>[<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipCode</span> <span class="pl-k">%in%</span> c(<span class="pl-s"><span class="pl-pds">"</span>21212<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>21213<span class="pl-pds">"</span></span>), ]</pre></div>
+<h3 id="167-cross-tabs-using-xtabs-amp-flat-tables-using-ftable">16.7. Cross tabs using <code>xtabs</code> &amp; Flat tables using <code>ftable</code></h3>
+<div class="highlight highlight-source-r"><pre>data(<span class="pl-smi">UCBAdmissions</span>)
+<span class="pl-v">DF</span> <span class="pl-k">=</span> as.data.frame(<span class="pl-smi">UCBAdmissions</span>)
+summary(<span class="pl-smi">DF</span>)
+
+<span class="pl-smi">xt</span> <span class="pl-k">&lt;-</span> xtabs(<span class="pl-smi">Freq</span> <span class="pl-k">~</span> <span class="pl-smi">Gender</span> <span class="pl-k">+</span> <span class="pl-smi">Admit</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">DF</span>)   <span class="pl-c"><span class="pl-c">#</span> sum(Freq) by Gender and Admit</span>
+<span class="pl-smi">xt</span>
+
+<span class="pl-smi">warpbreaks</span><span class="pl-k">$</span><span class="pl-smi">replicate</span> <span class="pl-k">&lt;-</span> rep(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">9</span>, <span class="pl-v">len</span> <span class="pl-k">=</span> <span class="pl-c1">54</span>)
+<span class="pl-smi">xt</span> <span class="pl-k">&lt;-</span> xtabs(<span class="pl-smi">breaks</span> <span class="pl-k">~</span>., <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">warpbreaks</span>)
+<span class="pl-smi">xt</span>
+<span class="pl-c"><span class="pl-c">#</span> more conveniently, use flat tables</span>
+ftable(<span class="pl-smi">xt</span>)</pre></div>
+<h3 id="168-size-of-a-data-set">16.8. Size of a data set</h3>
+<div class="highlight highlight-source-r"><pre><span class="pl-smi">fakeData</span> <span class="pl-k">&lt;-</span> rnorm(<span class="pl-c1">1e5</span>)
+object.size(<span class="pl-smi">fakeData</span>)
+
+print(object.size(<span class="pl-smi">fakeData</span>), <span class="pl-v">units</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Mb<span class="pl-pds">"</span></span>)</pre></div>
+<h2 id="17-creating-new-variables">17. Creating New Variables</h2>
+<ul>
+<li>Often the raw data won't have a value you are looking for</li>
+<li>You will need to transform the data to the values you would like</li>
+<li>Usually you will add those values to the data frames you are working with</li>
+<li>Common variables to create
+<ul>
+<li>Missingness indicators (pointing out missing data points)</li>
+<li>"Cutting up" quantitative variables (factor versions of quantitative variables)</li>
+<li>Applying transforms</li>
+</ul>
+</li>
+</ul>
+<h3 id="171-creating-sequences">17.1. Creating sequences</h3>
+<ul>
+<li>Sometimes you need an index for your data set -&gt; create sequences
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">s1</span> <span class="pl-k">&lt;-</span> seq(<span class="pl-c1">1</span>,<span class="pl-c1">10</span>, <span class="pl-v">by</span><span class="pl-k">=</span><span class="pl-c1">2</span>); <span class="pl-smi">s1</span>
+ <span class="pl-smi">s2</span> <span class="pl-k">&lt;-</span> seq(<span class="pl-c1">1</span>,<span class="pl-c1">10</span>, <span class="pl-v">length</span><span class="pl-k">=</span><span class="pl-c1">3</span>); <span class="pl-smi">s2</span>
+ <span class="pl-smi">x</span> <span class="pl-k">&lt;-</span> c(<span class="pl-c1">1</span>,<span class="pl-c1">3</span>,<span class="pl-c1">8</span>,<span class="pl-c1">25</span>,<span class="pl-c1">100</span>); seq(<span class="pl-v">along</span> <span class="pl-k">=</span> <span class="pl-smi">x</span>)</pre></div>
+</li>
+</ul>
+<h3 id="172-subsetting-variables">17.2. Subsetting variables</h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">nearMe</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">neighborhood</span> <span class="pl-k">%in%</span> c(<span class="pl-s"><span class="pl-pds">"</span>Roland Park<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Homeland<span class="pl-pds">"</span></span>)
+ table(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">nearMe</span>)</pre></div>
+</li>
+</ul>
+<h3 id="173-creating-binary-variables">17.3. Creating binary variables</h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipWrong</span> <span class="pl-k">&lt;-</span> ifelse(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipCode</span> <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>, <span class="pl-c1">TRUE</span>, <span class="pl-c1">FALSE</span>)
+ table(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipWrong</span>, <span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipCode</span> <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>)</pre></div>
+</li>
+</ul>
+<h3 id="174-creating-categorical-variables">17.4. Creating categorical variables</h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipGroups</span> <span class="pl-k">&lt;-</span> cut(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipCode</span>, <span class="pl-v">breaks</span><span class="pl-k">=</span>quantile(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipCode</span>))
+ table(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipGroups</span>)
+ table(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipGroups</span>,<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipCode</span>)</pre></div>
+</li>
+<li>Easier cutting: {<code>Hmisc</code> package}
+<div class="highlight highlight-source-r"><pre> library(<span class="pl-smi">Hmisc</span>)
+ <span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-v">zipGroups</span> <span class="pl-k">=</span> cut2(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipCode</span>, <span class="pl-v">g</span><span class="pl-k">=</span><span class="pl-c1">4</span>)
+ table(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipGroups</span>)
+</pre></div>
+</li>
+</ul>
+<h3 id="175-creating-factor-variables">17.5. Creating factor variables</h3>
+<ul>
+<li><a href="http://www.stat.berkeley.edu/classes/s133/factors.html">Lecture on categorical and factor variables</a></li>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zcf</span> <span class="pl-k">&lt;-</span> <span class="pl-k">factor</span>(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zipCode</span>)
+ <span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zcf</span>[<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">10</span>]
+ class(<span class="pl-smi">restData</span><span class="pl-k">$</span><span class="pl-smi">zcf</span>)</pre></div>
+</li>
+<li>Levels of factor variables:
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">yesno</span> <span class="pl-k">&lt;-</span> sample(c(<span class="pl-s"><span class="pl-pds">"</span>yes<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>no<span class="pl-pds">"</span></span>), <span class="pl-v">size</span><span class="pl-k">=</span><span class="pl-c1">10</span>, <span class="pl-v">replace</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)
+ <span class="pl-smi">yesnofac</span> <span class="pl-k">&lt;-</span> <span class="pl-k">factor</span>(<span class="pl-smi">yesno</span>, <span class="pl-v">levels</span><span class="pl-k">=</span>c(<span class="pl-s"><span class="pl-pds">"</span>yes<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>no<span class="pl-pds">"</span></span>))
+ relevel(<span class="pl-smi">yesnofac</span>, <span class="pl-v">ref</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>no<span class="pl-pds">"</span></span>)
+
+ as.numeric(<span class="pl-smi">yesnofac</span>)</pre></div>
+</li>
+</ul>
+<h3 id="176-using-the-mutate-function-in-plyr-package">17.6. Using the <code>mutate</code> function in {<code>plyr</code> package}</h3>
+<ul>
+<li>Create a new variable and simultaneously add to a dataset
+<div class="highlight highlight-source-r"><pre> library(<span class="pl-smi">Hmisc</span>); library(<span class="pl-smi">plyr</span>)
+ <span class="pl-smi">restData2</span> <span class="pl-k">&lt;-</span> mutate(<span class="pl-smi">restData</span>, <span class="pl-v">zipGroups</span><span class="pl-k">=</span>cut2(<span class="pl-smi">zipCode</span>, <span class="pl-v">g</span><span class="pl-k">=</span><span class="pl-c1">4</span>))
+ table(<span class="pl-smi">restData2</span><span class="pl-k">$</span><span class="pl-smi">zipGroups</span>)</pre></div>
+</li>
+<li>Tutorials on <strong>plyr package</strong>:
+<ul>
+<li><a href="http://plyr.had.co.nz/09-user/">plyr tutorial</a></li>
+<li><a href="https://www.r-bloggers.com/a-quick-primer-on-split-apply-combine-problems/">a-quick-primer-on-split-apply-combine-problems</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="177-common-transforms">17.7. Common transforms</h3>
+<ul>
+<li><code>abs(x)</code></li>
+<li><code>sqrt(x)</code></li>
+<li><code>ceiling(x)</code></li>
+<li><code>floor(x)</code></li>
+<li><code>round(x, digits=n)</code></li>
+<li><code>signif(x, digits=n)</code>, rounds the values in its first argument to the specified number of significant digits.</li>
+<li><code>cos(x)</code>, <code>sin(x)</code>, etc.</li>
+<li><code>log(x)</code></li>
+<li><code>log2(x)</code>, <code>log10(x)</code></li>
+<li><code>exp(x)</code></li>
+<li><a href="http://statmethods.net/management/functions.html"><strong>List of Built-in Functions in R</strong></a></li>
+</ul>
+<h2 id="18-reshaping-data">18. Reshaping Data</h2>
+<ul>
+<li><strong>The goal is tidy data</strong>
+<ol>
+<li>Each variable forms a column</li>
+<li>Each observation forms a row</li>
+<li>Each table/file stores data about one kind of observation (eg. people/hospitals)</li>
+</ol>
+<ul>
+<li>More on <a href="http://vita.had.co.nz/papers/tidy-data.pdf"><strong>Tidy Data</strong></a></li>
+</ul>
+</li>
+<li>Tutorials on <strong>Reshaping Data</strong>:
+<ul>
+<li><a href="http://www.statmethods.net/management/reshape.html">Reshape tutorial</a></li>
+<li><a href="https://www.slideshare.net/jeffreybreen/reshaping-data-in-r">reshaping-data-in-r</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="181-melting-data-frames-wide--to-long-format-data">18.1. Melting data frames (Wide- to long-format data)</h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> library(<span class="pl-smi">reshape2</span>)
+ head(<span class="pl-smi">mtcars</span>)
+
+ <span class="pl-c"><span class="pl-c">#</span> Melting data frames</span>
+ <span class="pl-smi">mtcars</span><span class="pl-k">$</span><span class="pl-smi">carname</span> <span class="pl-k">&lt;-</span> rownames(<span class="pl-smi">mtcars</span>)
+ <span class="pl-smi">carMelt</span> <span class="pl-k">&lt;-</span> melt(<span class="pl-smi">mtcars</span>, <span class="pl-v">id</span><span class="pl-k">=</span>c(<span class="pl-s"><span class="pl-pds">"</span>carname<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>gear<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>cyl<span class="pl-pds">"</span></span>),<span class="pl-v">measure.vars</span><span class="pl-k">=</span>c(<span class="pl-s"><span class="pl-pds">"</span>mpg<span class="pl-pds">"</span></span>,<span class="pl-s"><span class="pl-pds">"</span>hp<span class="pl-pds">"</span></span>))
+ head(<span class="pl-smi">carMelt</span>,<span class="pl-v">n</span><span class="pl-k">=</span><span class="pl-c1">3</span>)
+ tail(<span class="pl-smi">carMelt</span>,<span class="pl-v">n</span><span class="pl-k">=</span><span class="pl-c1">3</span>)</pre></div>
+</li>
+</ul>
+<h3 id="182-casting-data-frames-long--to-wide-format-data">18.2. Casting data frames (Long- to wide-format data)</h3>
+<ul>
+<li>Example:
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span> Casting data frames</span>
+ <span class="pl-smi">cylData</span> <span class="pl-k">&lt;-</span> dcast(<span class="pl-smi">carMelt</span>, <span class="pl-smi">cyl</span> <span class="pl-k">~</span> <span class="pl-smi">variable</span>)   <span class="pl-c"><span class="pl-c">#</span> rows: cyl; cols: variables("mpg", "hp")</span>
+ <span class="pl-smi">cylData</span>
+
+ <span class="pl-smi">cylData</span> <span class="pl-k">&lt;-</span> dcast(<span class="pl-smi">carMelt</span>, <span class="pl-smi">cyl</span> <span class="pl-k">~</span> <span class="pl-smi">variable</span>, <span class="pl-smi">mean</span>)     <span class="pl-c"><span class="pl-c">#</span> take the mean with the variables</span>
+ <span class="pl-smi">cylData</span></pre></div>
+</li>
+</ul>
+<h3 id="183-averaging-values">18.3. Averaging values</h3>
+<ul>
+<li>
+<p>Using <code>tapply()</code>:</p>
+<div class="highlight highlight-source-r"><pre> head(<span class="pl-smi">InsectSprays</span>)
+ 
+ tapply(<span class="pl-smi">InsectSprays</span><span class="pl-k">$</span><span class="pl-smi">count</span>, <span class="pl-smi">InsectSprays</span><span class="pl-k">$</span><span class="pl-smi">spray</span>, <span class="pl-smi">sum</span>)</pre></div>
+</li>
+<li>
+<p>Another way: <code>split()</code></p>
+<div class="highlight highlight-source-r"><pre> <span class="pl-v">spIns</span> <span class="pl-k">=</span> split(<span class="pl-smi">InsectSprays</span><span class="pl-k">$</span><span class="pl-smi">count</span>, <span class="pl-smi">InsectSprays</span><span class="pl-k">$</span><span class="pl-smi">spray</span>)
+ <span class="pl-smi">spIns</span>
+ <span class="pl-smi">sprCount</span> <span class="pl-k">&lt;-</span> lapply(<span class="pl-smi">spIns</span>, <span class="pl-smi">sum</span>)
+ <span class="pl-smi">sprCount</span>
+ unlist(<span class="pl-smi">sprCount</span>)</pre></div>
+</li>
+<li>
+<p>Another way: <code>sapply()</code> (all steps above combined into 1 function)</p>
+<div class="highlight highlight-source-r"><pre> sapply(<span class="pl-smi">spIns</span>, <span class="pl-smi">sum</span>)</pre></div>
+</li>
+<li>
+<p>Another way: {<code>plyr</code> package}</p>
+<div class="highlight highlight-source-r"><pre> library(<span class="pl-smi">plyr</span>)
+ ddply(<span class="pl-smi">InsectSprays</span>,.(<span class="pl-smi">spray</span>), <span class="pl-e">plyr</span><span class="pl-k">::</span><span class="pl-smi">summarize</span>,<span class="pl-v">sum</span><span class="pl-k">=</span>sum(<span class="pl-smi">count</span>))</pre></div>
+<p><strong>Advantage of <code>ddply()</code></strong>: It can add calculated values of each group to a new column</p>
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span> Adding the sum value of each group to a new column</span>
+ <span class="pl-smi">spraySums</span> <span class="pl-k">&lt;-</span> ddply(<span class="pl-smi">InsectSprays</span>,.(<span class="pl-smi">spray</span>), <span class="pl-e">plyr</span><span class="pl-k">::</span><span class="pl-smi">summarize</span>,<span class="pl-v">sum</span><span class="pl-k">=</span>ave(<span class="pl-smi">count</span>,<span class="pl-v">FUN</span><span class="pl-k">=</span><span class="pl-smi">sum</span>))
+ head(<span class="pl-smi">spraySums</span>)
+ tail(<span class="pl-smi">spraySums</span>)</pre></div>
+</li>
+<li>
+<p>Other functions in <code>plyr</code>:</p>
+<ul>
+<li><code>acast()</code>: for casting as multi-dimensional arrays</li>
+<li><code>arrange()</code>: for faster reordering without using order() commands</li>
+<li><code>mutate()</code>: adding new variables</li>
+</ul>
+</li>
+</ul>
+<h2 id="19-managing-data-frames-with-dplyr-package">19. Managing Data Frames with {<code>dplyr</code> package}</h2>
+<ul>
+<li>An optimized and distilled version of <code>plyr</code> package</li>
+<li>Additional benefits of <code>dplyr</code> package:
+<ul>
+<li>dplyr can work with other data frame “backends”</li>
+<li>data.table for large fast tables</li>
+<li>SQL interface for relational databases via the {<code>DBI</code> package}</li>
+</ul>
+</li>
+</ul>
+<h3 id="191-dplyr-verbs">19.1. dplyr Verbs</h3>
+<ul>
+<li><code>tbl_df</code>: convert to "data frame tbl" to work with dplyr</li>
+<li><code>select</code>: return a subset of the <strong>columns</strong> of a data frame</li>
+<li><code>filter</code>: extract a subset of <strong>rows</strong> from a data frame based on logical conditions</li>
+<li><code>arrange</code>: reorder rows of a data frame</li>
+<li><code>rename</code>: rename variables in a data frame</li>
+<li><code>mutate</code>: add new variables/columns or transform existing variables</li>
+<li><code>group_by</code>: group data frame by a variable</li>
+<li><code>summarise</code> / <code>summarize</code>: generate summary statistics of different variables in the data frame</li>
+<li><code>%&gt;%</code>: pipeline operator, allows for chaining</li>
+<li><code>print</code> method: prevents you from printing a lot of data to the console</li>
+</ul>
+<h3 id="192-select">19.2. <code>select</code></h3>
+<ul>
+<li>return a subset of the <strong>columns</strong> of a data frame:
+<div class="highlight highlight-source-r"><pre> select(<span class="pl-smi">chicago</span>, <span class="pl-smi">city</span><span class="pl-k">:</span><span class="pl-smi">dptp</span>)
+
+ <span class="pl-c"><span class="pl-c">#</span> In dplyr you can do: select all columns except...</span>
+ select(<span class="pl-smi">chicago</span>, <span class="pl-k">-</span>(<span class="pl-smi">city</span><span class="pl-k">:</span><span class="pl-smi">dptp</span>))
+
+ <span class="pl-c"><span class="pl-c">#</span> Equivalent base R</span>
+ <span class="pl-smi">i</span> <span class="pl-k">&lt;-</span> match(<span class="pl-s"><span class="pl-pds">"</span>city<span class="pl-pds">"</span></span>, names(<span class="pl-smi">chicago</span>))
+ <span class="pl-smi">j</span> <span class="pl-k">&lt;-</span> match(<span class="pl-s"><span class="pl-pds">"</span>dptp<span class="pl-pds">"</span></span>, names(<span class="pl-smi">chicago</span>))
+ head(<span class="pl-smi">chicago</span>[, <span class="pl-k">-</span>(<span class="pl-smi">i</span><span class="pl-k">:</span><span class="pl-smi">j</span>)])</pre></div>
+</li>
+</ul>
+<h3 id="193-filter">19.3. <code>filter</code></h3>
+<ul>
+<li>extract a subset of <strong>rows</strong> from a data frame based on logical conditions
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">chic.f</span> <span class="pl-k">&lt;-</span> filter(<span class="pl-smi">chicago</span>, <span class="pl-smi">pm25tmean2</span> <span class="pl-k">&gt;</span> <span class="pl-c1">30</span>)
+ head(select(<span class="pl-smi">chic.f</span>, <span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">3</span>, <span class="pl-smi">pm25tmean2</span>), <span class="pl-c1">10</span>)
+
+ <span class="pl-smi">chic.f</span> <span class="pl-k">&lt;-</span> filter(<span class="pl-smi">chicago</span>, <span class="pl-smi">pm25tmean2</span> <span class="pl-k">&gt;</span> <span class="pl-c1">30</span> <span class="pl-k">&amp;</span> <span class="pl-smi">tmpd</span> <span class="pl-k">&gt;</span> <span class="pl-c1">80</span>)
+ head(<span class="pl-smi">chic.f</span>)</pre></div>
+</li>
+</ul>
+<h3 id="194-arrange">19.4. <code>arrange</code></h3>
+<ul>
+<li>reorder rows of a data frame
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">chicago</span> <span class="pl-k">&lt;-</span> arrange(<span class="pl-smi">chicago</span>, <span class="pl-smi">date</span>)
+ head(select(<span class="pl-smi">chicago</span>, <span class="pl-smi">date</span>, <span class="pl-smi">pm25tmean2</span>), <span class="pl-c1">3</span>)
+ tail(select(<span class="pl-smi">chicago</span>, <span class="pl-smi">date</span>, <span class="pl-smi">pm25tmean2</span>), <span class="pl-c1">3</span>)
+
+ <span class="pl-c"><span class="pl-c">#</span> Columns can be arranged in DESCENDING order too.</span>
+ <span class="pl-smi">chicago</span> <span class="pl-k">&lt;-</span> arrange(<span class="pl-smi">chicago</span>, desc(<span class="pl-smi">date</span>))
+ head(select(<span class="pl-smi">chicago</span>, <span class="pl-smi">date</span>, <span class="pl-smi">pm25tmean2</span>), <span class="pl-c1">3</span>)
+ tail(select(<span class="pl-smi">chicago</span>, <span class="pl-smi">date</span>, <span class="pl-smi">pm25tmean2</span>), <span class="pl-c1">3</span>)</pre></div>
+</li>
+</ul>
+<h3 id="195-rename">19.5. <code>rename</code></h3>
+<ul>
+<li>rename variables in a data frame
+<div class="highlight highlight-source-r"><pre> head(<span class="pl-smi">chicago</span>[, <span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">5</span>], <span class="pl-c1">3</span>)
+
+ <span class="pl-smi">chicago</span> <span class="pl-k">&lt;-</span> rename(<span class="pl-smi">chicago</span>, <span class="pl-v">dewpoint</span> <span class="pl-k">=</span> <span class="pl-smi">dptp</span>, <span class="pl-v">pm25</span> <span class="pl-k">=</span> <span class="pl-smi">pm25tmean2</span>)
+ head(<span class="pl-smi">chicago</span>[, <span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">5</span>], <span class="pl-c1">3</span>)</pre></div>
+</li>
+</ul>
+<h3 id="196-mutate">19.6. <code>mutate</code></h3>
+<ul>
+<li>add new variables/columns or transform existing variables
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">chicago</span> <span class="pl-k">&lt;-</span> mutate(<span class="pl-smi">chicago</span>, <span class="pl-v">pm25detrend</span><span class="pl-k">=</span><span class="pl-smi">pm25</span><span class="pl-k">-</span>mean(<span class="pl-smi">pm25</span>, <span class="pl-v">na.rm</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>))
+ head(select(<span class="pl-smi">chicago</span>, <span class="pl-smi">pm25</span>, <span class="pl-smi">pm25detrend</span>))</pre></div>
+</li>
+</ul>
+<h3 id="197-group_by-and-summarize">19.7. <code>group_by</code> and <code>summarize</code></h3>
+<ul>
+<li><code>group_by()</code>: group data frame by a variable</li>
+<li><code>summarize()</code>/<code>summarise()</code>: generate summary statistics of different variables in the data frame
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span> Generating summary statistics by stratum</span>
+ <span class="pl-smi">chicago</span> <span class="pl-k">&lt;-</span> mutate(<span class="pl-smi">chicago</span>,
+                   <span class="pl-v">tempcat</span> <span class="pl-k">=</span> <span class="pl-k">factor</span>(<span class="pl-c1">1</span> <span class="pl-k">*</span> (<span class="pl-smi">tmpd</span> <span class="pl-k">&gt;</span> <span class="pl-c1">80</span>),<span class="pl-v">labels</span> <span class="pl-k">=</span> c(<span class="pl-s"><span class="pl-pds">"</span>cold<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>hot<span class="pl-pds">"</span></span>)))
+ <span class="pl-smi">hotcold</span> <span class="pl-k">&lt;-</span> group_by(<span class="pl-smi">chicago</span>, <span class="pl-smi">tempcat</span>)   <span class="pl-c"><span class="pl-c">#</span> grouped by hot &amp; cold</span>
+ summarize(<span class="pl-smi">hotcold</span>,
+           <span class="pl-v">pm25</span> <span class="pl-k">=</span> mean(<span class="pl-smi">pm25</span>, <span class="pl-v">na.rm</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>), 
+           <span class="pl-v">o3</span> <span class="pl-k">=</span> max(<span class="pl-smi">o3tmean2</span>),
+           <span class="pl-v">no2</span> <span class="pl-k">=</span> median(<span class="pl-smi">no2tmean2</span>))
+
+ <span class="pl-smi">chicago</span> <span class="pl-k">&lt;-</span> mutate(<span class="pl-smi">chicago</span>, <span class="pl-v">year</span> <span class="pl-k">=</span> as.POSIXlt(<span class="pl-smi">date</span>)<span class="pl-k">$</span><span class="pl-smi">year</span> <span class="pl-k">+</span> <span class="pl-c1">1900</span>)
+ <span class="pl-smi">years</span> <span class="pl-k">&lt;-</span> group_by(<span class="pl-smi">chicago</span>, <span class="pl-smi">year</span>)    <span class="pl-c"><span class="pl-c">#</span> grouped by year</span>
+ summarize(<span class="pl-smi">years</span>,
+           <span class="pl-v">pm25</span> <span class="pl-k">=</span> mean(<span class="pl-smi">pm25</span>, <span class="pl-v">na.rm</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>),
+           <span class="pl-v">o3</span> <span class="pl-k">=</span> max(<span class="pl-smi">o3tmean2</span>, <span class="pl-v">na.rm</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>),
+           <span class="pl-v">no2</span> <span class="pl-k">=</span> median(<span class="pl-smi">no2tmean2</span>, <span class="pl-v">na.rm</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>))</pre></div>
+</li>
+</ul>
+<h3 id="198-gt">19.8. <code>%&gt;%</code></h3>
+<ul>
+<li>=pipeline operator, allows for chaining</li>
+<li>advantage: no need to store data in temporary variables
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">chicago</span> %<span class="pl-k">&gt;</span>% mutate(<span class="pl-v">month</span> <span class="pl-k">=</span> as.POSIXlt(<span class="pl-smi">date</span>)<span class="pl-k">$</span><span class="pl-smi">mon</span> <span class="pl-k">+</span> <span class="pl-c1">1</span>)
+     %<span class="pl-k">&gt;</span>% group_by(<span class="pl-smi">month</span>)
+     %<span class="pl-k">&gt;</span>% summarize(<span class="pl-v">pm25</span> <span class="pl-k">=</span> mean(<span class="pl-smi">pm25</span>, <span class="pl-v">na.rm</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>),
+               <span class="pl-v">o3</span> <span class="pl-k">=</span> max(<span class="pl-smi">o3tmean2</span>, <span class="pl-v">na.rm</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>),
+               <span class="pl-v">no2</span> <span class="pl-k">=</span> median(<span class="pl-smi">no2tmean2</span>, <span class="pl-v">na.rm</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>))</pre></div>
+</li>
+</ul>
+<h2 id="20-merging-data">20. Merging data</h2>
+<ul>
+<li><a href="http://www.statmethods.net/management/merging.html">The quick R data merging page</a></li>
+<li>important parameters: <code>x</code>, <code>y</code>, <code>by</code>, <code>by.x</code>, <code>by.y</code>, <code>all</code></li>
+<li>default: merge all common column names, ie. <code>intersect(names(x), names(y))</code></li>
+</ul>
+<h3 id="201-merge">20.1. <code>merge</code></h3>
+<div class="highlight highlight-source-r"><pre><span class="pl-smi">mergedData</span> <span class="pl-k">&lt;-</span> merge(<span class="pl-smi">reviews</span>, <span class="pl-smi">solutions</span>, <span class="pl-v">by.x</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>solution_id<span class="pl-pds">"</span></span>, <span class="pl-v">by.y</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>, <span class="pl-v">all</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)
+head(<span class="pl-smi">mergedData</span>)</pre></div>
+<h3 id="202-using-join-in-the-plyr-package">20.2. Using <code>join</code> in the {<code>plyr</code> package}</h3>
+<ul>
+<li>Problem: can only join by common id</li>
+</ul>
+<div class="highlight highlight-source-r"><pre>library(<span class="pl-smi">plyr</span>)
+
+<span class="pl-smi">df1</span> <span class="pl-k">&lt;-</span> <span class="pl-k">data.frame</span>(<span class="pl-v">id</span><span class="pl-k">=</span>sample(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">10</span>), <span class="pl-v">x</span><span class="pl-k">=</span>rnorm(<span class="pl-c1">10</span>))
+<span class="pl-smi">df2</span> <span class="pl-k">&lt;-</span> <span class="pl-k">data.frame</span>(<span class="pl-v">id</span><span class="pl-k">=</span>sample(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">10</span>), <span class="pl-v">y</span><span class="pl-k">=</span>rnorm(<span class="pl-c1">10</span>))
+
+<span class="pl-smi">joinedData</span> <span class="pl-k">&lt;-</span> join(<span class="pl-smi">df1</span>, <span class="pl-smi">df2</span>)
+<span class="pl-smi">ordered</span> <span class="pl-k">&lt;-</span> arrange(<span class="pl-smi">joinedData</span>, <span class="pl-smi">id</span>)</pre></div>
+<h3 id="203-multiple-data-frames-using-join_all">20.3. Multiple data frames using <code>join_all</code></h3>
+<div class="highlight highlight-source-r"><pre><span class="pl-smi">df1</span> <span class="pl-k">&lt;-</span> <span class="pl-k">data.frame</span>(<span class="pl-v">id</span><span class="pl-k">=</span>sample(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">10</span>), <span class="pl-v">x</span><span class="pl-k">=</span>rnorm(<span class="pl-c1">10</span>))
+<span class="pl-smi">df2</span> <span class="pl-k">&lt;-</span> <span class="pl-k">data.frame</span>(<span class="pl-v">id</span><span class="pl-k">=</span>sample(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">10</span>), <span class="pl-v">y</span><span class="pl-k">=</span>rnorm(<span class="pl-c1">10</span>))
+<span class="pl-smi">df3</span> <span class="pl-k">&lt;-</span> <span class="pl-k">data.frame</span>(<span class="pl-v">id</span><span class="pl-k">=</span>sample(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">10</span>), <span class="pl-v">z</span><span class="pl-k">=</span>rnorm(<span class="pl-c1">10</span>))
+<span class="pl-smi">dfList</span> <span class="pl-k">&lt;-</span> <span class="pl-k">list</span>(<span class="pl-smi">df1</span>, <span class="pl-smi">df2</span>, <span class="pl-smi">df3</span>)
+
+join_all(<span class="pl-smi">dfList</span>)</pre></div>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Join_(SQL)">Types of joins</a></li>
+</ul>
+<h2 id="21-tidying-data-with-tidyr-package-and-readr-package">21. Tidying Data with {<code>tidyr</code> package} and {<code>readr</code> package}</h2>
+<ul>
+<li><a href="http://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data paper</a></li>
+<li>Tidy data is formatted in a standard way that facilitates exploration and analysis and works seamlessly with other tidy data tools. Specifically, tidy data satisfies three conditions:
+<ol>
+<li>Each variable forms a column</li>
+<li>Each observation forms a row</li>
+<li>Each type of observational unit forms a table</li>
+</ol>
+</li>
+<li>Any dataset that doesn't satisfy these conditions is considered 'messy' data.</li>
+</ul>
+<h3 id="211-first-problem-column-headers-that-are-values-not-variable-names">21.1. First problem: column headers that are values, not variable names</h3>
+<ul>
+<li>
+<p>Example:</p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="center">grade</th>
+<th align="center">male</th>
+<th align="center">female</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">A</td>
+<td align="center">1</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="center">B</td>
+<td align="center">5</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="center">C</td>
+<td align="center">5</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="center">D</td>
+<td align="center">5</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="center">E</td>
+<td align="center">7</td>
+<td align="center">4</td>
+</tr></tbody></table>
+</li>
+<li>
+<p>This dataset actually has three variables: grade, sex, and count:<br>
+The first variable, grade, is already a column, so that should remain as it is. The second variable, sex, is captured by the second and third column headings. The third variable, count, is the number of students for each combination of grade and sex. --&gt; one column for each variable</p>
+</li>
+<li>
+<p><code>gather(data, key, value, -except_col)</code>: takes multiple columns and collapses into <strong>key-value</strong> pairs, duplicating all other columns as needed. Use it when you notice that you have columns that are not variables.</p>
+</li>
+<li>
+<p>Eg. <code>gather(student_data, sex, count, -grade)</code></p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="center">grade</th>
+<th align="center">sex</th>
+<th align="center">count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">A</td>
+<td align="center">male</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="center">B</td>
+<td align="center">male</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="center">C</td>
+<td align="center">male</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="center">D</td>
+<td align="center">male</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="center">E</td>
+<td align="center">male</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="center">A</td>
+<td align="center">female</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="center">B</td>
+<td align="center">female</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="center">C</td>
+<td align="center">female</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="center">D</td>
+<td align="center">female</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="center">E</td>
+<td align="center">female</td>
+<td align="center">4</td>
+</tr></tbody></table>
+</li>
+</ul>
+<h3 id="212-second-problem-when-multiple-variables-are-stored-in-one-column">21.2. Second problem: when multiple variables are stored in one column</h3>
+<ul>
+<li>
+<p>Example:</p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="center">grade</th>
+<th align="center">male_1</th>
+<th align="center">female_1</th>
+<th align="center">male_2</th>
+<th align="center">female_2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">A</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="center">B</td>
+<td align="center">6</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="center">C</td>
+<td align="center">7</td>
+<td align="center">4</td>
+<td align="center">3</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="center">D</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">8</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="center">E</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">7</td>
+</tr></tbody></table>
+</li>
+<li>
+<p>Column headers that are values (male_1, female_1, etc.) and not variable names (sex, class, and count)</p>
+</li>
+<li>
+<p>It also has multiple variables stored in each column (sex and class)</p>
+<ul>
+<li><code>separate(data, col, into)</code>: separates one column into multiple columns (default: splits on non-alphanumeric values. In other words, it assumes that the values are separated by something other than a letter or number, eg. underscore)</li>
+</ul>
+</li>
+<li>
+<p>Tidying this dataset will be a two step process:</p>
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span> Step 1: gather()</span>
+ <span class="pl-smi">res</span> <span class="pl-k">&lt;-</span> gather(<span class="pl-smi">student_data</span>, <span class="pl-smi">sex_class</span>, <span class="pl-smi">count</span>, <span class="pl-k">-</span><span class="pl-smi">grade</span>)</pre></div>
+<table>
+<thead>
+<tr>
+<th align="right">n</th>
+<th align="center">grade</th>
+<th align="center">sex_class</th>
+<th align="center">count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">A</td>
+<td align="center">male_1</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="center">B</td>
+<td align="center">male_1</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="center">C</td>
+<td align="center">male_1</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="center">D</td>
+<td align="center">male_1</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="center">E</td>
+<td align="center">male_1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="center">A</td>
+<td align="center">female_1</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="center">B</td>
+<td align="center">female_1</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="center">C</td>
+<td align="center">female_1</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="center">D</td>
+<td align="center">female_1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="center">E</td>
+<td align="center">female_1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="center">A</td>
+<td align="center">male_2</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="center">B</td>
+<td align="center">male_2</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td align="center">C</td>
+<td align="center">male_2</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td align="center">D</td>
+<td align="center">male_2</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td align="center">E</td>
+<td align="center">male_2</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td align="center">A</td>
+<td align="center">female_2</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="right">17</td>
+<td align="center">B</td>
+<td align="center">female_2</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td align="center">C</td>
+<td align="center">female_2</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="right">19</td>
+<td align="center">D</td>
+<td align="center">female_2</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td align="center">E</td>
+<td align="center">female_2</td>
+<td align="center">7</td>
+</tr></tbody></table>
+<p>We still have two different variables, sex and class, stored together in the sex_class column</p>
+<div class="highlight highlight-source-r"><pre> <span class="pl-c"><span class="pl-c">#</span> Step 2: separate()</span>
+ separate(<span class="pl-smi">res</span>, <span class="pl-smi">sex_class</span>, c(<span class="pl-s"><span class="pl-pds">"</span>sex<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>class<span class="pl-pds">"</span></span>))</pre></div>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="center">grade</th>
+<th align="center">sex</th>
+<th align="center">class</th>
+<th align="center">count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">A</td>
+<td align="center">male</td>
+<td align="center">1</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="center">B</td>
+<td align="center">male</td>
+<td align="center">1</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="center">C</td>
+<td align="center">male</td>
+<td align="center">1</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="center">D</td>
+<td align="center">male</td>
+<td align="center">1</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="center">E</td>
+<td align="center">male</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="center">A</td>
+<td align="center">female</td>
+<td align="center">1</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="center">B</td>
+<td align="center">female</td>
+<td align="center">1</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="center">C</td>
+<td align="center">female</td>
+<td align="center">1</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="center">D</td>
+<td align="center">female</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="center">E</td>
+<td align="center">female</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="center">A</td>
+<td align="center">male</td>
+<td align="center">2</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td align="center">B</td>
+<td align="center">male</td>
+<td align="center">2</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td align="center">C</td>
+<td align="center">male</td>
+<td align="center">2</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td align="center">D</td>
+<td align="center">male</td>
+<td align="center">2</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td align="center">E</td>
+<td align="center">male</td>
+<td align="center">2</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td align="center">A</td>
+<td align="center">female</td>
+<td align="center">2</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="right">17</td>
+<td align="center">B</td>
+<td align="center">female</td>
+<td align="center">2</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td align="center">C</td>
+<td align="center">female</td>
+<td align="center">2</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="right">19</td>
+<td align="center">D</td>
+<td align="center">female</td>
+<td align="center">2</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td align="center">E</td>
+<td align="center">female</td>
+<td align="center">2</td>
+<td align="center">7</td>
+</tr></tbody></table>
+</li>
+</ul>
+<h3 id="213-third-problem-when-variables-are-stored-in-both-rows-and-columns">21.3. Third problem: when variables are stored in both rows and columns</h3>
+<ul>
+<li>
+<p>Example:</p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="center">name</th>
+<th align="center">test</th>
+<th align="center">class1</th>
+<th align="center">class2</th>
+<th align="center">class3</th>
+<th align="center">class4</th>
+<th align="center">class5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">Sally</td>
+<td align="center">midterm</td>
+<td align="center">A</td>
+<td align="center"></td>
+<td align="center">B</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="center">Sally</td>
+<td align="center">final</td>
+<td align="center">C</td>
+<td align="center"></td>
+<td align="center">C</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="center">Jeff</td>
+<td align="center">midterm</td>
+<td align="center"></td>
+<td align="center">D</td>
+<td align="center"></td>
+<td align="center">A</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="center">Jeff</td>
+<td align="center">final</td>
+<td align="center"></td>
+<td align="center">E</td>
+<td align="center"></td>
+<td align="center">C</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="center">Roger</td>
+<td align="center">midterm</td>
+<td align="center"></td>
+<td align="center">C</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="center">Roger</td>
+<td align="center">final</td>
+<td align="center"></td>
+<td align="center">A</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="center">Karen</td>
+<td align="center">midterm</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">C</td>
+<td align="center">A</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="center">Karen</td>
+<td align="center">final</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">C</td>
+<td align="center">A</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="center">Brian</td>
+<td align="center">midterm</td>
+<td align="center">B</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="center">Brian</td>
+<td align="center">final</td>
+<td align="center">B</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">C</td>
+</tr></tbody></table>
+</li>
+<li>
+<p>We have midterm and final exam grades for five students, each of whom were enrolled in exactly two of five possible classes. The first variable, name, is already a column and should remain as it is. The headers of the last five columns, class1 through class5, are all different values of what should be a class variable. The values in the test column, midterm and final, should each be its own variable containing the respective grades for each student.</p>
+</li>
+<li>
+<p><code>spread(data, key, value)</code>: spreads a key-value pair across multiple columns (<code>spread</code> and <code>gather</code> are complements)</p>
+</li>
+<li>
+<p>Tidying this dataset will require multiple steps:</p>
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">students3</span> %<span class="pl-k">&gt;</span>%
+ 	gather(<span class="pl-smi">class</span>, <span class="pl-smi">grade</span>, <span class="pl-smi">class1</span><span class="pl-k">:</span><span class="pl-smi">class5</span>, <span class="pl-v">na.rm</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>) %<span class="pl-k">&gt;</span>%
+ 	spread(<span class="pl-smi">test</span>, <span class="pl-smi">grade</span>) %<span class="pl-k">&gt;</span>%
+ 	mutate(<span class="pl-v">class</span><span class="pl-k">=</span>parse_number(<span class="pl-smi">class</span>))</pre></div>
+<p>Step 1: <code>gather()</code></p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="center">name</th>
+<th align="center">test</th>
+<th align="center">class</th>
+<th align="center">grade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">Sally</td>
+<td align="center">midterm</td>
+<td align="center">class1</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="center">Sally</td>
+<td align="center">final</td>
+<td align="center">class1</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="center">Brian</td>
+<td align="center">midterm</td>
+<td align="center">class1</td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="center">Brian</td>
+<td align="center">final</td>
+<td align="center">class1</td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td align="center">Jeff</td>
+<td align="center">midterm</td>
+<td align="center">class2</td>
+<td align="center">D</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td align="center">Jeff</td>
+<td align="center">final</td>
+<td align="center">class2</td>
+<td align="center">E</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td align="center">Roger</td>
+<td align="center">midterm</td>
+<td align="center">class2</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td align="center">Roger</td>
+<td align="center">final</td>
+<td align="center">class2</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">21</td>
+<td align="center">Sally</td>
+<td align="center">midterm</td>
+<td align="center">class3</td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td align="right">22</td>
+<td align="center">Sally</td>
+<td align="center">final</td>
+<td align="center">class3</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">27</td>
+<td align="center">Karen</td>
+<td align="center">midterm</td>
+<td align="center">class3</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">28</td>
+<td align="center">Karen</td>
+<td align="center">final</td>
+<td align="center">class3</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">33</td>
+<td align="center">Jeff</td>
+<td align="center">midterm</td>
+<td align="center">class4</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">34</td>
+<td align="center">Jeff</td>
+<td align="center">final</td>
+<td align="center">class4</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">37</td>
+<td align="center">Karen</td>
+<td align="center">midterm</td>
+<td align="center">class4</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">38</td>
+<td align="center">Karen</td>
+<td align="center">final</td>
+<td align="center">class4</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">45</td>
+<td align="center">Roger</td>
+<td align="center">midterm</td>
+<td align="center">class5</td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td align="right">46</td>
+<td align="center">Roger</td>
+<td align="center">final</td>
+<td align="center">class5</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">49</td>
+<td align="center">Brian</td>
+<td align="center">midterm</td>
+<td align="center">class5</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">50</td>
+<td align="center">Brian</td>
+<td align="center">final</td>
+<td align="center">class5</td>
+<td align="center">C</td>
+</tr></tbody></table>
+<p>Step 2: <code>spread()</code></p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="center">name</th>
+<th align="center">class</th>
+<th align="center">final</th>
+<th align="center">midterm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">Brian</td>
+<td align="center">class1</td>
+<td align="center">B</td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="center">Brian</td>
+<td align="center">class5</td>
+<td align="center">C</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="center">Jeff</td>
+<td align="center">class2</td>
+<td align="center">E</td>
+<td align="center">D</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="center">Jeff</td>
+<td align="center">class4</td>
+<td align="center">C</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="center">Karen</td>
+<td align="center">class3</td>
+<td align="center">C</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="center">Karen</td>
+<td align="center">class4</td>
+<td align="center">A</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="center">Roger</td>
+<td align="center">class2</td>
+<td align="center">A</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="center">Roger</td>
+<td align="center">class5</td>
+<td align="center">A</td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="center">Sally</td>
+<td align="center">class1</td>
+<td align="center">C</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="center">Sally</td>
+<td align="center">class3</td>
+<td align="center">C</td>
+<td align="center">B</td>
+</tr></tbody></table>
+<p>Step 3: <code>mutate(parse_number())</code></p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="center">name</th>
+<th align="center">class</th>
+<th align="center">final</th>
+<th align="center">midterm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">Brian</td>
+<td align="center">1</td>
+<td align="center">B</td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="center">Brian</td>
+<td align="center">5</td>
+<td align="center">C</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="center">Jeff</td>
+<td align="center">2</td>
+<td align="center">E</td>
+<td align="center">D</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="center">Jeff</td>
+<td align="center">4</td>
+<td align="center">C</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="center">Karen</td>
+<td align="center">3</td>
+<td align="center">C</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="center">Karen</td>
+<td align="center">4</td>
+<td align="center">A</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="center">Roger</td>
+<td align="center">2</td>
+<td align="center">A</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="center">Roger</td>
+<td align="center">5</td>
+<td align="center">A</td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="center">Sally</td>
+<td align="center">1</td>
+<td align="center">C</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="center">Sally</td>
+<td align="center">3</td>
+<td align="center">C</td>
+<td align="center">B</td>
+</tr></tbody></table>
+</li>
+</ul>
+<h3 id="214-fourth-problem-when-multiple-observational-units-are-stored-in-the-same-table">21.4. Fourth problem: when multiple observational units are stored in the same table</h3>
+<ul>
+<li>
+<p>Example:</p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="center">id</th>
+<th align="center">name</th>
+<th align="center">sex</th>
+<th align="center">class</th>
+<th align="center">midterm</th>
+<th align="center">final</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">168</td>
+<td align="center">Brian</td>
+<td align="center">F</td>
+<td align="center">1</td>
+<td align="center">B</td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="center">168</td>
+<td align="center">Brian</td>
+<td align="center">F</td>
+<td align="center">5</td>
+<td align="center">A</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="center">588</td>
+<td align="center">Sally</td>
+<td align="center">M</td>
+<td align="center">1</td>
+<td align="center">A</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="center">588</td>
+<td align="center">Sally</td>
+<td align="center">M</td>
+<td align="center">3</td>
+<td align="center">B</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="center">710</td>
+<td align="center">Jeff</td>
+<td align="center">M</td>
+<td align="center">2</td>
+<td align="center">D</td>
+<td align="center">E</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="center">710</td>
+<td align="center">Jeff</td>
+<td align="center">M</td>
+<td align="center">4</td>
+<td align="center">A</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="center">731</td>
+<td align="center">Roger</td>
+<td align="center">F</td>
+<td align="center">2</td>
+<td align="center">C</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="center">731</td>
+<td align="center">Roger</td>
+<td align="center">F</td>
+<td align="center">5</td>
+<td align="center">B</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="center">908</td>
+<td align="center">Karen</td>
+<td align="center">M</td>
+<td align="center">3</td>
+<td align="center">C</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="center">908</td>
+<td align="center">Karen</td>
+<td align="center">M</td>
+<td align="center">4</td>
+<td align="center">A</td>
+<td align="center">A</td>
+</tr></tbody></table>
+</li>
+<li>
+<p>At first glance, there doesn't seem to be much of a problem. All columns are variables and all rows are observations. However, notice that each id, name, and sex is repeated twice, which seems quite redundant. This is a hint that our data contains multiple observational units in a single table.</p>
+</li>
+<li>
+<p>Our solution will be to break the table into two separate tables -- one containing basic student information (id, name, and sex) and the other containing grades (id, class, midterm, final)</p>
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">student_info</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">students4</span> %<span class="pl-k">&gt;</span>%
+ 	select(<span class="pl-smi">id</span>, <span class="pl-smi">name</span>, <span class="pl-smi">sex</span>) %<span class="pl-k">&gt;</span>%
+ 	<span class="pl-smi">unique</span>
+
+ <span class="pl-smi">gradebook</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">students4</span> %<span class="pl-k">&gt;</span>%
+ 	select(<span class="pl-smi">id</span>, <span class="pl-smi">class</span>, <span class="pl-smi">midterm</span>, <span class="pl-smi">final</span>)</pre></div>
+<p>student_info table</p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="center">id</th>
+<th align="center">name</th>
+<th align="center">sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">168</td>
+<td align="center">Brian</td>
+<td align="center">F</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="center">588</td>
+<td align="center">Sally</td>
+<td align="center">M</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="center">710</td>
+<td align="center">Jeff</td>
+<td align="center">M</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="center">731</td>
+<td align="center">Roger</td>
+<td align="center">F</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="center">908</td>
+<td align="center">Karen</td>
+<td align="center">M</td>
+</tr></tbody></table>
+<p>gradebook table</p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="center">id</th>
+<th align="center">class</th>
+<th align="center">midterm</th>
+<th align="center">final</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">168</td>
+<td align="center">1</td>
+<td align="center">B</td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="center">168</td>
+<td align="center">5</td>
+<td align="center">A</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="center">588</td>
+<td align="center">1</td>
+<td align="center">A</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="center">588</td>
+<td align="center">3</td>
+<td align="center">B</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="center">710</td>
+<td align="center">2</td>
+<td align="center">D</td>
+<td align="center">E</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="center">710</td>
+<td align="center">4</td>
+<td align="center">A</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="center">731</td>
+<td align="center">2</td>
+<td align="center">C</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="center">731</td>
+<td align="center">5</td>
+<td align="center">B</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="center">908</td>
+<td align="center">3</td>
+<td align="center">C</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="center">908</td>
+<td align="center">4</td>
+<td align="center">A</td>
+<td align="center">A</td>
+</tr></tbody></table>
+</li>
+</ul>
+<h3 id="215-fifth-problem-when-a-single-observational-unit-is-stored-in-multiple-tables">21.5. Fifth problem: when a single observational unit is stored in multiple tables</h3>
+<ul>
+<li>
+<p>Opposite of the fourth problem.</p>
+</li>
+<li>
+<p><code>bind_rows(t1, t2)</code>: merge two rows into one (<code>dplyr</code> package)</p>
+</li>
+<li>
+<p>Example:</p>
+<p>passed table</p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="center">name</th>
+<th align="center">class</th>
+<th align="center">final</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">Brian</td>
+<td align="center">1</td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="center">Roger</td>
+<td align="center">2</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="center">Roger</td>
+<td align="center">5</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="center">Karen</td>
+<td align="center">4</td>
+<td align="center">A</td>
+</tr></tbody></table>
+<p>failed table</p>
+<table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="center">name</th>
+<th align="center">class</th>
+<th align="center">final</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">Brian</td>
+<td align="center">5</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="center">Sally</td>
+<td align="center">1</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="center">Sally</td>
+<td align="center">3</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="center">Jeff</td>
+<td align="center">2</td>
+<td align="center">E</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="center">Jeff</td>
+<td align="center">4</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="center">Karen</td>
+<td align="center">3</td>
+<td align="center">C</td>
+</tr></tbody></table>
+</li>
+<li>
+<p>Teachers decided to only take into consideration final exam grades in determining whether students passed or failed each class. The name of each dataset actually represents the value of a new variable that we will call 'status'. Before joining the two tables together, we'll add a new column to each containing this information so that it's not lost when we put everything together.</p>
+<div class="highlight highlight-source-r"><pre> <span class="pl-smi">passed</span> <span class="pl-k">&lt;-</span> mutate(<span class="pl-smi">passed</span>, <span class="pl-v">status</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>passed<span class="pl-pds">"</span></span>)
+ <span class="pl-smi">failed</span> <span class="pl-k">&lt;-</span> mutate(<span class="pl-smi">failed</span>, <span class="pl-v">status</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>failed<span class="pl-pds">"</span></span>)
+
+ bind_rows(<span class="pl-smi">passed</span>, <span class="pl-smi">failed</span>)</pre></div>
+<table>
+<thead>
+<tr>
+<th align="right">n</th>
+<th align="center">name</th>
+<th align="center">class</th>
+<th align="center">final</th>
+<th align="center">status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="center">Brian</td>
+<td align="center">1</td>
+<td align="center">B</td>
+<td align="center">passed</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="center">Roger</td>
+<td align="center">2</td>
+<td align="center">A</td>
+<td align="center">passed</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="center">Roger</td>
+<td align="center">5</td>
+<td align="center">A</td>
+<td align="center">passed</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="center">Karen</td>
+<td align="center">4</td>
+<td align="center">A</td>
+<td align="center">passed</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="center">Brian</td>
+<td align="center">5</td>
+<td align="center">C</td>
+<td align="center">failed</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="center">Sally</td>
+<td align="center">1</td>
+<td align="center">C</td>
+<td align="center">failed</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="center">Sally</td>
+<td align="center">3</td>
+<td align="center">C</td>
+<td align="center">failed</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="center">Jeff</td>
+<td align="center">2</td>
+<td align="center">E</td>
+<td align="center">failed</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="center">Jeff</td>
+<td align="center">4</td>
+<td align="center">C</td>
+<td align="center">failed</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="center">Karen</td>
+<td align="center">3</td>
+<td align="center">C</td>
+<td align="center">failed</td>
+</tr></tbody></table>
+</li>
+</ul>
+<h2 id="22-editing-text-variables">22. Editing Text Variables</h2>
+<h3 id="221-fixing-character-vectors">22.1. Fixing character vectors</h3>
+<ul>
+<li><code>tolower()</code></li>
+<li><code>toupper()</code></li>
+<li><code>strsplit(x, "\\.")</code>: important parameters are <em>x</em>, <em>split</em></li>
+<li><code>sapply(x, function(x) x[1]</code></li>
+<li><code>sub("_", "", names(reviews),)</code>: substituting "_" with nothing (only first occurence)</li>
+<li><code>gsub("_", "", "this_is_a_test)</code>: substituting multiple characters</li>
+</ul>
+<h3 id="222-finding-values">22.2. Finding values</h3>
+<ul>
+<li><code>grep("RegEx", x)</code>: returns the idx of occurences in the x vector
+<ul>
+<li><code>grep("RegEx", x, value=TRUE)</code>: returns the values rather the idx</li>
+<li><code>length(grep("RegEx", x))</code>: returns the number of occurences (0 if no occurence)</li>
+</ul>
+</li>
+<li><code>grepl("RegEx", x)</code>: returns a vector of TRUEs and FALSEs in the x vector
+<ul>
+<li><code>table(grepl("RegEx", x))</code></li>
+<li>subsetting with <code>grepl</code>: <code>y &lt;- x[!grepl("RegEx", x),]</code> (excludes occurences of "searchString")</li>
+</ul>
+</li>
+</ul>
+<h3 id="223-more-useful-string-functions">22.3. More useful string functions</h3>
+<ul>
+<li><code>nchar("Jeffrey Leek")</code>: returns number of characters</li>
+<li><code>substr()</code>: returns a substring</li>
+<li><code>paste("Jeffrey, "Leek")</code>: concatenates strings</li>
+<li><code>paste0("Jeffrey, "Leek")</code>: concatenates strings without whitespaces</li>
+<li>{<code>stringr</code> library}:
+<ul>
+<li><code>str_trim("Jeff ")</code>: trims off any extra spaces</li>
+</ul>
+</li>
+</ul>
+<h2 id="23-regular-expressions">23. Regular Expressions</h2>
+<ul>
+<li>Metacharacter <code>^</code>: represents <strong>start of a line</strong>, eg. <code>^i think</code></li>
+<li>Metacharacter <code>$</code>: represents <strong>end of a line</strong>, eg. <code>morning$</code></li>
+<li>Character Classes with <code>[]</code>: list a <strong>set of characters</strong> that will be accepted at any given point in the match, eg. <code>[Bb][Uu][Ss][Hh]</code> -&gt; Bush, bUSh, BUSH, bush, etc.
+<ul>
+<li>Range of letters with <code>[a-z]</code> or <code>[a-zA-Z]</code></li>
+<li><code>^</code> used in a character class indicates matching characters NOT in the indicated class, eg. <code>[^?.]$</code> means anything that ends without "?" or "."</li>
+</ul>
+</li>
+<li>Metacharacter <code>.</code>: used to refer to <strong>any character</strong>, eg. <code>9.11</code> will match "9-11", "9/11", "203.169.114.66", "9:11:46 AM", "02342340023499119725"</li>
+<li>Metacharacter <code>|</code> for "or": used to <strong>combine</strong> two expressions, the subexpressions being called alternatives, eg. <code>flood|fire</code>, <code>flood|earthquake|hurricane|coldfire</code></li>
+<li>Metacharacter <code>?</code>: indicates that the indicated expression is <strong>optional</strong>, eg. <code>[Gg]eorge( [Ww]\.)? [Bb]ush</code></li>
+<li>Metacharacters <code>*</code> and <code>+</code> are used to indicate <strong>repetition</strong>
+<ul>
+<li><code>*</code> means <em>"any number, including none, of the item"</em>, eg. <code>(.*)</code> means anything within parentheses with 'any character repeated any number of times'</li>
+<li><code>+</code> means <em>"at least one of the item"</em></li>
+<li><code>*</code> is "greedy" so it always matches the <em>longest</em> possible string that satisfies the regular expression. The greediness of <code>*</code> can be turned off with <code>?</code>, eg. <code>^s(.*)s</code> vs <code>^s(.*?)s$</code></li>
+</ul>
+</li>
+<li>Interval quantifiers with <code>{}</code>: specify the <strong>minimum and maximum number of matches</strong> of an expression, eg. <code>[Bb]ush( +[^ ]+ +){1,5} debate</code>
+<ul>
+<li><code>m,n</code> means "at least m but not more than n matches"</li>
+<li><code>m</code> means "exactyl m matches"</li>
+<li><code>m,</code> means "at least m matches"</li>
+</ul>
+</li>
+<li>Parentheses <code>()</code> not only limit the scope of alternatives divided by a "|", but also can be used to <strong>"remember"</strong> text matched by the expression enclosed
+<ul>
+<li><strong>Matched text</strong> can be referred to with <code>\1</code>, <code>\2</code>, etc.</li>
+<li>eg. <code>+([a-zA-Z]+) +\1 +</code> will match " night night", " blah blah" (that is it looks for some repetition in a particular phrase)</li>
+</ul>
+</li>
+<li>In R used with the functions <code>grep</code>, <code>grepl</code>, <code>sub</code>, <code>gsub</code> and others that involve searching for text strings</li>
+</ul>
+<h3 id="231-more-examples">23.1. More Examples</h3>
+<ul>
+<li><code>^[Ii] am</code></li>
+<li><code>^[0-9][a-zA-Z]</code></li>
+<li><code>^[Gg]ood|[Bb]ad</code> vs <code>^([Gg]ood|[Bb]ad)</code></li>
+<li><code>[0-9]+ (.*)[0-9]+</code></li>
+</ul>
+<h2 id="24-working-with-dates">24. Working with Dates</h2>
+<ul>
+<li>date function <code>date()</code> is of class "character" (<code>class(date())</code>)</li>
+<li><code>Sys.Date()</code> is of class "Date" (<code>class(Sys.Date())</code>)</li>
+<li>Ultimately you want your dates and times as class "Date" or the classes "POSIXct", "POSIXlt".</li>
+</ul>
+<h3 id="241-formatting-dates">24.1. Formatting Dates</h3>
+<ul>
+<li><code>%d</code> = day as number (0-31)</li>
+<li><code>%a</code> = abbreviated weekday</li>
+<li><code>%A</code> = unabbreviated weekday</li>
+<li><code>%m</code> = month (00-12)</li>
+<li><code>%b</code> = abbreviated month</li>
+<li><code>%B</code> = unabbreviated month</li>
+<li><code>%y</code> = 2 digit year</li>
+<li><code>%Y</code> = four digit year</li>
+</ul>
+<div class="highlight highlight-source-r"><pre>format(Sys.Date(), <span class="pl-s"><span class="pl-pds">"</span>%a %b %d<span class="pl-pds">"</span></span>)</pre></div>
+<h3 id="242-creating-dates">24.2. Creating Dates</h3>
+<div class="highlight highlight-source-r"><pre><span class="pl-smi">x</span> <span class="pl-k">&lt;-</span> c(<span class="pl-s"><span class="pl-pds">"</span>1jan1960<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>2jan1960<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>31mar1960<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>30jul1960<span class="pl-pds">"</span></span>)
+<span class="pl-smi">z</span> <span class="pl-k">&lt;-</span> as.Date(<span class="pl-smi">x</span>, <span class="pl-s"><span class="pl-pds">"</span>%d%b%Y<span class="pl-pds">"</span></span>)
+
+<span class="pl-smi">z</span>[<span class="pl-c1">1</span>] <span class="pl-k">-</span> <span class="pl-smi">z</span>[<span class="pl-c1">2</span>]
+as.numeric(<span class="pl-smi">z</span>[<span class="pl-c1">1</span>] <span class="pl-k">-</span> <span class="pl-smi">z</span>[<span class="pl-c1">2</span>])</pre></div>
+<h3 id="243-conversions">24.3. Conversions</h3>
+<div class="highlight highlight-source-r"><pre>weekdays(<span class="pl-smi">d</span>)
+months(<span class="pl-smi">d</span>)
+julian(<span class="pl-smi">d</span>)       <span class="pl-c"><span class="pl-c">#</span> returns number of days since origin date (1970-01-01)</span></pre></div>
+<h3 id="244-lubridate-package">24.4. {<code>lubridate</code> package}</h3>
+<ul>
+<li><a href="http://www.r-statistics.com/2012/03/do-more-with-dates-and-times-in-r-with-lubridate-1-1-0/">Do-more-with-dates-and-times-in-r-with-lubridate-1-1-0</a></li>
+</ul>
+<div class="highlight highlight-source-r"><pre>library(<span class="pl-smi">lubridate</span>)
+
+<span class="pl-c"><span class="pl-c">#</span> Dealing with dates</span>
+ymd(<span class="pl-s"><span class="pl-pds">"</span>20140108<span class="pl-pds">"</span></span>)
+ymd(<span class="pl-s"><span class="pl-pds">"</span>1989-05-17<span class="pl-pds">"</span></span>)
+ymd(<span class="pl-s"><span class="pl-pds">"</span>1989 May 17<span class="pl-pds">"</span></span>)
+mdy(<span class="pl-s"><span class="pl-pds">"</span>08/04/2013<span class="pl-pds">"</span></span>)
+mdy(<span class="pl-s"><span class="pl-pds">"</span>March 12, 1975<span class="pl-pds">"</span></span>)
+dmy(<span class="pl-s"><span class="pl-pds">"</span>03-04-2013<span class="pl-pds">"</span></span>)
+dmy(<span class="pl-c1">25081985</span>)
+dmy(c(<span class="pl-s"><span class="pl-pds">"</span>1jan2013<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>2jan2013<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>31mar2013<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>30jul2013<span class="pl-pds">"</span></span>))
+
+<span class="pl-c"><span class="pl-c">#</span> Dealing with times</span>
+hms(<span class="pl-s"><span class="pl-pds">"</span>10:15:03<span class="pl-pds">"</span></span>)
+
+<span class="pl-c"><span class="pl-c">#</span> Dealing with dates and times</span>
+ymd_hms(<span class="pl-s"><span class="pl-pds">"</span>2011-08-03 10:15:03<span class="pl-pds">"</span></span>)
+ymd_hms(<span class="pl-s"><span class="pl-pds">"</span>2011-08-03 10:15:03<span class="pl-pds">"</span></span>,<span class="pl-v">tz</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Pacific/Auckland<span class="pl-pds">"</span></span>)
+
+?<span class="pl-smi">Sys.timezone</span>
+
+<span class="pl-c"><span class="pl-c">#</span> Functions</span>
+Sys.getlocale(<span class="pl-s"><span class="pl-pds">"</span>LC_TIME<span class="pl-pds">"</span></span>)
+help(<span class="pl-v">package</span> <span class="pl-k">=</span> <span class="pl-smi">lubridate</span>)
+
+today()                 <span class="pl-c"><span class="pl-c">#</span> returns today's date</span>
+now()                   <span class="pl-c"><span class="pl-c">#</span> returns the date-time representing this exact moment in time</span>
+now(<span class="pl-v">tz</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>)            <span class="pl-c"><span class="pl-c">#</span> list of time zones: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones</span>
+update()                <span class="pl-c"><span class="pl-c">#</span> Changes the components of a date object</span>
+with_tz(<span class="pl-smi">d</span>, <span class="pl-v">tzone</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>)  <span class="pl-c"><span class="pl-c">#</span> returns a date-time as it would appear in a different time zone</span>
+
+
+year(<span class="pl-smi">d</span>)
+month(<span class="pl-smi">d</span>)
+day(<span class="pl-smi">d</span>)
+wday(<span class="pl-smi">d</span>)                 <span class="pl-c"><span class="pl-c">#</span> returns weekday as a number (1=Sun, 2=Mon, etc)</span>
+wday(<span class="pl-smi">d</span>, <span class="pl-v">label</span><span class="pl-k">=</span><span class="pl-c1">TRUE</span>)
+hour(<span class="pl-smi">t</span>)
+minute(<span class="pl-smi">t</span>)
+second(<span class="pl-smi">t</span>)
+
+<span class="pl-c"><span class="pl-c">#</span> Operations on date-time object</span>
+<span class="pl-smi">d</span> <span class="pl-k">+</span> days(<span class="pl-c1">2</span>)
+<span class="pl-smi">t</span> <span class="pl-k">+</span> hours(<span class="pl-c1">15</span>) <span class="pl-k">+</span> minutes(<span class="pl-c1">50</span>)
+
+<span class="pl-smi">i</span> <span class="pl-k">&lt;-</span> interval(<span class="pl-smi">start</span>, <span class="pl-smi">end</span>)
+as.period(<span class="pl-smi">i</span>)</pre></div>
+<h2 id="25-data-resources">25. Data Resources</h2>
+<h3 id="251-open-government-sites">25.1. Open Government Sites</h3>
+<ul>
+<li>United Nations <a href="http://data.un.org/">http://data.un.org/</a></li>
+<li>U.S. <a href="http://www.data.gov/">http://www.data.gov/</a>
+<ul>
+<li><a href="http://simplystatistics.org/2012/01/02/list-of-cities-states-with-open-data-help-me-find/">List of cities/states with open data</a></li>
+</ul>
+</li>
+<li>United Kingdom <a href="http://data.gov.uk/">http://data.gov.uk/</a></li>
+<li>France <a href="http://www.data.gouv.fr/">http://www.data.gouv.fr/</a></li>
+<li>Ghana <a href="http://data.gov.gh/">http://data.gov.gh/</a></li>
+<li>Australia <a href="http://data.gov.au/">http://data.gov.au/</a></li>
+<li>Germany <a href="https://www.govdata.de/">https://www.govdata.de/</a></li>
+<li>Hong Kong <a href="http://www.gov.hk/en/theme/psi/datasets/">http://www.gov.hk/en/theme/psi/datasets/</a></li>
+<li>Japan <a href="http://www.data.go.jp/">http://www.data.go.jp/</a></li>
+<li>Many more <a href="http://www.data.gov/opendatasites">http://www.data.gov/opendatasites</a></li>
+</ul>
+<h3 id="252-others">25.2. Others</h3>
+<ul>
+<li>Human Health: Gapminder <a href="http://www.gapminder.org/">http://www.gapminder.org/</a></li>
+<li>Survey data from the US: <a href="http://www.asdfree.com/">http://www.asdfree.com/</a></li>
+<li>Infochimps Marketplace: <a href="http://www.infochimps.com/marketplace">http://www.infochimps.com/marketplace</a></li>
+<li>Kaggle: <a href="http://www.kaggle.com/">http://www.kaggle.com/</a></li>
+</ul>
+<h3 id="253-collections-by-data-scientists">25.3. Collections by data scientists</h3>
+<ul>
+<li><a href="http://bitly.com/bundles/hmason/1">Hilary Mason</a></li>
+<li><a href="https://delicious.com/pskomoroch/dataset">Peter Skomoroch</a></li>
+<li><a href="http://www.quora.com/Jeff-Hammerbacher/Introduction-to-Data-Science-Data-Sets">Jeff Hammerbacher</a></li>
+<li><a href="http://www.kdnuggets.com/gps.html">Gregory Piatetsky-Shapiro</a></li>
+<li><a href="http://blog.mortardata.com/post/67652898761/6-dataset-lists-curated-by-data-scientists">dataset-lists-curated-by-data-scientists</a></li>
+</ul>
+<h3 id="254-more-specialized-collections">25.4. More specialized collections</h3>
+<ul>
+<li><a href="http://snap.stanford.edu/data/">Stanford Large Network Data</a></li>
+<li><a href="http://archive.ics.uci.edu/ml/">UCI Machine Learning</a></li>
+<li><a href="http://www.kdnuggets.com/datasets/index.html">KDD Nugets Datasets</a></li>
+<li><a href="http://lib.stat.cmu.edu/datasets/">CMU Statlib</a></li>
+<li><a href="http://www.ncbi.nlm.nih.gov/geo/">Gene expression omnibus</a></li>
+<li><a href="http://arxiv.org/help/bulk_data">ArXiv Data</a></li>
+<li><a href="http://aws.amazon.com/publicdatasets/">Public Data Sets on Amazon Web Services</a></li>
+</ul>
+<h3 id="255-some-apis-with-r-interfaces">25.5. Some API's with R interfaces</h3>
+<ul>
+<li><a href="https://dev.twitter.com/">twitter</a> and <a href="http://cran.r-project.org/web/packages/twitteR/index.html">twitteR</a> package</li>
+<li><a href="http://api.figshare.com/docs/intro.html">figshare</a> and <a href="http://cran.r-project.org/web/packages/rfigshare/index.html">rfigshare</a></li>
+<li><a href="http://api.plos.org/">PLoS</a> and <a href="http://cran.r-project.org/web/packages/rplos/rplos.pdf">rplos</a></li>
+<li><a href="http://ropensci.org/packages/index.html">rOpenSci</a></li>
+<li><a href="https://developers.facebook.com/">Facebook</a> and <a href="http://cran.r-project.org/web/packages/Rfacebook/">RFacebook</a></li>
+<li><a href="https://developers.google.com/maps/">Google maps</a> and <a href="http://cran.r-project.org/web/packages/RgoogleMaps/index.html">RGoogleMaps</a></li>
+</ul></article></body></html><script async>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
