@@ -906,10 +906,10 @@ comments: false</h2>
 <li>more than 2 variables because the real world is multivariate</li>
 <li>show as much data on a plot as you can</li>
 <li>example:<br>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/example_principle3.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/example_principle3.jpg" alt="example principle 3" style="max-width:100%;"></a><br>
+<a href="/../images/ds04/example_principle3.jpg" target="_blank"><img src="/../images/ds04/example_principle3.jpg" alt="example principle 3" style="max-width:100%;"></a><br>
 slightly negative relationship between pollution and mortality<br>
 when split up by season, the relationships are all positive → season = confounding variable<br>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/example_principle3_confounding.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/example_principle3_confounding.jpg" alt="example principle 3 confoudning" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/example_principle3_confounding.jpg" target="_blank"><img src="/../images/ds04/example_principle3_confounding.jpg" alt="example principle 3 confoudning" style="max-width:100%;"></a></li>
 </ul>
 </li>
 <li><strong>Principle 4: Integration of evidence (integrate words, numbers, images, diagrams)</strong>
@@ -981,19 +981,19 @@ when split up by season, the relationships are all positive → season = confoun
 <li>multiple/overlay 1D plots (using lattice/ggplot2)</li>
 <li><strong>Multiple boxplots</strong>:
 <div class="highlight highlight-source-r"><pre>boxplot(<span class="pl-smi">pm25</span> <span class="pl-k">~</span> <span class="pl-smi">region</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">pollution</span>, <span class="pl-v">col</span> <span class="pl-k">=</span> “<span class="pl-smi">red</span>”)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/multiple_boxplots.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/multiple_boxplots.jpg" alt="multiple boxplots" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/multiple_boxplots.jpg" target="_blank"><img src="/../images/ds04/multiple_boxplots.jpg" alt="multiple boxplots" style="max-width:100%;"></a></li>
 <li><strong>Multiple histograms</strong>:
 <div class="highlight highlight-source-r"><pre>par(<span class="pl-v">mfrow</span> <span class="pl-k">=</span> c(<span class="pl-c1">2</span>, <span class="pl-c1">1</span>), <span class="pl-v">mar</span> <span class="pl-k">=</span> c(<span class="pl-c1">4</span>, <span class="pl-c1">4</span>, <span class="pl-c1">2</span>, <span class="pl-c1">1</span>))                       <span class="pl-c"><span class="pl-c">#</span> = set margin</span>
 hist(subset(<span class="pl-smi">pollution</span>, <span class="pl-smi">region</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">"</span>east<span class="pl-pds">"</span></span>)<span class="pl-k">$</span><span class="pl-smi">pm25</span>, <span class="pl-v">col</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>green<span class="pl-pds">"</span></span>)   <span class="pl-c"><span class="pl-c">#</span> = first histogram</span>
 hist(subset(<span class="pl-smi">pollution</span>, <span class="pl-smi">region</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">"</span>west<span class="pl-pds">"</span></span>)<span class="pl-k">$</span><span class="pl-smi">pm25</span>, <span class="pl-v">col</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>green<span class="pl-pds">"</span></span>)   <span class="pl-c"><span class="pl-c">#</span> = second histogram</span></pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/multiple_histograms.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/multiple_histograms.jpg" alt="multiple histograms" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/multiple_histograms.jpg" target="_blank"><img src="/../images/ds04/multiple_histograms.jpg" alt="multiple histograms" style="max-width:100%;"></a></li>
 <li><strong>scatterplot</strong>:
 <div class="highlight highlight-source-r"><pre>with(<span class="pl-smi">pollution</span>, plot(<span class="pl-smi">latitude</span>, <span class="pl-smi">pm25</span>, <span class="pl-v">col</span> <span class="pl-k">=</span> <span class="pl-smi">region</span>))
 abline(<span class="pl-v">h</span> <span class="pl-k">=</span> <span class="pl-c1">12</span>, <span class="pl-v">lwd</span> <span class="pl-k">=</span> <span class="pl-c1">2</span>, <span class="pl-v">lty</span> <span class="pl-k">=</span> <span class="pl-c1">2</span>)        <span class="pl-c"><span class="pl-c">#</span> = plots horizontal dotted line</span>
 plot(jitter(<span class="pl-smi">child</span>, <span class="pl-c1">4</span>)<span class="pl-k">~</span><span class="pl-smi">parent</span>, <span class="pl-smi">galton</span>)   <span class="pl-c"><span class="pl-c">#</span> = spreads out data points at the same position to simulate measurement</span>
                                         <span class="pl-c"><span class="pl-c">#</span>   error/make high frequency more visibble</span></pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/scatterplot.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/scatterplot.jpg" alt="scatterplot" style="max-width:100%;"></a><br>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/plot_error.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/plot_error.jpg" alt="plot_error" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/scatterplot.jpg" target="_blank"><img src="/../images/ds04/scatterplot.jpg" alt="scatterplot" style="max-width:100%;"></a><br>
+<a href="/../images/ds04/plot_error.jpg" target="_blank"><img src="/../images/ds04/plot_error.jpg" alt="plot_error" style="max-width:100%;"></a></li>
 </ul>
 <h3 id="23-gt2-dimensions">2.3. &gt;2 dimensions</h3>
 <ul>
@@ -1004,7 +1004,7 @@ plot(jitter(<span class="pl-smi">child</span>, <span class="pl-c1">4</span>)<spa
 <div class="highlight highlight-source-r"><pre>par(<span class="pl-v">mfrow</span> <span class="pl-k">=</span> c(<span class="pl-c1">1</span>, <span class="pl-c1">2</span>), <span class="pl-v">mar</span> <span class="pl-k">=</span> c(<span class="pl-c1">5</span>, <span class="pl-c1">4</span>, <span class="pl-c1">2</span>, <span class="pl-c1">1</span>))                                           <span class="pl-c"><span class="pl-c">#</span> = sets margins</span>
 with(subset(<span class="pl-smi">pollution</span>, <span class="pl-smi">region</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">"</span>west<span class="pl-pds">"</span></span>), plot(<span class="pl-smi">latitude</span>, <span class="pl-smi">pm25</span>, <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>West<span class="pl-pds">"</span></span>))      <span class="pl-c"><span class="pl-c">#</span> = left scatterplot</span>
 with(subset(<span class="pl-smi">pollution</span>, <span class="pl-smi">region</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">"</span>east<span class="pl-pds">"</span></span>), plot(<span class="pl-smi">latitude</span>,  <span class="pl-smi">pm25</span>, <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>East<span class="pl-pds">"</span></span>))     <span class="pl-c"><span class="pl-c">#</span> = right scatterplot</span></pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/multiple_scatterplots.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/multiple_scatterplots.jpg" alt="multiple scatterplots" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/multiple_scatterplots.jpg" target="_blank"><img src="/../images/ds04/multiple_scatterplots.jpg" alt="multiple scatterplots" style="max-width:100%;"></a></li>
 </ul>
 <h3 id="24-process-of-making-a-plotconsiderations">2.4. Process of Making a Plot/Considerations</h3>
 <ul>
@@ -1102,14 +1102,14 @@ with(subset(<span class="pl-smi">pollution</span>, <span class="pl-smi">region</
 <div class="highlight highlight-source-r"><pre>library(<span class="pl-smi">datasets</span>)
 data(<span class="pl-smi">cars</span>)
 with(<span class="pl-smi">cars</span>, plot(<span class="pl-smi">speed</span>, <span class="pl-smi">dist</span>))</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/baseplot_basic1.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/baseplot_basic1.jpg" alt="base plot basic example 1" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/baseplot_basic1.jpg" target="_blank"><img src="/../images/ds04/baseplot_basic1.jpg" alt="base plot basic example 1" style="max-width:100%;"></a></p>
 <div class="highlight highlight-source-r"><pre>library(<span class="pl-smi">datasets</span>)
 hist(<span class="pl-smi">airquality</span><span class="pl-k">$</span><span class="pl-smi">Ozone</span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/baseplot_basic2.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/baseplot_basic2.jpg" alt="base plot basic example 2" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/baseplot_basic2.jpg" target="_blank"><img src="/../images/ds04/baseplot_basic2.jpg" alt="base plot basic example 2" style="max-width:100%;"></a></p>
 <div class="highlight highlight-source-r"><pre>library(<span class="pl-smi">datasets</span>)
 <span class="pl-smi">airquality</span> <span class="pl-k">&lt;-</span> transform(<span class="pl-smi">airquality</span>, <span class="pl-v">Month</span> <span class="pl-k">=</span> <span class="pl-k">factor</span>(<span class="pl-smi">Month</span>))
 boxplot(<span class="pl-smi">Ozone</span> <span class="pl-k">~</span> <span class="pl-smi">Month</span>, <span class="pl-smi">airquality</span>, <span class="pl-v">xlab</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Month<span class="pl-pds">"</span></span>, <span class="pl-v">ylab</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Ozone (ppb)<span class="pl-pds">"</span></span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/baseplot_basic3.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/baseplot_basic3.jpg" alt="base plot basic example 3" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/baseplot_basic3.jpg" target="_blank"><img src="/../images/ds04/baseplot_basic3.jpg" alt="base plot basic example 3" style="max-width:100%;"></a></p>
 </li>
 <li>
 <p>Advanced Examples:</p>
@@ -1125,7 +1125,7 @@ legend(<span class="pl-s"><span class="pl-pds">"</span>topright<span class="pl-p
 <span class="pl-c"><span class="pl-c">#</span> regression line is produced here</span>
 <span class="pl-smi">model</span> <span class="pl-k">&lt;-</span> lm(<span class="pl-smi">Ozone</span> <span class="pl-k">~</span> <span class="pl-smi">Wind</span>, <span class="pl-smi">airquality</span>)
 abline(<span class="pl-smi">model</span>, <span class="pl-v">lwd</span> <span class="pl-k">=</span> <span class="pl-c1">2</span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/baseplot_advanced1.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/baseplot_advanced1.jpg" alt="base plot advanced example 1" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/baseplot_advanced1.jpg" target="_blank"><img src="/../images/ds04/baseplot_advanced1.jpg" alt="base plot advanced example 1" style="max-width:100%;"></a></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-smi">x</span> <span class="pl-k">&lt;-</span> rnorm(<span class="pl-c1">100</span>)
 <span class="pl-smi">y</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">x</span> <span class="pl-k">+</span> rnorm(<span class="pl-c1">100</span>)
 <span class="pl-smi">g</span> <span class="pl-k">&lt;-</span> gl(<span class="pl-c1">2</span>, <span class="pl-c1">50</span>, <span class="pl-v">labels</span> <span class="pl-k">=</span> c(<span class="pl-s"><span class="pl-pds">"</span>Male<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Female<span class="pl-pds">"</span></span>))
@@ -1133,7 +1133,7 @@ abline(<span class="pl-smi">model</span>, <span class="pl-v">lwd</span> <span cl
 plot(<span class="pl-smi">x</span>, <span class="pl-smi">y</span>, <span class="pl-v">type</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>n<span class="pl-pds">"</span></span>)
 points(<span class="pl-smi">x</span>[<span class="pl-smi">g</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">"</span>Male<span class="pl-pds">"</span></span>], <span class="pl-smi">y</span>[<span class="pl-smi">g</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">"</span>Male<span class="pl-pds">"</span></span>], <span class="pl-v">col</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>green<span class="pl-pds">"</span></span>)
 points(<span class="pl-smi">x</span>[<span class="pl-smi">g</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">"</span>Female<span class="pl-pds">"</span></span>], <span class="pl-smi">y</span>[<span class="pl-smi">g</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">"</span>Female<span class="pl-pds">"</span></span>], <span class="pl-v">col</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>blue<span class="pl-pds">"</span></span>, <span class="pl-v">pch</span> <span class="pl-k">=</span> <span class="pl-c1">19</span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/baseplot_advanced2.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/baseplot_advanced2.jpg" alt="base plot advanced example 2" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/baseplot_advanced2.jpg" target="_blank"><img src="/../images/ds04/baseplot_advanced2.jpg" alt="base plot advanced example 2" style="max-width:100%;"></a></p>
 </li>
 </ul>
 <h3 id="33-multiple-plot-example">3.3. Multiple Plot Example</h3>
@@ -1149,7 +1149,7 @@ with(<span class="pl-smi">airquality</span>, {
     <span class="pl-c"><span class="pl-c">#</span> this adds a line of text in the outer margin*</span>
     mtext(<span class="pl-s"><span class="pl-pds">"</span>Ozone and Weather in New York City<span class="pl-pds">"</span></span>, <span class="pl-v">outer</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>)
 })</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/baseplot_multiple.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/baseplot_multiple.jpg" alt="base plot multiple example" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/baseplot_multiple.jpg" target="_blank"><img src="/../images/ds04/baseplot_multiple.jpg" alt="base plot multiple example" style="max-width:100%;"></a></li>
 </ul>
 <h2 id="4-graphics-devices">4. Graphics Devices</h2>
 <ul>
@@ -1290,7 +1290,7 @@ dev.off()                                       <span class="pl-c"><span class="
 <li><code>*</code> indicates interaction between two variables</li>
 <li>intuitively, the xyplot displays a graph between x and y for every level of <code>f</code> and <code>g</code></li>
 <li><strong>Example</strong>: <code>xyplot(price~carat | color*cut, data = diamonds, strip = FALSE, pch = 20)</code><br>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/latticeplot_factor.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/latticeplot_factor.jpg" alt="lattice plot factors example" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/latticeplot_factor.jpg" target="_blank"><img src="/../images/ds04/latticeplot_factor.jpg" alt="lattice plot factors example" style="max-width:100%;"></a></li>
 </ul>
 </li>
 <li><code>data</code> = the data frame/list from which the variables should be looked up
@@ -1324,7 +1324,7 @@ dev.off()                                       <span class="pl-c"><span class="
 <div class="highlight highlight-source-r"><pre>library(<span class="pl-smi">lattice</span>)
 <span class="pl-smi">state</span> <span class="pl-k">&lt;-</span> <span class="pl-k">data.frame</span>(<span class="pl-smi">state.x77</span>, <span class="pl-v">region</span> <span class="pl-k">=</span> <span class="pl-smi">state.region</span>)
 xyplot(<span class="pl-smi">Life.Exp</span> <span class="pl-k">~</span> <span class="pl-smi">Income</span> <span class="pl-k">|</span> <span class="pl-smi">region</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">state</span>, <span class="pl-v">layout</span> <span class="pl-k">=</span> c(<span class="pl-c1">4</span>,<span class="pl-c1">1</span>))</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/latticeplot_basic.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/latticeplot_basic.jpg" alt="lattice plot basic example" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/latticeplot_basic.jpg" target="_blank"><img src="/../images/ds04/latticeplot_basic.jpg" alt="lattice plot basic example" style="max-width:100%;"></a></li>
 <li>Advanced Example (Lattice Panel Functions):
 <div class="highlight highlight-source-r"><pre>library(<span class="pl-smi">lattice</span>)
 set.seed(<span class="pl-c1">10</span>)
@@ -1342,7 +1342,7 @@ xyplot(<span class="pl-smi">y</span> <span class="pl-k">~</span> <span class="pl
     <span class="pl-c"><span class="pl-c">#</span> overlays a simple linear regression line</span>
     panel.lmline(<span class="pl-smi">x</span>, <span class="pl-smi">y</span>, <span class="pl-v">col</span> <span class="pl-k">=</span> <span class="pl-c1">2</span>)
 })</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/latticeplot_advanced.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/latticeplot_advanced.jpg" alt="lattice plot advanced example" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/latticeplot_advanced.jpg" target="_blank"><img src="/../images/ds04/latticeplot_advanced.jpg" alt="lattice plot advanced example" style="max-width:100%;"></a></li>
 </ul>
 <h2 id="6-ggplot2-plotting-system">6. <code>ggplot2</code> Plotting System</h2>
 <ul>
@@ -1389,14 +1389,14 @@ xyplot(<span class="pl-smi">y</span> <span class="pl-k">~</span> <span class="pl
 <li><strong>Example (Scatterplot)</strong>:
 <div class="highlight highlight-source-r"><pre>library(<span class="pl-smi">ggplot2</span>)
 qplot(<span class="pl-smi">displ</span>, <span class="pl-smi">hwy</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">mpg</span>, <span class="pl-v">color</span> <span class="pl-k">=</span> <span class="pl-smi">drv</span>, <span class="pl-v">shape</span> <span class="pl-k">=</span> <span class="pl-smi">drv</span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_factorvariables.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_factorvariables.jpg" alt="qplot factor variables" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/qplot_factorvariables.jpg" target="_blank"><img src="/../images/ds04/qplot_factorvariables.jpg" alt="qplot factor variables" style="max-width:100%;"></a></li>
 </ul>
 </li>
 <li><strong>scatterplot sequential data</strong>: specifying the y parameter only, without an x argument, plots the values of the y argument in the order in which they occur in the data
 <ul>
 <li><strong>Example</strong>:
 <div class="highlight highlight-source-r"><pre>qplot(<span class="pl-v">y</span> <span class="pl-k">=</span> <span class="pl-smi">hwy</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">mpg</span>, <span class="pl-v">color</span> <span class="pl-k">=</span> <span class="pl-smi">drv</span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_sequential.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_sequential.jpg" alt="qplot sequential" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/qplot_sequential.jpg" target="_blank"><img src="/../images/ds04/qplot_sequential.jpg" alt="qplot sequential" style="max-width:100%;"></a></li>
 </ul>
 </li>
 <li><strong>adding statistics</strong>: <code>geom = c("point", "smooth")</code> = add a smoother/"low S"
@@ -1410,19 +1410,19 @@ qplot(<span class="pl-smi">displ</span>, <span class="pl-smi">hwy</span>, <span 
 </li>
 <li><strong>Examples</strong>:
 <div class="highlight highlight-source-r"><pre>qplot(<span class="pl-smi">displ</span>, <span class="pl-smi">hwy</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">mpg</span>, <span class="pl-v">geom</span> <span class="pl-k">=</span> c(<span class="pl-s"><span class="pl-pds">"</span>point<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>smooth<span class="pl-pds">"</span></span>), <span class="pl-v">method</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>loess<span class="pl-pds">"</span></span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_geom.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_geom.jpg" alt="qplot geom" style="max-width:100%;"></a>
+<a href="/../images/ds04/qplot_geom.jpg" target="_blank"><img src="/../images/ds04/qplot_geom.jpg" alt="qplot geom" style="max-width:100%;"></a>
 <div class="highlight highlight-source-r"><pre>qplot(log(<span class="pl-smi">pm25</span>), log(<span class="pl-smi">eno</span>), <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">maacs</span>, <span class="pl-v">color</span> <span class="pl-k">=</span> <span class="pl-smi">mopos</span>) <span class="pl-k">+</span> geom_smooth(<span class="pl-v">method</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>lm<span class="pl-pds">"</span></span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_geomsmooth.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_geomsmooth.jpg" alt="qplot geom smooth" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/qplot_geomsmooth.jpg" target="_blank"><img src="/../images/ds04/qplot_geomsmooth.jpg" alt="qplot geom smooth" style="max-width:100%;"></a></li>
 </ul>
 </li>
 <li><strong>box plot</strong>:
 <ul>
 <li><strong>Example</strong>:
 <div class="highlight highlight-source-r"><pre>qplot(<span class="pl-smi">drv</span>,<span class="pl-smi">hwy</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">mpg</span>, <span class="pl-v">geom</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>boxplot<span class="pl-pds">"</span></span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_boxplot.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_boxplot.jpg" alt="qplot boxplot" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/qplot_boxplot.jpg" target="_blank"><img src="/../images/ds04/qplot_boxplot.jpg" alt="qplot boxplot" style="max-width:100%;"></a></li>
 <li>Can even be subdivided into several boxes:
 <div class="highlight highlight-source-r"><pre>qplot(<span class="pl-smi">drv</span>,<span class="pl-smi">hwy</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">mpg</span>, <span class="pl-v">geom</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>boxplot<span class="pl-pds">"</span></span>, <span class="pl-v">color</span> <span class="pl-k">=</span> <span class="pl-smi">manufacturer</span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_boxplot_sub.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_boxplot_sub.jpg" alt="qplot boxplot subdivided" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/qplot_boxplot_sub.jpg" target="_blank"><img src="/../images/ds04/qplot_boxplot_sub.jpg" alt="qplot boxplot subdivided" style="max-width:100%;"></a></li>
 </ul>
 </li>
 <li><strong>histograms</strong>: if only one value is specified, a histogram is produced
@@ -1431,7 +1431,7 @@ qplot(<span class="pl-smi">displ</span>, <span class="pl-smi">hwy</span>, <span 
 <li><code>binwidth = &lt;number&gt;</code> = set width of the bins (default number of bins is 30)</li>
 <li><strong>Example</strong>:
 <div class="highlight highlight-source-r"><pre>qplot(<span class="pl-smi">hwy</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">mpg</span>, <span class="pl-v">fill</span> <span class="pl-k">=</span> <span class="pl-smi">drv</span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_histogram.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_histogram.jpg" alt="qplot histogram" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/qplot_histogram.jpg" target="_blank"><img src="/../images/ds04/qplot_histogram.jpg" alt="qplot histogram" style="max-width:100%;"></a></li>
 </ul>
 </li>
 <li><strong>density smooth</strong>: smooths the histograms into a line tracing its shape
@@ -1440,7 +1440,7 @@ qplot(<span class="pl-smi">displ</span>, <span class="pl-smi">hwy</span>, <span 
 <li><strong>Example</strong>:
 <div class="highlight highlight-source-r"><pre>qplot(log(<span class="pl-smi">eno</span>), <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">maacs</span>, <span class="pl-v">geom</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>density<span class="pl-pds">"</span></span>)
 qplot(log(<span class="pl-smi">eno</span>), <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">maacs</span>, <span class="pl-v">geom</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>density<span class="pl-pds">"</span></span>, <span class="pl-v">color</span> <span class="pl-k">=</span> <span class="pl-smi">mopos</span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_densitysmooth.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_densitysmooth.jpg" alt="qplot density smooth" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/qplot_densitysmooth.jpg" target="_blank"><img src="/../images/ds04/qplot_densitysmooth.jpg" alt="qplot density smooth" style="max-width:100%;"></a></li>
 </ul>
 </li>
 <li><strong>facets</strong>: similar to panels in lattice, split data according to factor variables
@@ -1455,16 +1455,16 @@ qplot(log(<span class="pl-smi">eno</span>), <span class="pl-v">data</span> <span
 <li>labels get generated automatically based on factor variable values</li>
 <li><strong>Examples</strong>:
 <div class="highlight highlight-source-r"><pre>qplot(<span class="pl-smi">displ</span>, <span class="pl-smi">hwy</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">mpg</span>, <span class="pl-v">facets</span> <span class="pl-k">=</span> . <span class="pl-k">~</span> <span class="pl-smi">drv</span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_facet1.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_facet1.jpg" alt="qplot facet1" style="max-width:100%;"></a>
+<a href="/../images/ds04/qplot_facet1.jpg" target="_blank"><img src="/../images/ds04/qplot_facet1.jpg" alt="qplot facet1" style="max-width:100%;"></a>
 <div class="highlight highlight-source-r"><pre>qplot(<span class="pl-smi">hwy</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">mpg</span>, <span class="pl-v">facets</span> <span class="pl-k">=</span> <span class="pl-smi">drv</span> <span class="pl-k">~</span> ., <span class="pl-v">binwidth</span> <span class="pl-k">=</span> <span class="pl-c1">2</span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_facet2.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_facet2.jpg" alt="qplot facet2" style="max-width:100%;"></a>
+<a href="/../images/ds04/qplot_facet2.jpg" target="_blank"><img src="/../images/ds04/qplot_facet2.jpg" alt="qplot facet2" style="max-width:100%;"></a>
 <div class="highlight highlight-source-r"><pre>library(<span class="pl-smi">datasets</span>)
 data(<span class="pl-smi">airquality</span>)
 
 <span class="pl-c"><span class="pl-c">#</span># Need to transform 'Month' to a factor variable first</span>
 <span class="pl-v">airquality</span> <span class="pl-k">=</span> transform(<span class="pl-smi">airquality</span>, <span class="pl-v">Month</span> <span class="pl-k">=</span> <span class="pl-k">factor</span>(<span class="pl-smi">Month</span>))
 qplot(<span class="pl-smi">Wind</span>, <span class="pl-smi">Ozone</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">airquality</span>, <span class="pl-v">facets</span> <span class="pl-k">=</span> . <span class="pl-k">~</span> <span class="pl-smi">Month</span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_facet3.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_facet3.jpg" alt="qplot facet3" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/qplot_facet3.jpg" target="_blank"><img src="/../images/ds04/qplot_facet3.jpg" alt="qplot facet3" style="max-width:100%;"></a></li>
 </ul>
 </li>
 </ul>
@@ -1555,7 +1555,7 @@ qplot(<span class="pl-smi">Wind</span>, <span class="pl-smi">Ozone</span>, <span
 </ul>
 </li>
 <li><strong>Example</strong>:<br>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/ggplot_aesthetics.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/ggplot_aesthetics.jpg" alt="ggplot aesthetics" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/ggplot_aesthetics.jpg" target="_blank"><img src="/../images/ds04/ggplot_aesthetics.jpg" alt="ggplot aesthetics" style="max-width:100%;"></a></li>
 </ul>
 </li>
 <li><em><strong>axis limits</strong></em>
@@ -1566,7 +1566,7 @@ qplot(<span class="pl-smi">Wind</span>, <span class="pl-smi">Ozone</span>, <span
 </ul>
 </li>
 <li><code>+ coord_cartesian(ylim = c(-3, 3))</code> = this will limit the visible range but plot all points of the data<br>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/ggplot_axis.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/ggplot_axis.jpg" alt="ggplot axis limits" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/ggplot_axis.jpg" target="_blank"><img src="/../images/ds04/ggplot_axis.jpg" alt="ggplot axis limits" style="max-width:100%;"></a></li>
 </ul>
 </li>
 </ul>
@@ -1576,7 +1576,7 @@ qplot(<span class="pl-smi">Wind</span>, <span class="pl-smi">Ozone</span>, <span
 <div class="highlight highlight-source-r"><pre>library(<span class="pl-smi">ggplot2</span>)
 data(<span class="pl-smi">mpg</span>)
 qplot(<span class="pl-smi">displ</span>, <span class="pl-smi">hwy</span>, <span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">mpg</span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_basic.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/qplot_basic.jpg" alt="qplot basic example" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/qplot_basic.jpg" target="_blank"><img src="/../images/ds04/qplot_basic.jpg" alt="qplot basic example" style="max-width:100%;"></a></li>
 <li>Comprehensive Example (ggplot):
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> initiates ggplot</span>
 <span class="pl-smi">g</span> <span class="pl-k">&lt;-</span> ggplot(<span class="pl-smi">maacs</span>, aes(<span class="pl-smi">logpm25</span>, <span class="pl-smi">NocturnalSympt</span>))
@@ -1587,7 +1587,7 @@ qplot(<span class="pl-smi">displ</span>, <span class="pl-smi">hwy</span>, <span 
   <span class="pl-k">+</span> labs(<span class="pl-v">x</span> <span class="pl-k">=</span> expression(<span class="pl-s"><span class="pl-pds">"</span>log <span class="pl-pds">"</span></span> <span class="pl-k">*</span> <span class="pl-smi">PM</span>[<span class="pl-c1">2.5</span>])               <span class="pl-c"><span class="pl-c">#</span> add labels</span>
   <span class="pl-k">+</span> labs(<span class="pl-v">y</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Nocturnal Symptoms”)</span>
 <span class="pl-s">  + labs(title = <span class="pl-pds">"</span></span><span class="pl-smi">MAACS</span> <span class="pl-smi">Cohort</span>”)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/ggplot_comprehensive.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/ggplot_comprehensive.jpg" alt="ggplot comprehensive example" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/ggplot_comprehensive.jpg" target="_blank"><img src="/../images/ds04/ggplot_comprehensive.jpg" alt="ggplot comprehensive example" style="max-width:100%;"></a></li>
 </ul>
 <h2 id="7-hierarchical-clustering">7. Hierarchical Clustering</h2>
 <ul>
@@ -1622,7 +1622,7 @@ qplot(<span class="pl-smi">displ</span>, <span class="pl-smi">hwy</span>, <span 
 </ul>
 </li>
 </ul>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/hierarchicalclustering_defineclose.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/hierarchicalclustering_defineclose.jpg" alt="hierarchical clustering defining close" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/hierarchicalclustering_defineclose.jpg" target="_blank"><img src="/../images/ds04/hierarchicalclustering_defineclose.jpg" alt="hierarchical clustering defining close" style="max-width:100%;"></a></p>
 <h3 id="71-procedure-for-constructing-hierarchical-clusters-hclust-function">7.1. Procedure for Constructing Hierarchical Clusters (<code>hclust</code> function)</h3>
 <ol>
 <li>calculate all pair wise distances between all points to see which points are closest together
@@ -1642,7 +1642,7 @@ qplot(<span class="pl-smi">displ</span>, <span class="pl-smi">hwy</span>, <span 
 <li><em><strong>complete linkage</strong></em> = to measure distance of two clusters, take the two points in the clusters that are the furthest apart</li>
 <li><strong>Note</strong>: two approaches may produce different results so it’s a good idea to use both approaches to validate results</li>
 </ul>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/hierarchicalclustering_approach.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/hierarchicalclustering_approach.jpg" alt="hierarchical clustering approach" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/hierarchicalclustering_approach.jpg" target="_blank"><img src="/../images/ds04/hierarchicalclustering_approach.jpg" alt="hierarchical clustering approach" style="max-width:100%;"></a></p>
 <h3 id="73-characteristics-of-hierarchical-clustering-algorithms">7.3. Characteristics of Hierarchical Clustering Algorithms</h3>
 <ul>
 <li>clustering result/plot maybe <em><strong>unstable</strong></em>
@@ -1691,7 +1691,7 @@ text(<span class="pl-smi">x</span> <span class="pl-k">+</span> <span class="pl-c
 <span class="pl-smi">distxy</span> <span class="pl-k">&lt;-</span> dist(<span class="pl-smi">dataFrame</span>)               <span class="pl-c"><span class="pl-c">#</span> calculate all pairwise distances</span>
 <span class="pl-smi">hClustering</span> <span class="pl-k">&lt;-</span> hclust(<span class="pl-smi">distxy</span>)
 plot(<span class="pl-smi">hClustering</span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/hierarchicalclustering_hclust.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/hierarchicalclustering_hclust.jpg" alt="hierarchical clustering hclust" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/hierarchicalclustering_hclust.jpg" target="_blank"><img src="/../images/ds04/hierarchicalclustering_hclust.jpg" alt="hierarchical clustering hclust" style="max-width:100%;"></a></p>
 <h3 id="75-myplcclust-function-and-example">7.5. <code>myplcclust</code> Function and Example</h3>
 <ul>
 <li><strong>Note</strong>: <code>myplcclust</code> = a function to plot <code>hclust</code> objects in color (clusters labeled 1 2 3 etc.), but must know how many clusters there are initially</li>
@@ -1720,7 +1720,7 @@ plot(<span class="pl-smi">hClustering</span>)</pre></div>
 <span class="pl-smi">distxy</span> <span class="pl-k">&lt;-</span> dist(<span class="pl-smi">dataFrame</span>)
 <span class="pl-smi">hClustering</span> <span class="pl-k">&lt;-</span> hclust(<span class="pl-smi">distxy</span>)
 myplclust(<span class="pl-smi">hClustering</span>, <span class="pl-v">lab</span> <span class="pl-k">=</span> rep(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">3</span>, <span class="pl-v">each</span> <span class="pl-k">=</span> <span class="pl-c1">4</span>), <span class="pl-v">lab.col</span> <span class="pl-k">=</span> rep(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">3</span>, <span class="pl-v">each</span> <span class="pl-k">=</span> <span class="pl-c1">4</span>))</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/hierarchicalclustering_myplcclust.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/hierarchicalclustering_myplcclust.jpg" alt="hierarchical clustering myplcclust" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/hierarchicalclustering_myplcclust.jpg" target="_blank"><img src="/../images/ds04/hierarchicalclustering_myplcclust.jpg" alt="hierarchical clustering myplcclust" style="max-width:100%;"></a></p>
 <h3 id="76-heatmap-function-and-example">7.6. <code>heatmap</code> Function and Example</h3>
 <ul>
 <li><a href="http://sebastianraschka.com/Articles/heatmaps_in_r.html#clustering">tutorial on heatmaps</a></li>
@@ -1737,7 +1737,7 @@ set.seed(<span class="pl-c1">143</span>)
 <span class="pl-smi">dataMatrix</span> <span class="pl-k">&lt;-</span> as.matrix(<span class="pl-smi">dataFrame</span>)[sample(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">12</span>), ]
 heatmap(<span class="pl-smi">dataMatrix</span>)
 <span class="pl-c"><span class="pl-c">#</span> heatmap(dataMatrix, col=cm.colors(19))</span></pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/hierarchicalclustering_heatmap.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/hierarchicalclustering_heatmap.jpg" alt="hierarchical clustering heatmap" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/hierarchicalclustering_heatmap.jpg" target="_blank"><img src="/../images/ds04/hierarchicalclustering_heatmap.jpg" alt="hierarchical clustering heatmap" style="max-width:100%;"></a></p>
 <h3 id="77-image-function-and-example">7.7. <code>image</code> Function and Example</h3>
 <ul>
 <li><code>image(x, y, t(dataMatrix)[, nrow(dataMatrix):1])</code> = produces similar color grid plot as the <code>heatmap()</code> without the dendrograms
@@ -1765,7 +1765,7 @@ heatmap(<span class="pl-smi">dataMatrix</span>)
 </li>
 </ul>
 <div class="highlight highlight-source-r"><pre>image(<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">2</span>, <span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">12</span>, t(<span class="pl-smi">dataMatrix</span>)[, nrow(<span class="pl-smi">dataMatrix</span>)<span class="pl-k">:</span><span class="pl-c1">1</span>])</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/hierarchicalclustering_image.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/hierarchicalclustering_image.jpg" alt="hierarchical clustering image" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/hierarchicalclustering_image.jpg" target="_blank"><img src="/../images/ds04/hierarchicalclustering_image.jpg" alt="hierarchical clustering image" style="max-width:100%;"></a></p>
 <h2 id="8-k-means-clustering">8. K-means Clustering</h2>
 <ul>
 <li>Further resources:
@@ -1799,7 +1799,7 @@ heatmap(<span class="pl-smi">dataMatrix</span>)
 </ul>
 </li>
 </ul>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/kmeans_clustering.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/kmeans_clustering.jpg" alt="k-means clustering" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/kmeans_clustering.jpg" target="_blank"><img src="/../images/ds04/kmeans_clustering.jpg" alt="k-means clustering" style="max-width:100%;"></a></p>
 <h3 id="81-procedure-for-constructing-k-means-clusters-kmeans-function">8.1. Procedure for Constructing K-means Clusters (<code>kmeans</code> function)</h3>
 <ol>
 <li>choose three random points as the starting centroids</li>
@@ -1827,7 +1827,7 @@ names(<span class="pl-smi">kmeansObj</span>)</pre></div>
 par(<span class="pl-v">mar</span><span class="pl-k">=</span>rep(<span class="pl-c1">0.2</span>,<span class="pl-c1">4</span>))
 plot(<span class="pl-smi">x</span>,<span class="pl-smi">y</span>,<span class="pl-v">col</span><span class="pl-k">=</span><span class="pl-smi">kmeansObj</span><span class="pl-k">$</span><span class="pl-smi">cluster</span>,<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>,<span class="pl-v">cex</span><span class="pl-k">=</span><span class="pl-c1">2</span>)
 points(<span class="pl-smi">kmeansObj</span><span class="pl-k">$</span><span class="pl-smi">centers</span>,<span class="pl-v">col</span><span class="pl-k">=</span><span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">3</span>,<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">3</span>,<span class="pl-v">cex</span><span class="pl-k">=</span><span class="pl-c1">3</span>,<span class="pl-v">lwd</span><span class="pl-k">=</span><span class="pl-c1">3</span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/kmeans_plot.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/kmeans_plot.jpg" alt="k-means clustering plot" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/kmeans_plot.jpg" target="_blank"><img src="/../images/ds04/kmeans_plot.jpg" alt="k-means clustering plot" style="max-width:100%;"></a></p>
 <h3 id="82-k-means-clustering-and-heatmaps">8.2. K-means clustering and heatmaps</h3>
 <ul>
 <li>similar to hierarchical clustering</li>
@@ -1840,7 +1840,7 @@ points(<span class="pl-smi">kmeansObj</span><span class="pl-k">$</span><span cla
 par(<span class="pl-v">mfrow</span><span class="pl-k">=</span>c(<span class="pl-c1">1</span>,<span class="pl-c1">2</span>), <span class="pl-v">mar</span> <span class="pl-k">=</span> c(<span class="pl-c1">2</span>, <span class="pl-c1">4</span>, <span class="pl-c1">0.1</span>, <span class="pl-c1">0.1</span>))
 image(t(<span class="pl-smi">dataMatrix</span>)[,nrow(<span class="pl-smi">dataMatrix</span>)<span class="pl-k">:</span><span class="pl-c1">1</span>],<span class="pl-v">yaxt</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>n<span class="pl-pds">"</span></span>)
 image(t(<span class="pl-smi">dataMatrix</span>)[,order(<span class="pl-smi">kmeansObj</span><span class="pl-k">$</span><span class="pl-smi">cluster</span>)],<span class="pl-v">yaxt</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>n<span class="pl-pds">"</span></span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/kmeans_heatmap.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/kmeans_heatmap.jpg" alt="k-means clustering heatmap" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/kmeans_heatmap.jpg" target="_blank"><img src="/../images/ds04/kmeans_heatmap.jpg" alt="k-means clustering heatmap" style="max-width:100%;"></a></p>
 <h3 id="83-characteristics-of-k-means-clustering-algorithms">8.3. Characteristics of K-means Clustering Algorithms</h3>
 <ul>
 <li>requires number of clusters initially
@@ -1902,7 +1902,7 @@ image(t(<span class="pl-smi">dataOrdered</span>)[,nrow(<span class="pl-smi">data
 plot(rowMeans(<span class="pl-smi">dataOrdered</span>),<span class="pl-c1">40</span><span class="pl-k">:</span><span class="pl-c1">1</span>,,<span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Row Mean<span class="pl-pds">"</span></span>,<span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Row<span class="pl-pds">"</span></span>,<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>)
 <span class="pl-c"><span class="pl-c">#</span> column means (10 columns)</span>
 plot(colMeans(<span class="pl-smi">dataOrdered</span>),<span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Column<span class="pl-pds">"</span></span>,<span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Column Mean<span class="pl-pds">"</span></span>,<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_example.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_example.jpg" alt="dimension reduction" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/dimreduction_example.jpg" target="_blank"><img src="/../images/ds04/dimreduction_example.jpg" alt="dimension reduction" style="max-width:100%;"></a></p>
 <h3 id="91-singular-value-decomposition-svd">9.1. Singular Value Decomposition (SVD)</h3>
 <ul>
 <li>Let $X$ = matrix which each variable in column (measurement) and each observation in row (subject)</li>
@@ -1965,7 +1965,7 @@ image(t(<span class="pl-smi">dataOrdered</span>)[,nrow(<span class="pl-smi">data
 plot(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">u</span>[,<span class="pl-c1">1</span>],<span class="pl-c1">40</span><span class="pl-k">:</span><span class="pl-c1">1</span>,,<span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Row<span class="pl-pds">"</span></span>,<span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>First left singular vector<span class="pl-pds">"</span></span>,<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>)
 <span class="pl-c"><span class="pl-c">#</span> V vector - first column</span>
 plot(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">v</span>[,<span class="pl-c1">1</span>],<span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Column<span class="pl-pds">"</span></span>,<span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>First right singular vector<span class="pl-pds">"</span></span>,<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_svd.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_svd.jpg" alt="dimension reduction svd" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/dimreduction_svd.jpg" target="_blank"><img src="/../images/ds04/dimreduction_svd.jpg" alt="dimension reduction svd" style="max-width:100%;"></a></p>
 <ul>
 <li><strong>$D$ Matrix and Variance Explained</strong>
 <ul>
@@ -1986,7 +1986,7 @@ par(<span class="pl-v">mfrow</span><span class="pl-k">=</span>c(<span class="pl-
 plot(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">d</span>,<span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Column<span class="pl-pds">"</span></span>,<span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Singular value<span class="pl-pds">"</span></span>,<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>)
 <span class="pl-c"><span class="pl-c">#</span> plot proportion of variance explained</span>
 plot(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">d</span><span class="pl-k">^</span><span class="pl-c1">2</span><span class="pl-k">/</span>sum(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">d</span><span class="pl-k">^</span><span class="pl-c1">2</span>),<span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Column<span class="pl-pds">"</span></span>,<span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Prop. of variance explained<span class="pl-pds">"</span></span>,<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_varianceexplained.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_varianceexplained.jpg" alt="dimension reduction variance explained" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/dimreduction_varianceexplained.jpg" target="_blank"><img src="/../images/ds04/dimreduction_varianceexplained.jpg" alt="dimension reduction variance explained" style="max-width:100%;"></a></p>
 <p>Variance explained by single variable:</p>
 <div class="highlight highlight-source-r"><pre><span class="pl-smi">constantMatrix</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">dataOrdered</span><span class="pl-k">*</span><span class="pl-c1">0</span>
 <span class="pl-k">for</span>(<span class="pl-smi">i</span> <span class="pl-k">in</span> <span class="pl-c1">1</span><span class="pl-k">:</span>dim(<span class="pl-smi">dataOrdered</span>)[<span class="pl-c1">1</span>]){<span class="pl-smi">constantMatrix</span>[<span class="pl-smi">i</span>,] <span class="pl-k">&lt;-</span> rep(c(<span class="pl-c1">0</span>,<span class="pl-c1">1</span>),<span class="pl-v">each</span><span class="pl-k">=</span><span class="pl-c1">5</span>)}
@@ -1996,7 +1996,7 @@ par(<span class="pl-v">mfrow</span><span class="pl-k">=</span>c(<span class="pl-
 image(t(<span class="pl-smi">constantMatrix</span>)[,nrow(<span class="pl-smi">constantMatrix</span>)<span class="pl-k">:</span><span class="pl-c1">1</span>])
 plot(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">d</span>,<span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Column<span class="pl-pds">"</span></span>,<span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Singular value<span class="pl-pds">"</span></span>,<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>)
 plot(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">d</span><span class="pl-k">^</span><span class="pl-c1">2</span><span class="pl-k">/</span>sum(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">d</span><span class="pl-k">^</span><span class="pl-c1">2</span>),<span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Column<span class="pl-pds">"</span></span>,<span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Prop. of variance explained<span class="pl-pds">"</span></span>,<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_variance_singlevar.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_variance_singlevar.jpg" alt="dimension reduction variance single var" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/dimreduction_variance_singlevar.jpg" target="_blank"><img src="/../images/ds04/dimreduction_variance_singlevar.jpg" alt="dimension reduction variance single var" style="max-width:100%;"></a></p>
 <ul>
 <li><strong>Relationship to PCA</strong>
 <ul>
@@ -2022,7 +2022,7 @@ plot(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-
 plot(<span class="pl-smi">pca1</span><span class="pl-k">$</span><span class="pl-smi">rotation</span>[,<span class="pl-c1">1</span>],<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">v</span>[,<span class="pl-c1">1</span>],<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>,<span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Principal Component 1<span class="pl-pds">"</span></span>,
     <span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Right Singular Vector 1<span class="pl-pds">"</span></span>)
 abline(c(<span class="pl-c1">0</span>,<span class="pl-c1">1</span>))</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_relation_pca.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_relation_pca.jpg" alt="dimension reduction relationship to pca" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/dimreduction_relation_pca.jpg" target="_blank"><img src="/../images/ds04/dimreduction_relation_pca.jpg" alt="dimension reduction relationship to pca" style="max-width:100%;"></a></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> summarize PCA</span>
 summary(<span class="pl-smi">pca1</span>)</pre></div>
 <pre><code>## Importance of components:
@@ -2086,7 +2086,7 @@ plot(<span class="pl-smi">svd2</span><span class="pl-k">$</span><span class="pl-
 par(<span class="pl-v">mfrow</span> <span class="pl-k">=</span> c(<span class="pl-c1">1</span>, <span class="pl-c1">2</span>))
 plot(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">d</span>, <span class="pl-v">xlab</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Column<span class="pl-pds">"</span></span>, <span class="pl-v">ylab</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Singular value<span class="pl-pds">"</span></span>, <span class="pl-v">pch</span> <span class="pl-k">=</span> <span class="pl-c1">19</span>)
 plot(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">d</span><span class="pl-k">^</span><span class="pl-c1">2</span><span class="pl-k">/</span>sum(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">d</span><span class="pl-k">^</span><span class="pl-c1">2</span>), <span class="pl-v">xlab</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Column<span class="pl-pds">"</span></span>, <span class="pl-v">ylab</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Percent of variance explained<span class="pl-pds">"</span></span>, <span class="pl-v">pch</span> <span class="pl-k">=</span> <span class="pl-c1">19</span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_complexexample.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_complexexample.jpg" alt="dimension reduction more complex example" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/dimreduction_complexexample.jpg" target="_blank"><img src="/../images/ds04/dimreduction_complexexample.jpg" alt="dimension reduction more complex example" style="max-width:100%;"></a></p>
 <ul>
 <li><strong>Missing Data</strong>
 <ul>
@@ -2116,7 +2116,7 @@ plot(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-
 par(<span class="pl-v">mfrow</span><span class="pl-k">=</span>c(<span class="pl-c1">1</span>,<span class="pl-c1">2</span>))
 plot(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">v</span>[,<span class="pl-c1">1</span>],<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>, <span class="pl-v">main</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Original<span class="pl-pds">"</span></span>)
 plot(<span class="pl-smi">svd2</span><span class="pl-k">$</span><span class="pl-smi">v</span>[,<span class="pl-c1">1</span>],<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>, <span class="pl-v">main</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Imputed<span class="pl-pds">"</span></span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_missingdata.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_missingdata.jpg" alt="dimension reduction missing data" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/dimreduction_missingdata.jpg" target="_blank"><img src="/../images/ds04/dimreduction_missingdata.jpg" alt="dimension reduction missing data" style="max-width:100%;"></a></p>
 <h3 id="94-create-approximationsdata-compression">9.4. Create Approximations/Data Compression</h3>
 <ul>
 <li>SVD can be used to create lower rank representation, or compressed representation of data</li>
@@ -2128,7 +2128,7 @@ load(<span class="pl-s"><span class="pl-pds">"</span>face.rda<span class="pl-pds
 <span class="pl-c"><span class="pl-c">#</span> perform SVD</span>
 <span class="pl-smi">svd3</span> <span class="pl-k">&lt;-</span> svd(scale(<span class="pl-smi">faceData</span>))
 plot(<span class="pl-smi">svd3</span><span class="pl-k">$</span><span class="pl-smi">d</span><span class="pl-k">^</span><span class="pl-c1">2</span><span class="pl-k">/</span>sum(<span class="pl-smi">svd3</span><span class="pl-k">$</span><span class="pl-smi">d</span><span class="pl-k">^</span><span class="pl-c1">2</span>),<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>,<span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Singular vector<span class="pl-pds">"</span></span>,<span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Variance explained<span class="pl-pds">"</span></span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_face_variance_explained.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_face_variance_explained.jpg" alt="dimension reduction face variance explained" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/dimreduction_face_variance_explained.jpg" target="_blank"><img src="/../images/ds04/dimreduction_face_variance_explained.jpg" alt="dimension reduction face variance explained" style="max-width:100%;"></a></p>
 <ul>
 <li>approximations can thus be created by taking the first few components and using matrix multiplication with the corresponding $U$, $V$, and $D$ components</li>
 </ul>
@@ -2146,7 +2146,7 @@ image(t(<span class="pl-smi">approx1</span>)[,nrow(<span class="pl-smi">approx1<
 image(t(<span class="pl-smi">approx5</span>)[,nrow(<span class="pl-smi">approx5</span>)<span class="pl-k">:</span><span class="pl-c1">1</span>], <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>5 Component<span class="pl-pds">"</span></span>)
 image(t(<span class="pl-smi">approx10</span>)[,nrow(<span class="pl-smi">approx10</span>)<span class="pl-k">:</span><span class="pl-c1">1</span>], <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>10 Component<span class="pl-pds">"</span></span>)
 image(t(<span class="pl-smi">faceData</span>)[,nrow(<span class="pl-smi">faceData</span>)<span class="pl-k">:</span><span class="pl-c1">1</span>], <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Original<span class="pl-pds">"</span></span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_face_approx.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/dimreduction_face_approx.jpg" alt="dimension reduction face approx" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/dimreduction_face_approx.jpg" target="_blank"><img src="/../images/ds04/dimreduction_face_approx.jpg" alt="dimension reduction face approx" style="max-width:100%;"></a></p>
 <h3 id="95-notes-and-further-resources">9.5. Notes and further resources</h3>
 <ul>
 <li><strong>Scale matters</strong>: when reducing dimensions you have to pay attention to the scales on which different variables are measured and make sure that all your data is in consistent units</li>
@@ -2244,7 +2244,7 @@ par(<span class="pl-v">mfrow</span><span class="pl-k">=</span>c(<span class="pl-
 plot(<span class="pl-smi">x</span>, <span class="pl-smi">y</span>, <span class="pl-v">pch</span> <span class="pl-k">=</span> <span class="pl-c1">19</span>, <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Default<span class="pl-pds">"</span></span>)
 <span class="pl-c"><span class="pl-c">#</span> using transparency shows data much better</span>
 plot(<span class="pl-smi">x</span>, <span class="pl-smi">y</span>, <span class="pl-v">col</span> <span class="pl-k">=</span> rgb(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0.2</span>), <span class="pl-v">pch</span> <span class="pl-k">=</span> <span class="pl-c1">19</span>, <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>With Transparency<span class="pl-pds">"</span></span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/color_rgb.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/color_rgb.jpg" alt="rgb" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/color_rgb.jpg" target="_blank"><img src="/../images/ds04/color_rgb.jpg" alt="rgb" style="max-width:100%;"></a></li>
 </ul>
 </li>
 </ul>
@@ -2264,7 +2264,7 @@ plot(<span class="pl-smi">x</span>, <span class="pl-smi">y</span>, <span class="
 </li>
 <li>palette information from the <code>RColorBrewer</code> package can be used by <code>colorRamp()</code> and <code>colorRampPalette()</code> functions</li>
 <li><strong>available colors palettes</strong>:<br>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/color_colorpalettes.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/color_colorpalettes.jpg" alt="color palettes" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/color_colorpalettes.jpg" target="_blank"><img src="/../images/ds04/color_colorpalettes.jpg" alt="color palettes" style="max-width:100%;"></a></li>
 <li><strong><code>brewer.pal(n, "BuGn")</code> function</strong>
 <ul>
 <li><code>n</code> = number of colors to generated</li>
@@ -2289,7 +2289,7 @@ image(<span class="pl-smi">volcano</span>, <span class="pl-v">main</span> <span 
 image(<span class="pl-smi">volcano</span>, <span class="pl-v">col</span> <span class="pl-k">=</span> topo.colors(<span class="pl-c1">20</span>), <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Topographical Colors<span class="pl-pds">"</span></span>)
 <span class="pl-c"><span class="pl-c">#</span> RColorBrewer colors</span>
 image(<span class="pl-smi">volcano</span>, <span class="pl-v">col</span> <span class="pl-k">=</span> pal(<span class="pl-c1">20</span>), <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>RColorBrewer Colors<span class="pl-pds">"</span></span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/color_rcolorbrewer.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/color_rcolorbrewer.jpg" alt="rcolorbrewer" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/color_rcolorbrewer.jpg" target="_blank"><img src="/../images/ds04/color_rcolorbrewer.jpg" alt="rcolorbrewer" style="max-width:100%;"></a></li>
 <li><strong><code>smoothScatter</code> function</strong>
 <ul>
 <li>used to plot <strong>large quantities of data points</strong></li>
@@ -2298,7 +2298,7 @@ image(<span class="pl-smi">volcano</span>, <span class="pl-v">col</span> <span c
 <li><strong>Example</strong>:
 <div class="highlight highlight-source-r"><pre><span class="pl-smi">x</span> <span class="pl-k">&lt;-</span> rnorm(<span class="pl-c1">10000</span>); <span class="pl-smi">y</span> <span class="pl-k">&lt;-</span> rnorm(<span class="pl-c1">10000</span>)
 smoothScatter(<span class="pl-smi">x</span>, <span class="pl-smi">y</span>)</pre></div>
-<a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/color_smoothscatter.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/color_smoothscatter.jpg" alt="rcolorbrewer smoothScatter" style="max-width:100%;"></a></li>
+<a href="/../images/ds04/color_smoothscatter.jpg" target="_blank"><img src="/../images/ds04/color_smoothscatter.jpg" alt="rcolorbrewer smoothScatter" style="max-width:100%;"></a></li>
 </ul>
 </li>
 </ul>
@@ -2331,7 +2331,7 @@ plot(<span class="pl-smi">sub1</span>[, <span class="pl-c1">1</span>], <span cla
 plot(<span class="pl-smi">sub1</span>[, <span class="pl-c1">2</span>], <span class="pl-v">col</span> <span class="pl-k">=</span> <span class="pl-smi">sub1</span><span class="pl-k">$</span><span class="pl-smi">activity</span>, <span class="pl-v">ylab</span> <span class="pl-k">=</span> names(<span class="pl-smi">sub1</span>)[<span class="pl-c1">2</span>], <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Mean Body Acceleration for Y<span class="pl-pds">"</span></span>)
 <span class="pl-c"><span class="pl-c">#</span> add legend</span>
 legend(<span class="pl-s"><span class="pl-pds">"</span>bottomright<span class="pl-pds">"</span></span>,<span class="pl-v">legend</span><span class="pl-k">=</span>unique(<span class="pl-smi">sub1</span><span class="pl-k">$</span><span class="pl-smi">activity</span>),<span class="pl-v">col</span><span class="pl-k">=</span>unique(<span class="pl-smi">sub1</span><span class="pl-k">$</span><span class="pl-smi">activity</span>), <span class="pl-v">pch</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_plotting_avgAcc.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_plotting_avgAcc.jpg" alt="clustering case study plotting average acceleration" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/clusteringcasestudy_plotting_avgAcc.jpg" target="_blank"><img src="/../images/ds04/clusteringcasestudy_plotting_avgAcc.jpg" alt="clustering case study plotting average acceleration" style="max-width:100%;"></a></p>
 <p><strong>Clustering Based on Only Average Acceleration</strong></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> load myplclust function</span>
 source(<span class="pl-s"><span class="pl-pds">"</span>myplclust.R<span class="pl-pds">"</span></span>)
@@ -2341,20 +2341,20 @@ source(<span class="pl-s"><span class="pl-pds">"</span>myplclust.R<span class="p
 <span class="pl-smi">hclustering</span> <span class="pl-k">&lt;-</span> hclust(<span class="pl-smi">distanceMatrix</span>)
 <span class="pl-c"><span class="pl-c">#</span> run myplclust on data</span>
 myplclust(<span class="pl-smi">hclustering</span>, <span class="pl-v">lab.col</span> <span class="pl-k">=</span> unclass(<span class="pl-smi">sub1</span><span class="pl-k">$</span><span class="pl-smi">activity</span>))</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_dendrogram_avgAcc.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_dendrogram_avgAcc.jpg" alt="clustering case study dendrogram avg acceleration" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/clusteringcasestudy_dendrogram_avgAcc.jpg" target="_blank"><img src="/../images/ds04/clusteringcasestudy_dendrogram_avgAcc.jpg" alt="clustering case study dendrogram avg acceleration" style="max-width:100%;"></a></p>
 <p><strong>Plotting Max Acceleration for the First Subject</strong></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> create 1 x 2 panel</span>
 par(<span class="pl-v">mfrow</span><span class="pl-k">=</span>c(<span class="pl-c1">1</span>,<span class="pl-c1">2</span>))
 <span class="pl-c"><span class="pl-c">#</span> plot max accelecrations in x and y direction</span>
 plot(<span class="pl-smi">sub1</span>[,<span class="pl-c1">10</span>],<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>,<span class="pl-v">col</span><span class="pl-k">=</span><span class="pl-smi">sub1</span><span class="pl-k">$</span><span class="pl-smi">activity</span>,<span class="pl-v">ylab</span><span class="pl-k">=</span>names(<span class="pl-smi">sub1</span>)[<span class="pl-c1">10</span>],<span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Max Body Acceleration for X<span class="pl-pds">"</span></span>)
 plot(<span class="pl-smi">sub1</span>[,<span class="pl-c1">11</span>],<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>,<span class="pl-v">col</span> <span class="pl-k">=</span> <span class="pl-smi">sub1</span><span class="pl-k">$</span><span class="pl-smi">activity</span>,<span class="pl-v">ylab</span><span class="pl-k">=</span>names(<span class="pl-smi">sub1</span>)[<span class="pl-c1">11</span>],<span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Max Body Acceleration for Y<span class="pl-pds">"</span></span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_plotting_maxAcc.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_plotting_maxAcc.jpg" alt="clustering case study plotting max acceleration" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/clusteringcasestudy_plotting_maxAcc.jpg" target="_blank"><img src="/../images/ds04/clusteringcasestudy_plotting_maxAcc.jpg" alt="clustering case study plotting max acceleration" style="max-width:100%;"></a></p>
 <p><strong>Clustering Based on Maximum Acceleration</strong></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> calculate distance matrix for max distances</span>
 <span class="pl-smi">distanceMatrix</span> <span class="pl-k">&lt;-</span> dist(<span class="pl-smi">sub1</span>[,<span class="pl-c1">10</span><span class="pl-k">:</span><span class="pl-c1">12</span>])
 <span class="pl-smi">hclustering</span> <span class="pl-k">&lt;-</span> hclust(<span class="pl-smi">distanceMatrix</span>)
 myplclust(<span class="pl-smi">hclustering</span>,<span class="pl-v">lab.col</span><span class="pl-k">=</span>unclass(<span class="pl-smi">sub1</span><span class="pl-k">$</span><span class="pl-smi">activity</span>))</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_dendrogram_maxAcc.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_dendrogram_maxAcc.jpg" alt="clustering case study dendrogram max acceleration" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/clusteringcasestudy_dendrogram_maxAcc.jpg" target="_blank"><img src="/../images/ds04/clusteringcasestudy_dendrogram_maxAcc.jpg" alt="clustering case study dendrogram max acceleration" style="max-width:100%;"></a></p>
 <p><strong>Singular Value Decomposition</strong></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> perform SVD minus last two columns (subject and activity)</span>
 <span class="pl-v">svd1</span> <span class="pl-k">=</span> svd(scale(<span class="pl-smi">sub1</span>[,<span class="pl-k">-</span>c(<span class="pl-c1">562</span>,<span class="pl-c1">563</span>)]))
@@ -2365,18 +2365,18 @@ par(<span class="pl-v">mfrow</span><span class="pl-k">=</span>c(<span class="pl-
 plot(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">u</span>[,<span class="pl-c1">1</span>],<span class="pl-v">col</span><span class="pl-k">=</span><span class="pl-smi">sub1</span><span class="pl-k">$</span><span class="pl-smi">activity</span>,<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>, <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>First Left Singular Vector<span class="pl-pds">"</span></span>)
 <span class="pl-c"><span class="pl-c">#</span> pink dots indicate that there are some kind of up and down movement (activity: walkup)</span>
 plot(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">u</span>[,<span class="pl-c1">2</span>],<span class="pl-v">col</span><span class="pl-k">=</span><span class="pl-smi">sub1</span><span class="pl-k">$</span><span class="pl-smi">activity</span>,<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>, <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Second Left Singular Vector<span class="pl-pds">"</span></span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_svd.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_svd.jpg" alt="clustering case study svd" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/clusteringcasestudy_svd.jpg" target="_blank"><img src="/../images/ds04/clusteringcasestudy_svd.jpg" alt="clustering case study svd" style="max-width:100%;"></a></p>
 <p><strong>New Clustering with Maximum Contributers</strong></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> see plot of svd1$v will reveal something (answer: nothing)</span>
 plot(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">v</span>[, <span class="pl-c1">2</span>], <span class="pl-v">pch</span> <span class="pl-k">=</span> <span class="pl-c1">19</span>, <span class="pl-v">col</span> <span class="pl-k">=</span> alpha(<span class="pl-c1">1</span>, <span class="pl-c1">0.5</span>))</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_rightColVec.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_rightColVec.jpg" alt="clustering case study right col vec" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/clusteringcasestudy_rightColVec.jpg" target="_blank"><img src="/../images/ds04/clusteringcasestudy_rightColVec.jpg" alt="clustering case study right col vec" style="max-width:100%;"></a></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> find the max contributing feature</span>
 <span class="pl-smi">maxContrib</span> <span class="pl-k">&lt;-</span> which.max(<span class="pl-smi">svd1</span><span class="pl-k">$</span><span class="pl-smi">v</span>[,<span class="pl-c1">2</span>])
 <span class="pl-c"><span class="pl-c">#</span> recalculate distance matrix</span>
 <span class="pl-smi">distanceMatrix</span> <span class="pl-k">&lt;-</span> dist(<span class="pl-smi">sub1</span>[, c(<span class="pl-c1">10</span><span class="pl-k">:</span><span class="pl-c1">12</span>,<span class="pl-smi">maxContrib</span>)])
 <span class="pl-smi">hclustering</span> <span class="pl-k">&lt;-</span> hclust(<span class="pl-smi">distanceMatrix</span>)
 myplclust(<span class="pl-smi">hclustering</span>,<span class="pl-v">lab.col</span><span class="pl-k">=</span>unclass(<span class="pl-smi">sub1</span><span class="pl-k">$</span><span class="pl-smi">activity</span>))</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_dendrogram_maxContr.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_dendrogram_maxContr.jpg" alt="clustering case study dendrogram max acceleration" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/clusteringcasestudy_dendrogram_maxContr.jpg" target="_blank"><img src="/../images/ds04/clusteringcasestudy_dendrogram_maxContr.jpg" alt="clustering case study dendrogram max acceleration" style="max-width:100%;"></a></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> name of max contributing factor</span>
 names(<span class="pl-smi">samsungData</span>)[<span class="pl-smi">maxContrib</span>]</pre></div>
 <pre><code>## [1] "fBodyAcc.meanFreq...Z"
@@ -2428,7 +2428,7 @@ table(<span class="pl-smi">kClust</span><span class="pl-k">$</span><span class="
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> plot first 12 centers of k-means for laying to understand which features drive the activity</span>
 <span class="pl-smi">laying</span> <span class="pl-k">&lt;-</span> which(<span class="pl-smi">kClust</span><span class="pl-k">$</span><span class="pl-smi">size</span><span class="pl-k">==</span><span class="pl-c1">29</span>)
 plot(<span class="pl-smi">kClust</span><span class="pl-k">$</span><span class="pl-smi">centers</span>[<span class="pl-smi">laying</span>,<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">12</span>],<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>,<span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Laying Cluster<span class="pl-pds">"</span></span>,<span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_laying.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_laying.jpg" alt="clustering case study laying" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/clusteringcasestudy_laying.jpg" target="_blank"><img src="/../images/ds04/clusteringcasestudy_laying.jpg" alt="clustering case study laying" style="max-width:100%;"></a></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> We see the first 3 columns dominate this cluster center.</span>
 <span class="pl-c"><span class="pl-c">#</span> what do these columns contain?</span>
 names(<span class="pl-smi">sub1</span>[,<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">3</span>])
@@ -2441,7 +2441,7 @@ names(<span class="pl-smi">sub1</span>[,<span class="pl-c1">1</span><span class=
 plot(<span class="pl-smi">kClust</span><span class="pl-k">$</span><span class="pl-smi">centers</span>[<span class="pl-smi">walkdown</span>,<span class="pl-c1">1</span><span class="pl-k">:</span><span class="pl-c1">12</span>],<span class="pl-v">pch</span><span class="pl-k">=</span><span class="pl-c1">19</span>,<span class="pl-v">ylab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Walkdown Center<span class="pl-pds">"</span></span>,<span class="pl-v">xlab</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>)
 <span class="pl-c"><span class="pl-c">#</span> We see an interesting pattern here. From left to right, looking at the 12 acceleration </span>
 <span class="pl-c"><span class="pl-c">#</span> measurements in groups of 3, the points decrease in value.</span></pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_walkdown.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/clusteringcasestudy_walkdown.jpg" alt="clustering case study walking" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/clusteringcasestudy_walkdown.jpg" target="_blank"><img src="/../images/ds04/clusteringcasestudy_walkdown.jpg" alt="clustering case study walking" style="max-width:100%;"></a></p>
 <h2 id="12-case-study-air-pollution">12. Case Study: Air Pollution</h2>
 <p><strong>Read Raw Data from 1999 and 2012 (<a href="http://goo.gl/soQZHM">EPA Air Pollution Data</a>)</strong></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> read in raw data from 1999</span>
@@ -2484,7 +2484,7 @@ summary(<span class="pl-smi">x1</span>)</pre></div>
 boxplot(<span class="pl-smi">x0</span>, <span class="pl-smi">x1</span>, <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Regular Boxplot<span class="pl-pds">"</span></span>)
 <span class="pl-c"><span class="pl-c">#</span> log boxplot, significant difference in means, but more spread</span>
 boxplot(log10(<span class="pl-smi">x0</span>), log10(<span class="pl-smi">x1</span>), <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>log Boxplot<span class="pl-pds">"</span></span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/casestudy_boxplot.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/casestudy_boxplot.jpg" alt="case study airpollution boxplot" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/casestudy_boxplot.jpg" target="_blank"><img src="/../images/ds04/casestudy_boxplot.jpg" alt="case study airpollution boxplot" style="max-width:100%;"></a></p>
 <p><strong>Check for Negative Values in 'x1'</strong></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> summary again</span>
 summary(<span class="pl-smi">x1</span>)</pre></div>
@@ -2507,10 +2507,10 @@ mean(<span class="pl-smi">negative</span>, <span class="pl-v">na.rm</span> <span
 
 <span class="pl-c"><span class="pl-c">#</span> plot the histogram</span>
 hist(<span class="pl-smi">dates</span>, <span class="pl-s"><span class="pl-pds">"</span>month<span class="pl-pds">"</span></span>)  <span class="pl-c"><span class="pl-c">#</span># Check what's going on in months 1--6</span></pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/casestudy_hist.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/casestudy_hist.jpg" alt="case study airpollution histogram" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/casestudy_hist.jpg" target="_blank"><img src="/../images/ds04/casestudy_hist.jpg" alt="case study airpollution histogram" style="max-width:100%;"></a></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> plot the histogram of dates where values are negative</span>
 hist(<span class="pl-smi">dates</span>[<span class="pl-smi">negative</span>], <span class="pl-s"><span class="pl-pds">"</span>month<span class="pl-pds">"</span></span>)  <span class="pl-c"><span class="pl-c">#</span># Check what's going on in months 1--6</span></pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/casestudy_hist_neg.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/casestudy_hist_neg.jpg" alt="case study airpollution histogram of negative values" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/casestudy_hist_neg.jpg" target="_blank"><img src="/../images/ds04/casestudy_hist_neg.jpg" alt="case study airpollution histogram of negative values" style="max-width:100%;"></a></p>
 <p><strong>Check Same New York Monitors at 1999 and 2012</strong></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> find unique monitors in New York in 1999</span>
 <span class="pl-smi">site0</span> <span class="pl-k">&lt;-</span> unique(subset(<span class="pl-smi">pm0</span>, <span class="pl-smi">State.Code</span> <span class="pl-k">==</span> <span class="pl-c1">36</span>, c(<span class="pl-smi">County.Code</span>, <span class="pl-smi">Site.ID</span>)))
@@ -2563,7 +2563,7 @@ dim(<span class="pl-smi">pm1sub</span>)</pre></div>
 <span class="pl-smi">dates1</span> <span class="pl-k">&lt;-</span> as.Date(as.character(<span class="pl-smi">dates1</span>), <span class="pl-s"><span class="pl-pds">"</span>%Y%m%d<span class="pl-pds">"</span></span>)
 <span class="pl-c"><span class="pl-c">#</span> plot pm2.5 value vs time</span>
 plot(<span class="pl-smi">dates1</span>, <span class="pl-smi">x1sub</span>, <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>NY PM2.5 Pollution Level in 2012<span class="pl-pds">"</span></span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/casestudy_plotNY2012.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/casestudy_plotNY2012.jpg" alt="case study NY airpollution plot 2012" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/casestudy_plotNY2012.jpg" target="_blank"><img src="/../images/ds04/casestudy_plotNY2012.jpg" alt="case study NY airpollution plot 2012" style="max-width:100%;"></a></p>
 <p><strong>Plot data for 1999</strong></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> capture the dates of the subset of data</span>
 <span class="pl-smi">dates0</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">pm0sub</span><span class="pl-k">$</span><span class="pl-smi">Date</span>
@@ -2573,7 +2573,7 @@ plot(<span class="pl-smi">dates1</span>, <span class="pl-smi">x1sub</span>, <spa
 <span class="pl-smi">x0sub</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">pm0sub</span><span class="pl-k">$</span><span class="pl-smi">Sample.Value</span>
 <span class="pl-c"><span class="pl-c">#</span> plot pm2.5 value vs time</span>
 plot(<span class="pl-smi">dates0</span>, <span class="pl-smi">x0sub</span>, <span class="pl-v">main</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>NY PM2.5 Pollution Level in 1999<span class="pl-pds">"</span></span>)</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/casestudy_plotNY1999.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/casestudy_plotNY1999.jpg" alt="case study NY airpollution plot 1999" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/casestudy_plotNY1999.jpg" target="_blank"><img src="/../images/ds04/casestudy_plotNY1999.jpg" alt="case study NY airpollution plot 1999" style="max-width:100%;"></a></p>
 <p><strong>Panel Plot for Both Years</strong></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> find max range for data</span>
 <span class="pl-smi">rng</span> <span class="pl-k">&lt;-</span> range(<span class="pl-smi">x0sub</span>, <span class="pl-smi">x1sub</span>, <span class="pl-v">na.rm</span> <span class="pl-k">=</span> <span class="pl-c1">T</span>)
@@ -2587,7 +2587,7 @@ abline(<span class="pl-v">h</span> <span class="pl-k">=</span> median(<span clas
 plot(<span class="pl-smi">dates1</span>, <span class="pl-smi">x1sub</span>, <span class="pl-v">pch</span> <span class="pl-k">=</span> <span class="pl-c1">20</span>, <span class="pl-v">ylim</span> <span class="pl-k">=</span> <span class="pl-smi">rng</span>, <span class="pl-v">main</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Pollution in 2012<span class="pl-pds">"</span></span>)
 <span class="pl-c"><span class="pl-c">#</span> plot the median</span>
 abline(<span class="pl-v">h</span> <span class="pl-k">=</span> median(<span class="pl-smi">x1sub</span>, <span class="pl-v">na.rm</span> <span class="pl-k">=</span> <span class="pl-c1">T</span>))</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/casestudy_panel.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/casestudy_panel.jpg" alt="case study airpollution panel" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/casestudy_panel.jpg" target="_blank"><img src="/../images/ds04/casestudy_panel.jpg" alt="case study airpollution panel" style="max-width:100%;"></a></p>
 <p><strong>Find State-wide Means and Trend</strong></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> divide data by state and find tne mean of pollution level for 1999</span>
 <span class="pl-smi">mn0</span> <span class="pl-k">&lt;-</span> with(<span class="pl-smi">pm0</span>, tapply(<span class="pl-smi">Sample.Value</span>, <span class="pl-smi">State.Code</span>, <span class="pl-smi">mean</span>, <span class="pl-v">na.rm</span> <span class="pl-k">=</span> <span class="pl-c1">T</span>))
@@ -2621,7 +2621,7 @@ with(<span class="pl-smi">mrg</span>, plot(rep(<span class="pl-c1">1999</span>, 
 with(<span class="pl-smi">mrg</span>, points(rep(<span class="pl-c1">2012</span>, <span class="pl-c1">52</span>), <span class="pl-smi">mrg</span>[, <span class="pl-c1">3</span>]))
 <span class="pl-c"><span class="pl-c">#</span> connected the dots</span>
 segments(rep(<span class="pl-c1">1999</span>, <span class="pl-c1">52</span>), <span class="pl-smi">mrg</span>[, <span class="pl-c1">2</span>], rep(<span class="pl-c1">2012</span>, <span class="pl-c1">52</span>), <span class="pl-smi">mrg</span>[, <span class="pl-c1">3</span>])</pre></div>
-<p><a href="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/casestudy_pollutionLevels.jpg" target="_blank"><img src="///C://Users/mymai/OneDrive/Projects/GitHub/markdown%20files/images/ds04/casestudy_pollutionLevels.jpg" alt="case study airpollution pollution levels" style="max-width:100%;"></a></p>
+<p><a href="/../images/ds04/casestudy_pollutionLevels.jpg" target="_blank"><img src="/../images/ds04/casestudy_pollutionLevels.jpg" alt="case study airpollution pollution levels" style="max-width:100%;"></a></p>
 <p><strong>Which states had higher means in 2012 than in 1999</strong></p>
 <div class="highlight highlight-source-r"><pre><span class="pl-c"><span class="pl-c">#</span> Only 4 states had worse pollution averages, and 2 of these had means that were very close.</span>
 <span class="pl-smi">mrg</span>[<span class="pl-smi">mrg</span><span class="pl-k">$</span><span class="pl-smi">mean.x</span> <span class="pl-k">&lt;</span> <span class="pl-smi">mrg</span><span class="pl-k">$</span><span class="pl-smi">mean.y</span>, ]</pre></div>
