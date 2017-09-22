@@ -1,5 +1,5 @@
 body {
-    background: url(https://source.unsplash.com/6WPcf5D1XdA);
+    background: url("../images/background.jpg") no-repeat fixed center;
     /*Make background fill the whole page*/
     background-size: cover;
     background-position: center;
