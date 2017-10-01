@@ -7,8 +7,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
 	rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
@@ -18,73 +17,71 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
 	<div class="container">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<span class="navbar-brand">alpenfritz</span>
-		</div>
+		<span class="navbar-brand mb-0">alpenfritz</span>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<!-- Make Home be active -->
-				<!-- <li class="active"><a href="landing.html">Home</a></li> -->
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Science <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="./pages/ds01-data-scientists-toolbox.html">Data Scientists Toolbox</a></li>
-						<li><a href="./pages/ds02-r-programming.html">R Programming</a></li>
-						<li><a href="./pages/ds03-getting-and-cleaning-data.html">Getting & Cleaning Data</a></li>
-						<li><a href="./pages/ds04-exploratory-data-analysis.html">Exploratory Data Analysis</a></li>
-						<li><a href="./pages/ds05-reproducible-research.html">Reproducible Research</a></li>
-						<li><a href="./pages/ds06-statistical-inference.html">Statistical Inference</a></li>
-						<li><a href="./pages/ds07-regression-models.html">Regression Models</a></li>
-						<li><a href="./pages/ds08-practical-machine-learning.html">Practical Machine Learning</a></li>
-						<li><a href="./pages/ds09-developing-data-products.html">Developing Data Products</a></li>
-					</ul>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuDataScience" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data Science JHS</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<h1 class="dropdown-header">Course Notes</h1>
+						<a class="dropdown-item" href="./pages/ds01-data-scientists-toolbox.html">DS01: Data Scientists Toolbox</a>
+						<a class="dropdown-item" href="./pages/ds02-r-programming.html">DS02: R Programming</a>
+						<a class="dropdown-item" href="./pages/ds03-getting-and-cleaning-data.html">DS03: Getting & Cleaning Data</a>
+						<a class="dropdown-item" href="./pages/ds04-exploratory-data-analysis.html">DS04: Exploratory Data Analysis</a>
+						<a class="dropdown-item" href="./pages/ds05-reproducible-research.html">DS05: Reproducible Research</a>
+						<a class="dropdown-item" href="./pages/ds06-statistical-inference.html">DS06: Statistical Inference</a>
+						<a class="dropdown-item" href="./pages/ds07-regression-models.html">DS07: Regression Models</a>
+						<a class="dropdown-item" href="./pages/ds08-practical-machine-learning.html">DS08: Practical Machine Learning</a>
+						<a class="dropdown-item" href="./pages/ds09-developing-data-products.html">DS09: Developing Data Products</a>
+						<h1 class="dropdown-header">Mini Project Reports</h1>
+						<a class="dropdown-item" href="./pages/ds05-storm-analysis.html">DS05: Storm Analysis</a>
+						<a class="dropdown-item" href="./pages/ds06-simulation-exercise.pdf">DS06: Simulation Exercise</a>
+						<a class="dropdown-item" href="./pages/ds06-basic-inferential-data-analysis.pdf">DS06: Statistical Inference Exercise</a>
+						<a class="dropdown-item" href="./pages/ds07-regression-models-course-project.pdf">DS07: Regression Models Exercise</a>
+						<a class="dropdown-item" href="./pages/ds08-machine-learning-course-project.html">DS08: Machine Learning Exercise</a>
+					</div>
 				</li>
 
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cheatsheets <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="./pages/cheatsheet-git.html">Git</a></li>
-						<li><a href="./pages/cheatsheet-conda.html">Conda</a></li>
-						<li><a href="./pages/cheatsheet-docker.html">Docker</a></li>
-						<li><a href="./pages/cheatsheet-linux.html">Linux</a></li>
-					</ul>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuCheatsheets" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cheatsheets</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="./pages/cheatsheet-git.html">Git</a>
+						<a class="dropdown-item" href="./pages/cheatsheet-conda.html">Conda</a>
+						<a class="dropdown-item" href="./pages/cheatsheet-docker.html">Docker</a>
+						<a class="dropdown-item" href="./pages/cheatsheet-linux.html">Linux</a>
+					</div>
 				</li>
 
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorials <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="./pages/tutorial-hugo-cloud9-gae.html">Hugo-Cloud9-GAE</a></li>
-						<li><a href="./pages/tutorial-hugo-github-netlify.html">Hugo-Github-Netlify</a></li>
-						<li><a href="./pages/tutorial-jekyll.html">Jekyll</a></li>
-					</ul>
-				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuTutorials" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tutorials</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="./pages/tutorial-hugo-cloud9-gae.html">Hugo-Cloud9-GAE</a>
+						<a class="dropdown-item" href="./pages/tutorial-hugo-github-netlify.html">Hugo-Github-Netlify</a>
+						<a class="dropdown-item" href="./pages/tutorial-jekyll.html">Jekyll</a>
+					</div>
+				</li>		
 
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Playground <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="./pages/colorGame.html">Color Game</a></li>
-						<li><a href="./pages/tokyoUnis.html">Tokyo Universities</a></li>
-						<li><a href="./pages/plotly.html#1">Plotly Showcase</a></li>
-						<li><a href="https://alpenfritz.shinyapps.io/tokyopopmap/">Tokyo Population Map</a></li>
-						<li><a href="https://alpenfritz.github.io/tokyopopmap/">Slidify</a></li>
-					</ul>
-				</li>
-
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuPlayground" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Playground</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="./pages/colorGame.html">Color Game</a>
+						<a class="dropdown-item" href="./pages/tokyoUnis.html">Tokyo Universities</a>
+						<a class="dropdown-item" href="./pages/plotly.html#1">Plotly Showcase</a>
+						<a class="dropdown-item" href="https://alpenfritz.shinyapps.io/tokyopopmap/">Tokyo Population Map</a>
+						<a class="dropdown-item" href="https://alpenfritz.github.io/tokyopopmap/">Slidify</a>
+					</div>
+				</li>			
 			</ul>
-		</div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
+		</div>	
+	</div>
 </nav>
+
 
 <div class="container">
 	<div class="row">
@@ -99,17 +96,10 @@
 	</div>
 </div>
 
-<!-- <script src="http://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
-  crossorigin="anonymous">
-</script> -->
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
 
