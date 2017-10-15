@@ -810,14 +810,14 @@ MathJax.Hub.Config({
   onReady(function(){convertUML('uml-sequence-diagram', Diagram, {theme: 'simple'});});
 })(window, document)
 </script>
-<title>04 Javascript</title></head><body><article class="markdown-body"><h1 id="javascript">JavaScript</h1>
-<h2 id="resources">Resources</h2>
+<title>04 Javascript</title></head><body><article class="markdown-body"><h1 id="1-javascript">1. JavaScript</h1>
+<h2 id="11-resources">1.1. Resources</h2>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">MDN JavaScript Array</a></li>
 <li><a href="http://underscorejs.org/">Underscore.js</a></li>
 </ul>
-<h2 id="1-javascript-basics-intro">1. JavaScript Basics: Intro</h2>
-<h3 id="11primitive-dataytypes">1.1.Primitive Dataytypes</h3>
+<h2 id="12-javascript-basics-intro">1.2. JavaScript Basics: Intro</h2>
+<h3 id="121-primitive-dataytypes">1.2.1. Primitive Dataytypes</h3>
 <div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span>Numbers</span>
 <span class="pl-c1">4</span>
 <span class="pl-c1">9.3</span>
@@ -834,7 +834,7 @@ MathJax.Hub.Config({
 <span class="pl-c"><span class="pl-c">//</span>null and undefined</span>
 <span class="pl-c1">null</span>
 <span class="pl-c1">undefined</span></pre></div>
-<h4 id="111-numbers">1.1.1. Numbers</h4>
+<h4 id="1211-numbers">1.2.1.1. Numbers</h4>
 <div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span>Numbers</span>
 <span class="pl-c1">4</span>
 <span class="pl-c1">9.3</span>
@@ -848,7 +848,7 @@ MathJax.Hub.Config({
 <span class="pl-c1">10</span> <span class="pl-k">%</span> <span class="pl-c1">3</span> <span class="pl-c"><span class="pl-c">//</span>1</span>
 <span class="pl-c1">24</span> <span class="pl-k">%</span> <span class="pl-c1">2</span> <span class="pl-c"><span class="pl-c">//</span>0</span>
 <span class="pl-c1">15</span> <span class="pl-k">%</span> <span class="pl-c1">11</span> <span class="pl-c"><span class="pl-c">//</span>4</span></pre></div>
-<h4 id="112-strings">1.1.2. Strings</h4>
+<h4 id="1212-strings">1.2.1.2. Strings</h4>
 <div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span>Single or Double quotes OK</span>
 <span class="pl-s"><span class="pl-pds">"</span>hello world<span class="pl-pds">"</span></span>
 <span class="pl-s"><span class="pl-pds">'</span>hello world<span class="pl-pds">'</span></span>
@@ -866,7 +866,7 @@ MathJax.Hub.Config({
 <span class="pl-c"><span class="pl-c">//</span>Access individual characters using [] and an index</span>
 <span class="pl-s"><span class="pl-pds">"</span>hello<span class="pl-pds">"</span></span>[<span class="pl-c1">0</span>] <span class="pl-c"><span class="pl-c">//</span>"h"</span>
 <span class="pl-s"><span class="pl-pds">"</span>hello<span class="pl-pds">"</span></span>[<span class="pl-c1">4</span>] <span class="pl-c"><span class="pl-c">//</span>"o"</span></pre></div>
-<h4 id="113-variables">1.1.3. Variables</h4>
+<h4 id="1213-variables">1.2.1.3. Variables</h4>
 <ul>
 <li><strong>camel-cased</strong> (<code>camelCased</code>) VS <strong>kebab-cased</strong> or dash-cased (<code>kebab-cased</code>)</li>
 </ul>
@@ -888,7 +888,7 @@ num <span class="pl-k">+</span> <span class="pl-c1">3</span> <span class="pl-k">
 <span class="pl-c"><span class="pl-c">//</span>We can also update existing variables</span>
 <span class="pl-k">var</span> name <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Robert<span class="pl-pds">"</span></span>;
 name <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Bob<span class="pl-pds">"</span></span>;</pre></div>
-<h4 id="114-null-and-undefined">1.1.4. Null and Undefined</h4>
+<h4 id="1214-null-and-undefined">1.2.1.4. Null and Undefined</h4>
 <div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span>Variables that are declared but not initialized are undefined</span>
 <span class="pl-c"><span class="pl-c">//</span>The following variables are undefined:</span>
 <span class="pl-k">var</span> name;
@@ -897,7 +897,7 @@ name <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span
 <span class="pl-c"><span class="pl-c">//</span>null is "explicitly nothing"</span>
 <span class="pl-k">var</span> currentPlayer <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>charlie<span class="pl-pds">"</span></span>;
 currentPlayer <span class="pl-k">=</span> <span class="pl-c1">null</span>; <span class="pl-c"><span class="pl-c">//</span>game over</span></pre></div>
-<h3 id="12-useful-built-in-methods">1.2. Useful Built-In Methods</h3>
+<h3 id="122-useful-built-in-methods">1.2.2. Useful Built-In Methods</h3>
 <div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span>clear screen</span>
 <span class="pl-en">clear</span>();
 
@@ -949,8 +949,8 @@ currentPlayer <span class="pl-k">=</span> <span class="pl-c1">null</span>; <span
     <span class="pl-c"><span class="pl-c">//</span>return str</span>
     <span class="pl-k">return</span> newStr;
 }</pre></div>
-<h2 id="2-javascript-basics-control-flow">2. JavaScript Basics: Control Flow</h2>
-<h3 id="21-boolean-logic">2.1. Boolean Logic</h3>
+<h2 id="13-javascript-basics-control-flow">1.3. JavaScript Basics: Control Flow</h2>
+<h3 id="131-boolean-logic">1.3.1. Boolean Logic</h3>
 <ul>
 <li><strong>Comparison Operators</strong><br>
 Assuming x = 5</li>
@@ -1080,7 +1080,7 @@ Assuming x = 5 and y = 9</li>
 </ul>
 </li>
 </ul>
-<h3 id="22-js-conditionals">2.2. JS Conditionals</h3>
+<h3 id="132-js-conditionals">1.3.2. JS Conditionals</h3>
 <div class="highlight highlight-source-js"><pre><span class="pl-k">if</span>(age <span class="pl-k">&lt;</span> <span class="pl-c1">18</span>) {
     <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>Sorry, you are not old enough to enter the venue<span class="pl-pds">"</span></span>);
 }
@@ -1090,7 +1090,7 @@ Assuming x = 5 and y = 9</li>
 <span class="pl-k">else</span> {
     <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>Come on in. You can drink<span class="pl-pds">"</span></span>);
 }</pre></div>
-<h3 id="23-while-loop">2.3. While Loop</h3>
+<h3 id="133-while-loop">1.3.3. While Loop</h3>
 <div class="highlight highlight-source-js"><pre><span class="pl-k">while</span>(someCondition) {
     <span class="pl-c"><span class="pl-c">//</span>run some code</span>
 }
@@ -1127,7 +1127,7 @@ Assuming x = 5 and y = 9</li>
     }
     counter<span class="pl-k">+=</span><span class="pl-c1">1</span>;
 }</pre></div>
-<h3 id="24-for-loop">2.4. For Loop</h3>
+<h3 id="134-for-loop">1.3.4. For Loop</h3>
 <div class="highlight highlight-source-js"><pre><span class="pl-k">for</span>(init; condition; step) {
     <span class="pl-c"><span class="pl-c">//</span>run some code</span>
 }
@@ -1157,7 +1157,7 @@ Assuming x = 5 and y = 9</li>
         <span class="pl-en">console</span>.<span class="pl-c1">log</span>(i);
     }
 }</pre></div>
-<h2 id="3-javascript-basics-functions">3. JavaScript Basics: Functions</h2>
+<h2 id="14-javascript-basics-functions">1.4. JavaScript Basics: Functions</h2>
 <ul>
 <li>Function Declaration:</li>
 </ul>
@@ -1172,7 +1172,7 @@ Assuming x = 5 and y = 9</li>
 <div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-en">square</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">x</span>) {
     <span class="pl-k">return</span> x<span class="pl-k">*</span>x;
 }</pre></div>
-<h3 id="31-js-scope">3.1. JS Scope</h3>
+<h3 id="141-js-scope">1.4.1. JS Scope</h3>
 <ul>
 <li>Scope is the <strong>context</strong> that code is executed in</li>
 </ul>
@@ -1214,7 +1214,7 @@ y               <span class="pl-c"><span class="pl-c">//</span> now also returns
 
 <span class="pl-en">doSomething</span>()   <span class="pl-c"><span class="pl-c">//</span> returns "Goodbye!"</span>
 phrase          <span class="pl-c"><span class="pl-c">//</span> returns "hi there!", not changed</span></pre></div>
-<h3 id="32-higher-order-functions">3.2. Higher Order Functions</h3>
+<h3 id="142-higher-order-functions">1.4.2. Higher Order Functions</h3>
 <ul>
 <li>Passing functions to other functions:</li>
 </ul>
@@ -1233,8 +1233,8 @@ phrase          <span class="pl-c"><span class="pl-c">//</span> returns "hi ther
     <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>I am an anonymous function!<span class="pl-pds">"</span></span>);
     <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>THIS IS AWESOME!<span class="pl-pds">"</span></span>);
     }, <span class="pl-c1">2000</span>);</pre></div>
-<h2 id="4-javascript-basics-arrays">4. JavaScript Basics: Arrays</h2>
-<h3 id="41-intro-to-arrays">4.1. Intro to Arrays</h3>
+<h2 id="15-javascript-basics-arrays">1.5. JavaScript Basics: Arrays</h2>
+<h3 id="151-intro-to-arrays">1.5.1. Intro to Arrays</h3>
 <ul>
 <li>Array are indexed starting at 0. Every slot has a corresponding number</li>
 </ul>
@@ -1271,7 +1271,7 @@ friends[<span class="pl-c1">4</span>] <span class="pl-k">=</span> <span class="p
     [<span class="pl-s"><span class="pl-pds">"</span>Mooney<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>wormtail<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Prongs<span class="pl-pds">"</span></span>]
 ];
 <span class="pl-en">console</span>.<span class="pl-c1">log</span>(friendGroups[<span class="pl-c1">2</span>][<span class="pl-c1">0</span>]);</pre></div>
-<h3 id="42-array-methods">4.2. Array Methods</h3>
+<h3 id="152-array-methods">1.5.2. Array Methods</h3>
 <ul>
 <li>Push and Pop</li>
 </ul>
@@ -1334,7 +1334,7 @@ friends[<span class="pl-c1">4</span>] <span class="pl-k">=</span> <span class="p
 <span class="pl-k">var</span> fruits <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">'</span>Banana<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>Orange<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>Lemon<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>Apple<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>Mango<span class="pl-pds">'</span></span>];
 <span class="pl-smi">fruits</span>.<span class="pl-c1">splice</span>(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>);            <span class="pl-c"><span class="pl-c">//</span> returns: ["Orange"]</span>
 <span class="pl-en">console</span>.<span class="pl-c1">log</span>(fruits);            <span class="pl-c"><span class="pl-c">//</span> prints: ["Banana", "Lemon", "Apple", "Mango"]</span></pre></div>
-<h3 id="43-array-iteration">4.3. Array Iteration</h3>
+<h3 id="153-array-iteration">1.5.3. Array Iteration</h3>
 <ul>
 <li>For Loop:</li>
 </ul>
@@ -1367,8 +1367,8 @@ friends[<span class="pl-c1">4</span>] <span class="pl-k">=</span> <span class="p
     <span class="pl-en">console</span>.<span class="pl-c1">log</span>(color);
 }
 <span class="pl-smi">colors</span>.<span class="pl-c1">forEach</span>(printColor);</pre></div>
-<h2 id="5-javascript-basics-objects">5. JavaScript Basics: Objects</h2>
-<h3 id="51-intro-to-objects">5.1. Intro to Objects</h3>
+<h2 id="16-javascript-basics-objects">1.6. JavaScript Basics: Objects</h2>
+<h3 id="161-intro-to-objects">1.6.1. Intro to Objects</h3>
 <ul>
 <li>Objects: Store data in <strong>key-value pairs</strong></li>
 </ul>
@@ -1457,7 +1457,7 @@ person[<span class="pl-s"><span class="pl-pds">"</span>age<span class="pl-pds">"
 ];
 
 posts[<span class="pl-c1">1</span>].<span class="pl-smi">comments</span>[<span class="pl-c1">1</span>]</pre></div>
-<h3 id="52-adding-methods-to-objects">5.2. Adding Methods to Objects</h3>
+<h3 id="162-adding-methods-to-objects">1.6.2. Adding Methods to Objects</h3>
 <div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> obj <span class="pl-k">=</span> {
     name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Chuck<span class="pl-pds">"</span></span>,
     age<span class="pl-k">:</span> <span class="pl-c1">45</span>,
@@ -1483,4 +1483,598 @@ posts[<span class="pl-c1">1</span>].<span class="pl-smi">comments</span>[<span c
     <span class="pl-c1">this</span>.<span class="pl-c1">data</span>.<span class="pl-c1">forEach</span>(<span class="pl-k">function</span>(<span class="pl-smi">el</span>){
         <span class="pl-en">console</span>.<span class="pl-c1">log</span>(el);
         });
-}</pre></div></article></body></html><script async>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+}</pre></div>
+<h1 id="2-intermediate-javascript">2. Intermediate JavaScript</h1>
+<h2 id="21-references">2.1. References</h2>
+<ul>
+<li><a href="http://webdev.slides.com/eschoppik/deck">Keyword <code>this</code></a></li>
+<li><a href="http://webdev.slides.com/eschoppik/deck-1">Intro to OOP</a></li>
+<li><a href="http://webdev.slides.com/eschoppik/deck-1-2">OOP Prototypes</a></li>
+<li><a href="http://webdev.slides.com/eschoppik/deck-1-2-3-4">Closures</a></li>
+</ul>
+<h2 id="22-keyword-this">2.2. Keyword <code>this</code></h2>
+<ul>
+<li>The keyword <code>this</code> is a reserved keyword in JavaScript and its value is determined at execution (= EXECUTION CONTEXT)</li>
+<li>It is either set using the:
+<ul>
+<li>global context,</li>
+<li>implicit/object binding,</li>
+<li>explicit binding, or</li>
+<li>the <code>new</code> keyword</li>
+</ul>
+</li>
+<li>When set in the global context in a function, it is either the global object (window if in the browser) or undefined (if we are using strict mode)</li>
+<li>To explicitly set the value of the keyword <code>this</code>, we use <code>call</code>, <code>apply</code>, or <code>bind</code></li>
+<li>We can also use the <code>new</code> keyword to set the <strong>context</strong> of <code>this</code>, which we will discuss when we talk about Object Oriented Programming</li>
+</ul>
+<h3 id="221-global-context">2.2.1. Global context</h3>
+<ul>
+<li>When <code>this</code> is not inside of a declared object</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-c1">this</span>) <span class="pl-c"><span class="pl-c">//</span> global object = window object</span>
+
+<span class="pl-k">function</span> <span class="pl-en">whatIsThis</span>(){
+    <span class="pl-k">return</span> <span class="pl-c1">this</span>
+}
+
+<span class="pl-k">function</span> <span class="pl-en">variablesInThis</span>(){
+    <span class="pl-c"><span class="pl-c">//</span> since the value of 'this' is the window</span>
+    <span class="pl-c"><span class="pl-c">//</span> all we are doing here is creating a global variable</span>
+    <span class="pl-c1">this</span>.<span class="pl-smi">person</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Elie<span class="pl-pds">"</span></span>
+}
+
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(person) <span class="pl-c"><span class="pl-c">//</span> Elie</span>
+
+<span class="pl-en">whatIsThis</span>() <span class="pl-c"><span class="pl-c">//</span> window</span></pre></div>
+<ul>
+<li><strong>Strict Mode</strong>: When we enable strict mode and we are not inside a declared object</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-s"><span class="pl-pds">"</span>use strict<span class="pl-pds">"</span></span>
+
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-c1">this</span>) <span class="pl-c"><span class="pl-c">//</span> window</span>
+
+<span class="pl-k">function</span> <span class="pl-en">whatIsThis</span>(){
+    <span class="pl-k">return</span> <span class="pl-c1">this</span>
+}
+
+<span class="pl-k">function</span> <span class="pl-en">variablesInThis</span>(){
+    <span class="pl-c"><span class="pl-c">//</span> since we are in strict mode this is undefined</span>
+    <span class="pl-c"><span class="pl-c">//</span> so what happens if we add a property on undefined?</span>
+    <span class="pl-c"><span class="pl-c">//</span> let's see what happens when we call the function...</span>
+    <span class="pl-c1">this</span>.<span class="pl-smi">person</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Elie<span class="pl-pds">"</span></span>
+}
+
+<span class="pl-en">variablesInThis</span>() <span class="pl-c"><span class="pl-c">//</span> TypeError, can't set person on undefined! </span>
+
+<span class="pl-en">whatIsThis</span>() <span class="pl-c"><span class="pl-c">//</span> undefined</span></pre></div>
+<h3 id="222-implicitobject">2.2.2. Implicit/Object</h3>
+<ul>
+<li>When the keyword <code>this</code> IS inside of a declared object</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> strict mode does NOT make a difference here</span>
+
+<span class="pl-k">var</span> person <span class="pl-k">=</span> {
+    firstName<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Elie<span class="pl-pds">"</span></span>,
+    <span class="pl-en">sayHi</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Hi <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span>
+    },
+    <span class="pl-en">determineContext</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-c1">this</span> <span class="pl-k">===</span> person
+    }
+}</pre></div>
+<pre><code>person.sayHi() // "Hi Elie"
+person.determineContext() // true
+</code></pre>
+<ul>
+<li><strong>Nested Objects</strong>: What happens when we have a nested object?</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> person <span class="pl-k">=</span> {
+    firstName<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Colt<span class="pl-pds">"</span></span>,
+    <span class="pl-en">sayHi</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Hi <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span>;
+    },
+    <span class="pl-en">determineContext</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-c1">this</span> <span class="pl-k">===</span> person;
+    },
+    dog<span class="pl-k">:</span> {
+        <span class="pl-en">sayHello</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+            <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Hello <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span>;
+        },
+        <span class="pl-en">determineContext</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+            <span class="pl-k">return</span> <span class="pl-c1">this</span> <span class="pl-k">===</span> person;
+        }        
+    }
+}</pre></div>
+<pre><code>person.sayHi() // "Hi Colt"
+person.determineContext() // true
+
+// but what is the value of the keyword this right now?
+person.dog.sayHello() // "Hello undefined"
+person.dog.determineContext() // false
+</code></pre>
+<h3 id="223-explicit-binding">2.2.3. Explicit Binding</h3>
+<ul>
+<li>Choose what we want the context of 'this' to be using call, apply or bind
+<ul>
+<li>can only used by functions (not by other data types: strings, booleans, or objects)</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>NAME OF METHOD</th>
+<th>PARAMETERS</th>
+<th>INVOKE IMMEDIATELY?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Call</td>
+<td>thisArg, a, b, c, d , ...</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Apply</td>
+<td>thisArg, [a,b,c,d, ...]</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Bind</td>
+<td>thisArg, a, b, c, d , ...</td>
+<td>No</td>
+</tr></tbody></table>
+<h4 id="2231-call">2.2.3.1. <code>call</code></h4>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> person <span class="pl-k">=</span> {
+    firstName<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Colt<span class="pl-pds">"</span></span>,
+    <span class="pl-en">sayHi</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Hi <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span>
+    },
+    <span class="pl-en">determineContext</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-c1">this</span> <span class="pl-k">===</span> person
+    },
+    dog<span class="pl-k">:</span> {
+        <span class="pl-en">sayHello</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+            <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Hello <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span>
+        },
+        <span class="pl-en">determineContext</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+            <span class="pl-k">return</span> <span class="pl-c1">this</span> <span class="pl-k">===</span> person
+        }        
+    }
+}</pre></div>
+<pre><code>person.sayHi() // "Hi Colt"
+person.determineContext() // true
+
+person.dog.sayHello.call(person) // "Hello Colt"
+person.dog.determineContext.call(person) // true
+
+// Using call worked! Notice that we do NOT invoke sayHello or determineContext
+</code></pre>
+<ul>
+<li>Using Call in the Wild</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> colt <span class="pl-k">=</span> {
+    firstName<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Colt<span class="pl-pds">"</span></span>,
+    <span class="pl-en">sayHi</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Hi <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span> 
+    }
+}
+
+<span class="pl-k">var</span> elie <span class="pl-k">=</span> {
+    firstName<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Elie<span class="pl-pds">"</span></span>,
+    <span class="pl-c"><span class="pl-c">//</span> Look at all this duplication :(</span>
+    <span class="pl-en">sayHi</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Hi <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span> 
+    }
+}</pre></div>
+<pre><code>colt.sayHi() // Hi Colt
+elie.sayHi() // Hi Elie (but we had to copy and paste the function from above...)
+
+// How can we refactor the duplication using call? 
+
+// How can we "borrow" the sayHi function from colt 
+// and set the value of 'this' to be elie?
+</code></pre>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> colt <span class="pl-k">=</span> {
+    firstName<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Colt<span class="pl-pds">"</span></span>,
+    <span class="pl-en">sayHi</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Hi <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span> 
+    }
+}
+
+<span class="pl-k">var</span> elie <span class="pl-k">=</span> {
+    firstName<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Elie<span class="pl-pds">"</span></span>
+}</pre></div>
+<pre><code>colt.sayHi() // Hi Colt
+colt.sayHi.call(elie) // Hi Elie 
+</code></pre>
+<h4 id="2232-apply">2.2.3.2. <code>apply</code></h4>
+<ul>
+<li>It's almost identical to <code>call</code> - except the parameters!</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> colt <span class="pl-k">=</span> {
+    firstName<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Colt<span class="pl-pds">"</span></span>,
+    <span class="pl-en">sayHi</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Hi <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span> 
+    },
+    <span class="pl-en">addNumbers</span><span class="pl-k">:</span> <span class="pl-k">function</span>(<span class="pl-smi">a</span>,<span class="pl-smi">b</span>,<span class="pl-smi">c</span>,<span class="pl-smi">d</span>){
+        <span class="pl-k">return</span> <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> just calculated <span class="pl-pds">"</span></span> <span class="pl-k">+</span> (a<span class="pl-k">+</span>b<span class="pl-k">+</span>c<span class="pl-k">+</span>d);
+    }
+}
+
+<span class="pl-k">var</span> elie <span class="pl-k">=</span> {
+    firstName<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Elie<span class="pl-pds">"</span></span>
+}</pre></div>
+<pre><code>colt.sayHi() // Hi Colt
+colt.sayHi.apply(elie) // Hi Elie 
+
+// well this seems the same....but what happens when we start adding arguments?
+colt.addNumbers(1,2,3,4) // Colt just calculated 10
+colt.addNumbers.call(elie,1,2,3,4) // Elie just calculated 10
+colt.addNumbers.apply(elie,[1,2,3,4]) // Elie just calculated 10
+</code></pre>
+<h4 id="2233-bind">2.2.3.3. <code>bind</code></h4>
+<ul>
+<li>The parameters work like call, but bind returns a function with the context of 'this' bound already!</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> colt <span class="pl-k">=</span> {
+    firstName<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Colt<span class="pl-pds">"</span></span>,
+    <span class="pl-en">sayHi</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Hi <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span> 
+    },
+    <span class="pl-en">addNumbers</span><span class="pl-k">:</span> <span class="pl-k">function</span>(<span class="pl-smi">a</span>,<span class="pl-smi">b</span>,<span class="pl-smi">c</span>,<span class="pl-smi">d</span>){
+        <span class="pl-k">return</span> <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> just calculated <span class="pl-pds">"</span></span> <span class="pl-k">+</span> (a<span class="pl-k">+</span>b<span class="pl-k">+</span>c<span class="pl-k">+</span>d);
+    }
+}
+
+<span class="pl-k">var</span> elie <span class="pl-k">=</span> {
+    firstName<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Elie<span class="pl-pds">"</span></span>
+}
+
+<span class="pl-k">var</span> elieCalc <span class="pl-k">=</span> <span class="pl-smi">colt</span>.<span class="pl-smi">addNumbers</span>.<span class="pl-en">bind</span>(elie,<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">3</span>,<span class="pl-c1">4</span>) <span class="pl-c"><span class="pl-c">//</span> function(){}...</span></pre></div>
+<pre><code>elieCalc() // Elie just calculated 10
+</code></pre>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> With bind - we do not need to know all the arguments up front!</span>
+<span class="pl-c"><span class="pl-c">//</span> = PARTIAL APPLICATION</span>
+<span class="pl-k">var</span> elieCalc <span class="pl-k">=</span> <span class="pl-smi">colt</span>.<span class="pl-smi">addNumbers</span>.<span class="pl-en">bind</span>(elie,<span class="pl-c1">1</span>,<span class="pl-c1">2</span>) <span class="pl-c"><span class="pl-c">//</span> function(){}... </span></pre></div>
+<pre><code>elieCalc(3,4) // Elie just calculated 10 
+</code></pre>
+<ul>
+<li>Bind in the wild</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> colt <span class="pl-k">=</span> {
+    firstName<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Colt<span class="pl-pds">"</span></span>,
+    <span class="pl-en">sayHi</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+        <span class="pl-c1">setTimeout</span>(<span class="pl-k">function</span>(){
+            <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>Hi <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span>)
+        },<span class="pl-c1">1000</span>)
+    }
+}</pre></div>
+<pre><code>// 'this' will refer to window object rather than colt object, since setTimeout
+// function is executed at a later time
+colt.sayHi() // Hi undefined (1000 milliseconds later)
+</code></pre>
+<ul>
+<li>Use <code>bind</code> to set the <strong>correct context</strong> of <code>this</code></li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> colt <span class="pl-k">=</span> {
+    firstName<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Colt<span class="pl-pds">"</span></span>,
+    <span class="pl-en">sayHi</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+        <span class="pl-c1">setTimeout</span>(<span class="pl-k">function</span>(){
+            <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>Hi <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span>)
+        }.<span class="pl-en">bind</span>(<span class="pl-c1">this</span>),<span class="pl-c1">1000</span>)
+    }
+}</pre></div>
+<pre><code>colt.sayHi() // Hi Colt (1000 milliseconds later)
+</code></pre>
+<h3 id="224-the-new-keyword">2.2.4. The <code>new</code> keyword</h3>
+<ul>
+<li>We can set the <strong>context</strong> of the keyword 'this' using the 'new' keyword
+<ul>
+<li>it does quite a bit more as well which we will discuss further when we talk about OOP</li>
+</ul>
+</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">Person</span>(<span class="pl-smi">firstName</span>, <span class="pl-smi">lastName</span>){
+    <span class="pl-c1">this</span>.<span class="pl-smi">firstName</span> <span class="pl-k">=</span> firstName
+    <span class="pl-c1">this</span>.<span class="pl-smi">lastName</span> <span class="pl-k">=</span> lastName
+}
+
+<span class="pl-k">var</span> elie <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Elie<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Schoppik<span class="pl-pds">"</span></span>);</pre></div>
+<pre><code>elie.firstName // "Elie"
+elie.lastName // "Schoppik"
+</code></pre>
+<h2 id="23-intro-to-object-oriented-programming">2.3. Intro to Object Oriented Programming</h2>
+<ul>
+<li>A programming model based around the idea of objects</li>
+<li>These objects are constructed from what are called "classes", which we can think of like a blueprint. We call these objects created from classes "instances"</li>
+<li>We strive to make our classes abstract and modular</li>
+<li>But JavaScript does not have "classes" built into it - so what do we do?
+<ul>
+<li>we mimic classes by using functions and objects!</li>
+<li>These constructor functions create objects through the use of the <code>new</code> keyword</li>
+<li>Advantage: We can avoid duplication in multiple constructor functions by using <code>call</code> or <code>apply</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="231-object-creation">2.3.1. Object Creation</h3>
+<ul>
+<li>Imagine we want to make a few house objects, they will all have bedrooms, bathrooms, and numSqft</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> house <span class="pl-k">=</span> {
+    bedrooms<span class="pl-k">:</span> <span class="pl-c1">2</span>,
+    bathrooms<span class="pl-k">:</span> <span class="pl-c1">2</span>
+    sqFeet<span class="pl-k">:</span> <span class="pl-c1">1000</span>
+}
+
+<span class="pl-k">var</span> house2 <span class="pl-k">=</span> {
+    bedrooms<span class="pl-k">:</span> <span class="pl-c1">2</span>,
+    bathrooms<span class="pl-k">:</span> <span class="pl-c1">2</span>
+    sqFeet<span class="pl-k">:</span> <span class="pl-c1">1000</span>
+}
+
+<span class="pl-k">var</span> house3 <span class="pl-k">=</span> {
+    bedrooms<span class="pl-k">:</span> <span class="pl-c1">2</span>,
+    bathrooms<span class="pl-k">:</span> <span class="pl-c1">2</span>
+    sqFeet<span class="pl-k">:</span> <span class="pl-c1">1000</span>
+}
+
+<span class="pl-k">var</span> house4 <span class="pl-k">=</span> {
+    bedrooms<span class="pl-k">:</span> <span class="pl-c1">2</span>,
+    bathrooms<span class="pl-k">:</span> <span class="pl-c1">2</span>
+    sqFeet<span class="pl-k">:</span> <span class="pl-c1">1000</span>
+}
+
+<span class="pl-c"><span class="pl-c">//</span> woof...imagine if we had to make 100 of these!</span></pre></div>
+<ul>
+<li>Instead of making an infinite number of different objects, let's see if we can create a function to construct these similar "house" objects.</li>
+<li>Let's use a function as a blueprint for what each house should be - we call these kinds of functions <strong>constructor functions</strong></li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> constructor functions are Capitalized - this is convention!</span>
+<span class="pl-k">function</span> <span class="pl-en">House</span>(<span class="pl-smi">bedrooms</span>, <span class="pl-smi">bathrooms</span>, <span class="pl-smi">numSqft</span>){
+    <span class="pl-c1">this</span>.<span class="pl-smi">bedrooms</span> <span class="pl-k">=</span> bedrooms;
+    <span class="pl-c1">this</span>.<span class="pl-smi">bathrooms</span> <span class="pl-k">=</span> bathrooms;
+    <span class="pl-c1">this</span>.<span class="pl-smi">numSqft</span> <span class="pl-k">=</span> numSqft;
+}
+
+<span class="pl-c"><span class="pl-c">//</span> invalid</span>
+<span class="pl-c"><span class="pl-c">//</span> We are not returning anything from the function so our House function returns undefined</span>
+<span class="pl-c"><span class="pl-c">//</span> We are not explicitly binding the keyword 'this' or placing it inside a declared object. This means </span>
+<span class="pl-c"><span class="pl-c">//</span> the value of the keyword 'this' will be the global object, which is not what we want!</span>
+<span class="pl-k">var</span> firstHouse <span class="pl-k">=</span> <span class="pl-en">House</span>(<span class="pl-c1">2</span>,<span class="pl-c1">2</span>,<span class="pl-c1">1000</span>) <span class="pl-c"><span class="pl-c">//</span> does this work?</span>
+firstHouse <span class="pl-c"><span class="pl-c">//</span> undefined...guess not!</span>
+
+<span class="pl-c"><span class="pl-c">//</span> solution: use 'new' keyword</span>
+<span class="pl-k">var</span> firstHouse <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">House</span>(<span class="pl-c1">2</span>,<span class="pl-c1">2</span>,<span class="pl-c1">1000</span>) 
+<span class="pl-smi">firstHouse</span>.<span class="pl-smi">bedrooms</span> <span class="pl-c"><span class="pl-c">//</span> 2</span>
+<span class="pl-smi">firstHouse</span>.<span class="pl-smi">bathrooms</span> <span class="pl-c"><span class="pl-c">//</span> 2</span>
+<span class="pl-smi">firstHouse</span>.<span class="pl-smi">numSqft</span> <span class="pl-c"><span class="pl-c">//</span> 1000</span></pre></div>
+<ul>
+<li>So what does the <code>new</code> keyword do? A lot more than we might think...
+<ul>
+<li>It first creates an empty object</li>
+<li>It then sets the keyword <code>this</code> to be that empty object</li>
+<li>It adds the line <code>return this</code> to the end of the function, which follows it</li>
+<li>It adds a property onto the empty object called <code>__proto__</code>, which links the prototype property on the constructor function to the empty object (more on this later)</li>
+</ul>
+</li>
+</ul>
+<h3 id="232-multiple-constructors">2.3.2. Multiple Constructors</h3>
+<ul>
+<li>Let's create two constructor functions, one for a Car and one for a Motorcycle</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">Car</span>(<span class="pl-smi">make</span>, <span class="pl-smi">model</span>, <span class="pl-smi">year</span>){
+    <span class="pl-c1">this</span>.<span class="pl-smi">make</span> <span class="pl-k">=</span> make;
+    <span class="pl-c1">this</span>.<span class="pl-smi">model</span> <span class="pl-k">=</span> model;
+    <span class="pl-c1">this</span>.<span class="pl-smi">year</span> <span class="pl-k">=</span> year;
+    <span class="pl-c"><span class="pl-c">//</span> we can also set properties on the keyword this that are preset values</span>
+    <span class="pl-c1">this</span>.<span class="pl-smi">numWheels</span> <span class="pl-k">=</span> <span class="pl-c1">4</span>;
+}
+
+<span class="pl-k">function</span> <span class="pl-en">Motorcycle</span>(<span class="pl-smi">make</span>, <span class="pl-smi">model</span>, <span class="pl-smi">year</span>){
+    <span class="pl-c1">this</span>.<span class="pl-smi">make</span> <span class="pl-k">=</span> make;
+    <span class="pl-c1">this</span>.<span class="pl-smi">model</span> <span class="pl-k">=</span> model;
+    <span class="pl-c1">this</span>.<span class="pl-smi">year</span> <span class="pl-k">=</span> year;
+    <span class="pl-c1">this</span>.<span class="pl-smi">numWheels</span> <span class="pl-k">=</span> <span class="pl-c1">2</span>;
+}</pre></div>
+<ul>
+<li>Notice how much duplication is going on in the Motorcycle function. Is there any way to "borrow" the Car function and invoke it inside the Motorcycle function?
+<ul>
+<li>We can refactor our code quite a bit using <code>call</code> + <code>apply</code></li>
+</ul>
+</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">Car</span>(<span class="pl-smi">make</span>, <span class="pl-smi">model</span>, <span class="pl-smi">year</span>){
+    <span class="pl-c1">this</span>.<span class="pl-smi">make</span> <span class="pl-k">=</span> make;
+    <span class="pl-c1">this</span>.<span class="pl-smi">model</span> <span class="pl-k">=</span> model;
+    <span class="pl-c1">this</span>.<span class="pl-smi">year</span> <span class="pl-k">=</span> year;
+    <span class="pl-c1">this</span>.<span class="pl-smi">numWheels</span> <span class="pl-k">=</span> <span class="pl-c1">4</span>;
+}
+
+<span class="pl-c"><span class="pl-c">//</span> OPTION 1: using call</span>
+<span class="pl-k">function</span> <span class="pl-en">Motorcycle</span>(<span class="pl-smi">make</span>, <span class="pl-smi">model</span>, <span class="pl-smi">year</span>){
+    <span class="pl-smi">Car</span>.<span class="pl-c1">call</span>(<span class="pl-c1">this</span>, make, model, year)
+    <span class="pl-c1">this</span>.<span class="pl-smi">numWheels</span> <span class="pl-k">=</span> <span class="pl-c1">2</span>;
+}
+
+<span class="pl-c"><span class="pl-c">//</span> OPTION 2: using apply</span>
+<span class="pl-k">function</span> <span class="pl-en">Motorcycle</span>(<span class="pl-smi">make</span>, <span class="pl-smi">model</span>, <span class="pl-smi">year</span>){
+    <span class="pl-smi">Car</span>.<span class="pl-c1">apply</span>(<span class="pl-c1">this</span>, [make,model,year]);
+    <span class="pl-c1">this</span>.<span class="pl-smi">numWheels</span> <span class="pl-k">=</span> <span class="pl-c1">2</span>;
+}
+
+<span class="pl-c"><span class="pl-c">//</span> OPTION 3: using apply with arguments</span>
+<span class="pl-k">function</span> <span class="pl-en">Motorcycle</span>(<span class="pl-smi">make</span>, <span class="pl-smi">model</span>, <span class="pl-smi">year</span>){
+    <span class="pl-c"><span class="pl-c">//</span> even better using apply with arguments</span>
+    <span class="pl-smi">Car</span>.<span class="pl-c1">apply</span>(<span class="pl-c1">this</span>, <span class="pl-c1">arguments</span>);
+    <span class="pl-c1">this</span>.<span class="pl-smi">numWheels</span> <span class="pl-k">=</span> <span class="pl-c1">2</span>;
+}</pre></div>
+<h3 id="233-prototypes">2.3.3. Prototypes</h3>
+<p><a href="../images/Prototype.png" target="_blank"><img src="../images/Prototype.png" alt="Prototype" style="max-width:100%;"></a></p>
+<ul>
+<li>Image: Circles are functions, Squares are objects</li>
+<li>Every constructor function has a property on it called "prototype", which is an object</li>
+<li>The prototype object has a property on it called "constructor", which points back to the constructor function</li>
+<li>Anytime an object is created using the 'new' keyword, a property called <code>__proto__</code> gets created, linking the object and the prototype property of the constructor function</li>
+<li>Example:</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> this is the constructor function</span>
+<span class="pl-k">function</span> <span class="pl-en">Person</span>(<span class="pl-smi">name</span>){
+    <span class="pl-c1">this</span>.<span class="pl-c1">name</span> <span class="pl-k">=</span> name;
+}
+
+<span class="pl-c"><span class="pl-c">//</span> this is an object created from the Person constructor</span>
+<span class="pl-k">var</span> elie <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Elie<span class="pl-pds">"</span></span>);
+<span class="pl-k">var</span> colt <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Colt<span class="pl-pds">"</span></span>);
+
+<span class="pl-c"><span class="pl-c">//</span> since we used the new keyword, we have established</span>
+<span class="pl-c"><span class="pl-c">//</span> a link between the object and the prototype property</span>
+<span class="pl-c"><span class="pl-c">//</span> we can access that using __proto__</span>
+<span class="pl-smi">elie</span>.<span class="pl-smi">__proto__</span> <span class="pl-k">===</span> <span class="pl-smi">Person</span>.<span class="pl-c1">prototype</span>; <span class="pl-c"><span class="pl-c">//</span> true</span>
+<span class="pl-smi">colt</span>.<span class="pl-smi">__proto__</span> <span class="pl-k">===</span> <span class="pl-smi">Person</span>.<span class="pl-c1">prototype</span>; <span class="pl-c"><span class="pl-c">//</span> true</span>
+
+<span class="pl-c"><span class="pl-c">//</span> The Person.prototype object also has a property</span>
+<span class="pl-c"><span class="pl-c">//</span> called constructor which points back to the function</span>
+<span class="pl-smi">Person</span>.<span class="pl-c1">prototype</span>.<span class="pl-c1">constructor</span> <span class="pl-k">===</span> Person; <span class="pl-c"><span class="pl-c">//</span> true</span></pre></div>
+<ul>
+<li>Where does the prototype property fit into all of this?</li>
+<li>Remember, the prototype is shared among all objects created by that constructor function</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> this is the constructor function</span>
+<span class="pl-k">function</span> <span class="pl-en">Person</span>(<span class="pl-smi">name</span>){
+    <span class="pl-c1">this</span>.<span class="pl-c1">name</span> <span class="pl-k">=</span> name;
+}
+
+<span class="pl-c"><span class="pl-c">//</span> this is an object created from the Person constructor</span>
+<span class="pl-k">var</span> elie <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Elie<span class="pl-pds">"</span></span>);
+<span class="pl-k">var</span> colt <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Colt<span class="pl-pds">"</span></span>);
+
+<span class="pl-c"><span class="pl-c">//</span> add isInstructor property to prototype property</span>
+<span class="pl-smi">Person</span>.<span class="pl-c1">prototype</span>.<span class="pl-smi">isInstructor</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>;
+<span class="pl-smi">elie</span>.<span class="pl-smi">isInstructor</span>; <span class="pl-c"><span class="pl-c">//</span> true</span>
+<span class="pl-smi">colt</span>.<span class="pl-smi">isInstructor</span>; <span class="pl-c"><span class="pl-c">//</span> true</span>
+
+<span class="pl-c"><span class="pl-c">//</span> how were we able to access properties on the prototype??</span>
+<span class="pl-c"><span class="pl-c">//</span> __proto__!</span>
+<span class="pl-c"><span class="pl-c">//</span> this is called a Prototype Chain</span></pre></div>
+<ul>
+<li>How does JavaScript find methods and properties? -&gt; Prototype Chain</li>
+</ul>
+<p><a href="../images/PrototypeChain.png" target="_blank"><img src="../images/PrototypeChain.png" alt="Prototype Chain" style="max-width:100%;"></a></p>
+<ul>
+<li>Now that we know that objects created by the same constructor have a shared prototype, let's refactor some code</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">Person</span>(<span class="pl-smi">name</span>){
+    <span class="pl-c1">this</span>.<span class="pl-c1">name</span> <span class="pl-k">=</span> name;
+    <span class="pl-c1">this</span>.<span class="pl-en">sayHi</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Hi <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">this</span>.<span class="pl-c1">name</span>; 
+    }
+}
+
+elie <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Elie<span class="pl-pds">"</span></span>);
+<span class="pl-smi">elie</span>.<span class="pl-en">sayHi</span>(); <span class="pl-c"><span class="pl-c">//</span> Hi Elie</span>
+
+<span class="pl-c"><span class="pl-c">//</span> now this code works, but it is inefficient</span>
+<span class="pl-c"><span class="pl-c">//</span> every time we make an object using the new keyword we have to redefine this function</span>
+<span class="pl-c"><span class="pl-c">//</span> but its the same for everyone! Let's put it on the prototype instead!</span>
+
+<span class="pl-k">function</span> <span class="pl-en">Person</span>(<span class="pl-smi">name</span>){
+    <span class="pl-c1">this</span>.<span class="pl-c1">name</span> <span class="pl-k">=</span> name;
+}
+
+<span class="pl-smi">Person</span>.<span class="pl-c1">prototype</span>.<span class="pl-en">sayHi</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(){
+    <span class="pl-k">return</span> <span class="pl-s"><span class="pl-pds">"</span>Hi <span class="pl-pds">"</span></span> <span class="pl-k">+</span> <span class="pl-c1">this</span>.<span class="pl-c1">name</span>; 
+}
+
+elie <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Person</span>(<span class="pl-s"><span class="pl-pds">"</span>Elie<span class="pl-pds">"</span></span>);
+<span class="pl-smi">elie</span>.<span class="pl-en">sayHi</span>(); <span class="pl-c"><span class="pl-c">//</span> Hi Elie</span></pre></div>
+<ul>
+<li><strong>Recap</strong>:
+<ul>
+<li>Every time the new keyword is used, a link between the object created and the prototype property of the constructor is established - this link can be accessed using <strong>proto</strong></li>
+<li>The prototype object contains a property called constructor, which points back to the constructor function</li>
+<li>To share properties and methods for objects created by a constructor function, place them in the prototype as it is the most efficient</li>
+</ul>
+</li>
+</ul>
+<h3 id="234-closures">2.3.4. Closures</h3>
+<ul>
+<li>A <strong>closure</strong> is a function that makes use of <em>variables defined in outer functions</em> that have previously returned
+<ul>
+<li>Note: If the inner function does not make use of any of the external variables all we have is a <strong>nested function</strong>.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">outer</span>(<span class="pl-smi">a</span>){
+    <span class="pl-k">return</span> <span class="pl-k">function</span> <span class="pl-en">inner</span>(<span class="pl-smi">b</span>){
+        <span class="pl-c"><span class="pl-c">//</span> the inner function is making use of the variable "a"</span>
+        <span class="pl-c"><span class="pl-c">//</span> which was defined in an outer function called "outer"</span>
+        <span class="pl-c"><span class="pl-c">//</span> and by the time this is called, that outer function has returned</span>
+        <span class="pl-c"><span class="pl-c">//</span> this function called "inner" is a closure!</span>
+        <span class="pl-k">return</span> a <span class="pl-k">+</span> b
+    }
+}
+
+<span class="pl-en">outer</span>(<span class="pl-c1">5</span>)(<span class="pl-c1">5</span>) <span class="pl-c"><span class="pl-c">//</span> 10</span>
+
+<span class="pl-k">var</span> storeOuter <span class="pl-k">=</span> <span class="pl-en">outer</span>(<span class="pl-c1">5</span>)
+<span class="pl-en">storeOuter</span>(<span class="pl-c1">10</span>) <span class="pl-c"><span class="pl-c">//</span> 15</span></pre></div>
+<ul>
+<li>A couple things to note here:
+<ul>
+<li>We have to 'return' the inner function for this to work</li>
+<li>We can either call the inner function right away by using an extra () or we can store the result of the function in a variable (very similar to how bind works)</li>
+<li>We do NOT have to give the inner function a name - we can make it anonymous (we just called it "inner" for learning purposes)</li>
+</ul>
+</li>
+</ul>
+<p>** Private Variables**</p>
+<ul>
+<li>In other languages, there exists support for variables that can not be modified externally. We call those <strong>private variables</strong>, but in JavaScript we don't have that built in.</li>
+<li><strong>Example</strong>: Privacy - counter</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">counter</span>(){
+    <span class="pl-k">var</span> count <span class="pl-k">=</span> <span class="pl-c1">0</span>
+    <span class="pl-k">return</span> <span class="pl-k">function</span>(){
+        <span class="pl-k">return</span> <span class="pl-k">++</span>count
+    }
+}
+
+counter1 <span class="pl-k">=</span> <span class="pl-en">counter</span>()
+<span class="pl-en">counter1</span>() <span class="pl-c"><span class="pl-c">//</span> 1</span>
+<span class="pl-en">counter1</span>() <span class="pl-c"><span class="pl-c">//</span> 2</span>
+
+counter2 <span class="pl-k">=</span> <span class="pl-en">counter</span>()
+<span class="pl-en">counter2</span>() <span class="pl-c"><span class="pl-c">//</span> 1</span>
+<span class="pl-en">counter2</span>() <span class="pl-c"><span class="pl-c">//</span> 2</span>
+
+<span class="pl-en">counter1</span>() <span class="pl-c"><span class="pl-c">//</span> 3 this is not affected by counter2!</span>
+
+count <span class="pl-c"><span class="pl-c">//</span> ReferenceError: count is not defined - because it is private!</span></pre></div>
+<ul>
+<li>We can use closures to create private variables and write better code that <em>isolates our logic and application</em></li>
+<li><strong>Example</strong>: Privacy - classroom</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">classRoom</span>(){
+    <span class="pl-k">var</span> instructors <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">"</span>Colt<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Elie<span class="pl-pds">"</span></span>]
+    <span class="pl-k">return</span> {
+        <span class="pl-en">getInstructors</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){
+            <span class="pl-k">return</span> instructors;
+        },
+        <span class="pl-en">addInstructor</span><span class="pl-k">:</span> <span class="pl-k">function</span>(<span class="pl-smi">instructor</span>){
+            <span class="pl-smi">instructors</span>.<span class="pl-c1">push</span>(instructor);
+            <span class="pl-k">return</span> instructors;
+        }
+    }
+}
+
+course1 <span class="pl-k">=</span> <span class="pl-en">classRoom</span>()
+<span class="pl-smi">course1</span>.<span class="pl-en">getInstructors</span>() <span class="pl-c"><span class="pl-c">//</span> ["Elie", "Colt"]</span>
+<span class="pl-smi">course1</span>.<span class="pl-en">addInstructor</span>(<span class="pl-s"><span class="pl-pds">"</span>Ian<span class="pl-pds">"</span></span>) <span class="pl-c"><span class="pl-c">//</span> ["Elie", "Colt","Ian"]</span>
+<span class="pl-smi">course1</span>.<span class="pl-en">getInstructors</span>() <span class="pl-c"><span class="pl-c">//</span> ["Elie", "Colt", "Ian"]</span>
+
+course2 <span class="pl-k">=</span> <span class="pl-en">classRoom</span>()
+<span class="pl-smi">course2</span>.<span class="pl-en">getInstructors</span>() <span class="pl-c"><span class="pl-c">//</span> ["Elie", "Colt"] - not affected by course1</span>
+
+<span class="pl-c"><span class="pl-c">//</span> we also have NO access to the instructors variable</span>
+<span class="pl-c"><span class="pl-c">//</span> which makes it private - no one can modify it...you're stuck with Colt and Elie</span></pre></div></article></body></html><script async>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
