@@ -1,0 +1,1290 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: false
+  },
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"],
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    equationNumbers: {
+      autoNumber: "AMS",
+    },
+    unicode: {
+      fonts: "STIXGeneral,'Arial Unicode MS'"
+    }
+  },
+  showProcessingMessages: false
+});
+</script>
+<script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.4/sequence-diagram-min.js"></script>
+<script type="text/javascript">// flowchart, v1.3.4
+// Copyright (c)2014 Adriano Raiano (adrai).
+// Distributed under MIT license
+// http://adrai.github.io/flowchart.js
+!function(){function a(b,c){if(!b||"function"==typeof b)return c;var d={};for(var e in c)d[e]=c[e];for(e in b)b[e]&&(d[e]="object"==typeof d[e]?a(d[e],b[e]):b[e]);return d}function b(a,b){if("function"==typeof Object.create)a.super_=b,a.prototype=Object.create(b.prototype,{constructor:{value:a,enumerable:!1,writable:!0,configurable:!0}});else{a.super_=b;var c=function(){};c.prototype=b.prototype,a.prototype=new c,a.prototype.constructor=a}}function c(a,b,c){var d,e,f="M{0},{1}";for(d=2,e=2*c.length+2;e>d;d+=2)f+=" L{"+d+"},{"+(d+1)+"}";var g=[b.x,b.y];for(d=0,e=c.length;e>d;d++)g.push(c[d].x),g.push(c[d].y);var h=a.paper.path(f,g);h.attr("stroke",a.options["element-color"]),h.attr("stroke-width",a.options["line-width"]);var i=a.options.font,j=a.options["font-family"],k=a.options["font-weight"];return i&&h.attr({font:i}),j&&h.attr({"font-family":j}),k&&h.attr({"font-weight":k}),h}function d(a,b,c,d){var e,f;"[object Array]"!==Object.prototype.toString.call(c)&&(c=[c]);var g="M{0},{1}";for(e=2,f=2*c.length+2;f>e;e+=2)g+=" L{"+e+"},{"+(e+1)+"}";var h=[b.x,b.y];for(e=0,f=c.length;f>e;e++)h.push(c[e].x),h.push(c[e].y);var i=a.paper.path(g,h);i.attr({stroke:a.options["line-color"],"stroke-width":a.options["line-width"],"arrow-end":a.options["arrow-end"]});var j=a.options.font,k=a.options["font-family"],l=a.options["font-weight"];if(j&&i.attr({font:j}),k&&i.attr({"font-family":k}),l&&i.attr({"font-weight":l}),d){var m=!1,n=a.paper.text(0,0,d),o=!1,p=c[0];b.y===p.y&&(o=!0);var q=0,r=0;m?(q=b.x>p.x?b.x-(b.x-p.x)/2:p.x-(p.x-b.x)/2,r=b.y>p.y?b.y-(b.y-p.y)/2:p.y-(p.y-b.y)/2,o?(q-=n.getBBox().width/2,r-=a.options["text-margin"]):(q+=a.options["text-margin"],r-=n.getBBox().height/2)):(q=b.x,r=b.y,o?(q+=a.options["text-margin"]/2,r-=a.options["text-margin"]):(q+=a.options["text-margin"]/2,r+=a.options["text-margin"])),n.attr({"text-anchor":"start","font-size":a.options["font-size"],fill:a.options["font-color"],x:q,y:r}),j&&n.attr({font:j}),k&&n.attr({"font-family":k}),l&&n.attr({"font-weight":l})}return i}function e(a,b,c,d,e,f,g,h){var i,j,k,l,m,n={x:null,y:null,onLine1:!1,onLine2:!1};return i=(h-f)*(c-a)-(g-e)*(d-b),0===i?n:(j=b-f,k=a-e,l=(g-e)*j-(h-f)*k,m=(c-a)*j-(d-b)*k,j=l/i,k=m/i,n.x=a+j*(c-a),n.y=b+j*(d-b),j>0&&1>j&&(n.onLine1=!0),k>0&&1>k&&(n.onLine2=!0),n)}function f(a,b){b=b||{},this.paper=new Raphael(a),this.options=r.defaults(b,q),this.symbols=[],this.lines=[],this.start=null}function g(a,b,c){this.chart=a,this.group=this.chart.paper.set(),this.symbol=c,this.connectedTo=[],this.symbolType=b.symbolType,this.flowstate=b.flowstate||"future",this.next_direction=b.next&&b.direction_next?b.direction_next:void 0,this.text=this.chart.paper.text(0,0,b.text),b.key&&(this.text.node.id=b.key+"t"),this.text.node.setAttribute("class",this.getAttr("class")+"t"),this.text.attr({"text-anchor":"start",x:this.getAttr("text-margin"),fill:this.getAttr("font-color"),"font-size":this.getAttr("font-size")});var d=this.getAttr("font"),e=this.getAttr("font-family"),f=this.getAttr("font-weight");d&&this.text.attr({font:d}),e&&this.text.attr({"font-family":e}),f&&this.text.attr({"font-weight":f}),b.link&&this.text.attr("href",b.link),b.target&&this.text.attr("target",b.target);var g=this.getAttr("maxWidth");if(g){for(var h=b.text.split(" "),i="",j=0,k=h.length;k>j;j++){var l=h[j];this.text.attr("text",i+" "+l),i+=this.text.getBBox().width>g?"\n"+l:" "+l}this.text.attr("text",i.substring(1))}if(this.group.push(this.text),c){var m=this.getAttr("text-margin");c.attr({fill:this.getAttr("fill"),stroke:this.getAttr("element-color"),"stroke-width":this.getAttr("line-width"),width:this.text.getBBox().width+2*m,height:this.text.getBBox().height+2*m}),c.node.setAttribute("class",this.getAttr("class")),b.link&&c.attr("href",b.link),b.target&&c.attr("target",b.target),b.key&&(c.node.id=b.key),this.group.push(c),c.insertBefore(this.text),this.text.attr({y:c.getBBox().height/2}),this.initialize()}}function h(a,b){var c=a.paper.rect(0,0,0,0,20);b=b||{},b.text=b.text||"Start",g.call(this,a,b,c)}function i(a,b){var c=a.paper.rect(0,0,0,0,20);b=b||{},b.text=b.text||"End",g.call(this,a,b,c)}function j(a,b){var c=a.paper.rect(0,0,0,0);b=b||{},g.call(this,a,b,c)}function k(a,b){var c=a.paper.rect(0,0,0,0);b=b||{},g.call(this,a,b,c),c.attr({width:this.text.getBBox().width+4*this.getAttr("text-margin")}),this.text.attr({x:2*this.getAttr("text-margin")});var d=a.paper.rect(0,0,0,0);d.attr({x:this.getAttr("text-margin"),stroke:this.getAttr("element-color"),"stroke-width":this.getAttr("line-width"),width:this.text.getBBox().width+2*this.getAttr("text-margin"),height:this.text.getBBox().height+2*this.getAttr("text-margin"),fill:this.getAttr("fill")}),b.key&&(d.node.id=b.key+"i");var e=this.getAttr("font"),f=this.getAttr("font-family"),h=this.getAttr("font-weight");e&&d.attr({font:e}),f&&d.attr({"font-family":f}),h&&d.attr({"font-weight":h}),b.link&&d.attr("href",b.link),b.target&&d.attr("target",b.target),this.group.push(d),d.insertBefore(this.text),this.initialize()}function l(a,b){b=b||{},g.call(this,a,b),this.textMargin=this.getAttr("text-margin"),this.text.attr({x:3*this.textMargin});var d=this.text.getBBox().width+4*this.textMargin,e=this.text.getBBox().height+2*this.textMargin,f=this.textMargin,h=e/2,i={x:f,y:h},j=[{x:f-this.textMargin,y:e},{x:f-this.textMargin+d,y:e},{x:f-this.textMargin+d+2*this.textMargin,y:0},{x:f-this.textMargin+2*this.textMargin,y:0},{x:f,y:h}],k=c(a,i,j);k.attr({stroke:this.getAttr("element-color"),"stroke-width":this.getAttr("line-width"),fill:this.getAttr("fill")}),b.link&&k.attr("href",b.link),b.target&&k.attr("target",b.target),b.key&&(k.node.id=b.key),k.node.setAttribute("class",this.getAttr("class")),this.text.attr({y:k.getBBox().height/2}),this.group.push(k),k.insertBefore(this.text),this.initialize()}function m(a,b){b=b||{},g.call(this,a,b),this.textMargin=this.getAttr("text-margin"),this.yes_direction="bottom",this.no_direction="right",b.yes&&b.direction_yes&&b.no&&!b.direction_no?"right"===b.direction_yes?(this.no_direction="bottom",this.yes_direction="right"):(this.no_direction="right",this.yes_direction="bottom"):b.yes&&!b.direction_yes&&b.no&&b.direction_no?"right"===b.direction_no?(this.yes_direction="bottom",this.no_direction="right"):(this.yes_direction="right",this.no_direction="bottom"):(this.yes_direction="bottom",this.no_direction="right"),this.yes_direction=this.yes_direction||"bottom",this.no_direction=this.no_direction||"right",this.text.attr({x:2*this.textMargin});var d=this.text.getBBox().width+3*this.textMargin;d+=d/2;var e=this.text.getBBox().height+2*this.textMargin;e+=e/2,e=Math.max(.5*d,e);var f=d/4,h=e/4;this.text.attr({x:f+this.textMargin/2});var i={x:f,y:h},j=[{x:f-d/4,y:h+e/4},{x:f-d/4+d/2,y:h+e/4+e/2},{x:f-d/4+d,y:h+e/4},{x:f-d/4+d/2,y:h+e/4-e/2},{x:f-d/4,y:h+e/4}],k=c(a,i,j);k.attr({stroke:this.getAttr("element-color"),"stroke-width":this.getAttr("line-width"),fill:this.getAttr("fill")}),b.link&&k.attr("href",b.link),b.target&&k.attr("target",b.target),b.key&&(k.node.id=b.key),k.node.setAttribute("class",this.getAttr("class")),this.text.attr({y:k.getBBox().height/2}),this.group.push(k),k.insertBefore(this.text),this.initialize()}function n(a){function b(a){var b=a.indexOf("(")+1,c=a.indexOf(")");return b>=0&&c>=0?d.symbols[a.substring(0,b-1)]:d.symbols[a]}function c(a){var b="next",c=a.indexOf("(")+1,d=a.indexOf(")");return c>=0&&d>=0&&(b=D.substring(c,d),b.indexOf(",")<0&&"yes"!==b&&"no"!==b&&(b="next, "+b)),b}a=a||"",a=a.trim();for(var d={symbols:{},start:null,drawSVG:function(a,b){function c(a){if(g[a.key])return g[a.key];switch(a.symbolType){case"start":g[a.key]=new h(e,a);break;case"end":g[a.key]=new i(e,a);break;case"operation":g[a.key]=new j(e,a);break;case"inputoutput":g[a.key]=new l(e,a);break;case"subroutine":g[a.key]=new k(e,a);break;case"condition":g[a.key]=new m(e,a);break;default:return new Error("Wrong symbol type!")}return g[a.key]}var d=this;this.diagram&&this.diagram.clean();var e=new f(a,b);this.diagram=e;var g={};!function n(a,b,f){var g=c(a);return d.start===a?e.startWith(g):b&&f&&!b.pathOk&&(b instanceof m?(f.yes===a&&b.yes(g),f.no===a&&b.no(g)):b.then(g)),g.pathOk?g:(g instanceof m?(a.yes&&n(a.yes,g,a),a.no&&n(a.no,g,a)):a.next&&n(a.next,g,a),g)}(this.start),e.render()},clean:function(){this.diagram.clean()}},e=[],g=0,n=1,o=a.length;o>n;n++)if("\n"===a[n]&&"\\"!==a[n-1]){var p=a.substring(g,n);g=n+1,e.push(p.replace(/\\\n/g,"\n"))}g<a.length&&e.push(a.substr(g));for(var q=1,r=e.length;r>q;){var s=e[q];s.indexOf(": ")<0&&s.indexOf("(")<0&&s.indexOf(")")<0&&s.indexOf("->")<0&&s.indexOf("=>")<0?(e[q-1]+="\n"+s,e.splice(q,1),r--):q++}for(;e.length>0;){var t=e.splice(0,1)[0];if(t.indexOf("=>")>=0){var u,v=t.split("=>"),w={key:v[0],symbolType:v[1],text:null,link:null,target:null,flowstate:null};if(w.symbolType.indexOf(": ")>=0&&(u=w.symbolType.split(": "),w.symbolType=u[0],w.text=u[1]),w.text&&w.text.indexOf(":>")>=0?(u=w.text.split(":>"),w.text=u[0],w.link=u[1]):w.symbolType.indexOf(":>")>=0&&(u=w.symbolType.split(":>"),w.symbolType=u[0],w.link=u[1]),w.symbolType.indexOf("\n")>=0&&(w.symbolType=w.symbolType.split("\n")[0]),w.link){var x=w.link.indexOf("[")+1,y=w.link.indexOf("]");x>=0&&y>=0&&(w.target=w.link.substring(x,y),w.link=w.link.substring(0,x-1))}if(w.text&&w.text.indexOf("|")>=0){var z=w.text.split("|");w.text=z[0],w.flowstate=z[1].trim()}d.symbols[w.key]=w}else if(t.indexOf("->")>=0)for(var A=t.split("->"),B=0,C=A.length;C>B;B++){var D=A[B],E=b(D),F=c(D),G=null;if(F.indexOf(",")>=0){var H=F.split(",");F=H[0],G=H[1].trim()}if(d.start||(d.start=E),C>B+1){var I=A[B+1];E[F]=b(I),E["direction_"+F]=G,G=null}}}return d}Array.prototype.indexOf||(Array.prototype.indexOf=function(a){"use strict";if(null===this)throw new TypeError;var b=Object(this),c=b.length>>>0;if(0===c)return-1;var d=0;if(arguments.length>0&&(d=Number(arguments[1]),d!=d?d=0:0!==d&&1/0!=d&&d!=-1/0&&(d=(d>0||-1)*Math.floor(Math.abs(d)))),d>=c)return-1;for(var e=d>=0?d:Math.max(c-Math.abs(d),0);c>e;e++)if(e in b&&b[e]===a)return e;return-1}),Array.prototype.lastIndexOf||(Array.prototype.lastIndexOf=function(a){"use strict";if(null===this)throw new TypeError;var b=Object(this),c=b.length>>>0;if(0===c)return-1;var d=c;arguments.length>1&&(d=Number(arguments[1]),d!=d?d=0:0!==d&&d!=1/0&&d!=-(1/0)&&(d=(d>0||-1)*Math.floor(Math.abs(d))));for(var e=d>=0?Math.min(d,c-1):c-Math.abs(d);e>=0;e--)if(e in b&&b[e]===a)return e;return-1}),String.prototype.trim||(String.prototype.trim=function(){return this.replace(/^\s+|\s+$/g,"")});var o=this,p={};"undefined"!=typeof module&&module.exports?module.exports=p:o.flowchart=o.flowchart||p;var q={x:0,y:0,"line-width":3,"line-length":50,"text-margin":10,"font-size":14,"font-color":"black","line-color":"black","element-color":"black",fill:"white","yes-text":"yes","no-text":"no","arrow-end":"block","class":"flowchart",symbols:{start:{},end:{},condition:{},inputoutput:{},operation:{},subroutine:{}}},r={defaults:a,inherits:b};f.prototype.handle=function(a){this.symbols.indexOf(a)<=-1&&this.symbols.push(a);var b=this;return a instanceof m?(a.yes=function(c){return a.yes_symbol=c,a.no_symbol&&(a.pathOk=!0),b.handle(c)},a.no=function(c){return a.no_symbol=c,a.yes_symbol&&(a.pathOk=!0),b.handle(c)}):a.then=function(c){return a.next=c,a.pathOk=!0,b.handle(c)},a},f.prototype.startWith=function(a){return this.start=a,this.handle(a)},f.prototype.render=function(){var a,b=0,c=0,d=0,e=0,f=0,g=0;for(d=0,e=this.symbols.length;e>d;d++)a=this.symbols[d],a.width>b&&(b=a.width),a.height>c&&(c=a.height);for(d=0,e=this.symbols.length;e>d;d++)a=this.symbols[d],a.shiftX(this.options.x+(b-a.width)/2+this.options["line-width"]),a.shiftY(this.options.y+(c-a.height)/2+this.options["line-width"]);for(this.start.render(),d=0,e=this.symbols.length;e>d;d++)a=this.symbols[d],a.renderLines();for(f=this.maxXFromLine,d=0,e=this.symbols.length;e>d;d++){a=this.symbols[d];var h=a.getX()+a.width,i=a.getY()+a.height;h>f&&(f=h),i>g&&(g=i)}this.paper.setSize(f+this.options["line-width"],g+this.options["line-width"])},f.prototype.clean=function(){if(this.paper){var a=this.paper.canvas;a.parentNode.removeChild(a)}},g.prototype.getAttr=function(a){if(!this.chart)return void 0;var b,c=this.chart.options?this.chart.options[a]:void 0,d=this.chart.options.symbols?this.chart.options.symbols[this.symbolType][a]:void 0;return this.chart.options.flowstate&&this.chart.options.flowstate[this.flowstate]&&(b=this.chart.options.flowstate[this.flowstate][a]),b||d||c},g.prototype.initialize=function(){this.group.transform("t"+this.getAttr("line-width")+","+this.getAttr("line-width")),this.width=this.group.getBBox().width,this.height=this.group.getBBox().height},g.prototype.getCenter=function(){return{x:this.getX()+this.width/2,y:this.getY()+this.height/2}},g.prototype.getX=function(){return this.group.getBBox().x},g.prototype.getY=function(){return this.group.getBBox().y},g.prototype.shiftX=function(a){this.group.transform("t"+(this.getX()+a)+","+this.getY())},g.prototype.setX=function(a){this.group.transform("t"+a+","+this.getY())},g.prototype.shiftY=function(a){this.group.transform("t"+this.getX()+","+(this.getY()+a))},g.prototype.setY=function(a){this.group.transform("t"+this.getX()+","+a)},g.prototype.getTop=function(){var a=this.getY(),b=this.getX()+this.width/2;return{x:b,y:a}},g.prototype.getBottom=function(){var a=this.getY()+this.height,b=this.getX()+this.width/2;return{x:b,y:a}},g.prototype.getLeft=function(){var a=this.getY()+this.group.getBBox().height/2,b=this.getX();return{x:b,y:a}},g.prototype.getRight=function(){var a=this.getY()+this.group.getBBox().height/2,b=this.getX()+this.group.getBBox().width;return{x:b,y:a}},g.prototype.render=function(){if(this.next){var a=this.getAttr("line-length");if("right"===this.next_direction){var b=this.getRight();if(this.next.getLeft(),!this.next.isPositioned){this.next.setY(b.y-this.next.height/2),this.next.shiftX(this.group.getBBox().x+this.width+a);var c=this;!function e(){for(var b,d=!1,f=0,g=c.chart.symbols.length;g>f;f++){b=c.chart.symbols[f];var h=Math.abs(b.getCenter().x-c.next.getCenter().x);if(b.getCenter().y>c.next.getCenter().y&&h<=c.next.width/2){d=!0;break}}d&&(c.next.setX(b.getX()+b.width+a),e())}(),this.next.isPositioned=!0,this.next.render()}}else{var d=this.getBottom();this.next.getTop(),this.next.isPositioned||(this.next.shiftY(this.getY()+this.height+a),this.next.setX(d.x-this.next.width/2),this.next.isPositioned=!0,this.next.render())}}},g.prototype.renderLines=function(){this.next&&(this.next_direction?this.drawLineTo(this.next,"",this.next_direction):this.drawLineTo(this.next))},g.prototype.drawLineTo=function(a,b,c){this.connectedTo.indexOf(a)<0&&this.connectedTo.push(a);var f,g=this.getCenter().x,h=this.getCenter().y,i=(this.getTop(),this.getRight()),j=this.getBottom(),k=this.getLeft(),l=a.getCenter().x,m=a.getCenter().y,n=a.getTop(),o=a.getRight(),p=(a.getBottom(),a.getLeft()),q=g===l,r=h===m,s=m>h,t=h>m,u=g>l,v=l>g,w=0,x=this.getAttr("line-length"),y=this.getAttr("line-width");if(c&&"bottom"!==c||!q||!s)if(c&&"right"!==c||!r||!v)if(c&&"left"!==c||!r||!u)if(c&&"right"!==c||!q||!t)if(c&&"right"!==c||!q||!s)if(c&&"bottom"!==c||!u)if(c&&"bottom"!==c||!v)if(c&&"right"===c&&u)f=d(this.chart,i,[{x:i.x+x/2,y:i.y},{x:i.x+x/2,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.rightStart=!0,a.topEnd=!0,w=i.x+x/2;else if(c&&"right"===c&&v)f=d(this.chart,i,[{x:n.x,y:i.y},{x:n.x,y:n.y}],b),this.rightStart=!0,a.topEnd=!0,w=i.x+x/2;else if(c&&"bottom"===c&&q&&t)f=d(this.chart,j,[{x:j.x,y:j.y+x/2},{x:i.x+x/2,y:j.y+x/2},{x:i.x+x/2,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.bottomStart=!0,a.topEnd=!0,w=j.x+x/2;else if("left"===c&&q&&t){var z=k.x-x/2;p.x<k.x&&(z=p.x-x/2),f=d(this.chart,k,[{x:z,y:k.y},{x:z,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.leftStart=!0,a.topEnd=!0,w=k.x}else"left"===c&&(f=d(this.chart,k,[{x:n.x+(k.x-n.x)/2,y:k.y},{x:n.x+(k.x-n.x)/2,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.leftStart=!0,a.topEnd=!0,w=k.x);else f=d(this.chart,j,[{x:j.x,y:j.y+x/2},{x:j.x+(j.x-n.x)/2,y:j.y+x/2},{x:j.x+(j.x-n.x)/2,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.bottomStart=!0,a.topEnd=!0,w=j.x+(j.x-n.x)/2;else f=this.leftEnd&&t?d(this.chart,j,[{x:j.x,y:j.y+x/2},{x:j.x+(j.x-n.x)/2,y:j.y+x/2},{x:j.x+(j.x-n.x)/2,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b):d(this.chart,j,[{x:j.x,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.bottomStart=!0,a.topEnd=!0,w=j.x+(j.x-n.x)/2;else f=d(this.chart,i,[{x:i.x+x/2,y:i.y},{x:i.x+x/2,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.rightStart=!0,a.topEnd=!0,w=i.x+x/2;else f=d(this.chart,i,[{x:i.x+x/2,y:i.y},{x:i.x+x/2,y:n.y-x/2},{x:n.x,y:n.y-x/2},{x:n.x,y:n.y}],b),this.rightStart=!0,a.topEnd=!0,w=i.x+x/2;else f=d(this.chart,k,o,b),this.leftStart=!0,a.rightEnd=!0,w=o.x;else f=d(this.chart,i,p,b),this.rightStart=!0,a.leftEnd=!0,w=p.x;else f=d(this.chart,j,n,b),this.bottomStart=!0,a.topEnd=!0,w=j.x;if(f){for(var A=0,B=this.chart.lines.length;B>A;A++)for(var C,D=this.chart.lines[A],E=D.attr("path"),F=f.attr("path"),G=0,H=E.length-1;H>G;G++){var I=[];I.push(["M",E[G][1],E[G][2]]),I.push(["L",E[G+1][1],E[G+1][2]]);for(var J=I[0][1],K=I[0][2],L=I[1][1],M=I[1][2],N=0,O=F.length-1;O>N;N++){var P=[];P.push(["M",F[N][1],F[N][2]]),P.push(["L",F[N+1][1],F[N+1][2]]);var Q=P[0][1],R=P[0][2],S=P[1][1],T=P[1][2],U=e(J,K,L,M,Q,R,S,T);if(U.onLine1&&U.onLine2){var V;R===T?Q>S?(V=["L",U.x+2*y,R],F.splice(N+1,0,V),V=["C",U.x+2*y,R,U.x,R-4*y,U.x-2*y,R],F.splice(N+2,0,V),f.attr("path",F)):(V=["L",U.x-2*y,R],F.splice(N+1,0,V),V=["C",U.x-2*y,R,U.x,R-4*y,U.x+2*y,R],F.splice(N+2,0,V),f.attr("path",F)):R>T?(V=["L",Q,U.y+2*y],F.splice(N+1,0,V),V=["C",Q,U.y+2*y,Q+4*y,U.y,Q,U.y-2*y],F.splice(N+2,0,V),f.attr("path",F)):(V=["L",Q,U.y-2*y],F.splice(N+1,0,V),V=["C",Q,U.y-2*y,Q+4*y,U.y,Q,U.y+2*y],F.splice(N+2,0,V),f.attr("path",F)),N+=2,C+=2}}}this.chart.lines.push(f)}(!this.chart.maxXFromLine||this.chart.maxXFromLine&&w>this.chart.maxXFromLine)&&(this.chart.maxXFromLine=w)},r.inherits(h,g),r.inherits(i,g),r.inherits(j,g),r.inherits(k,g),r.inherits(l,g),l.prototype.getLeft=function(){var a=this.getY()+this.group.getBBox().height/2,b=this.getX()+this.textMargin;return{x:b,y:a}},l.prototype.getRight=function(){var a=this.getY()+this.group.getBBox().height/2,b=this.getX()+this.group.getBBox().width-this.textMargin;return{x:b,y:a}},r.inherits(m,g),m.prototype.render=function(){this.yes_direction&&(this[this.yes_direction+"_symbol"]=this.yes_symbol),this.no_direction&&(this[this.no_direction+"_symbol"]=this.no_symbol);var a=this.getAttr("line-length");if(this.bottom_symbol){var b=this.getBottom();this.bottom_symbol.getTop(),this.bottom_symbol.isPositioned||(this.bottom_symbol.shiftY(this.getY()+this.height+a),this.bottom_symbol.setX(b.x-this.bottom_symbol.width/2),this.bottom_symbol.isPositioned=!0,this.bottom_symbol.render())}if(this.right_symbol){var c=this.getRight();if(this.right_symbol.getLeft(),!this.right_symbol.isPositioned){this.right_symbol.setY(c.y-this.right_symbol.height/2),this.right_symbol.shiftX(this.group.getBBox().x+this.width+a);var d=this;!function e(){for(var b,c=!1,f=0,g=d.chart.symbols.length;g>f;f++){b=d.chart.symbols[f];var h=Math.abs(b.getCenter().x-d.right_symbol.getCenter().x);if(b.getCenter().y>d.right_symbol.getCenter().y&&h<=d.right_symbol.width/2){c=!0;break}}c&&(d.right_symbol.setX(b.getX()+b.width+a),e())}(),this.right_symbol.isPositioned=!0,this.right_symbol.render()}}},m.prototype.renderLines=function(){this.yes_symbol&&this.drawLineTo(this.yes_symbol,this.getAttr("yes-text"),this.yes_direction),this.no_symbol&&this.drawLineTo(this.no_symbol,this.getAttr("no-text"),this.no_direction)},p.parse=n}();
+</script>
+<script type="text/javascript">
+(function (win, doc) {
+  function onReady(fn) {
+    if (doc.addEventListener) {
+      doc.addEventListener('DOMContentLoaded', fn);
+    } else {
+      doc.attachEvent('onreadystatechange', function() {
+        if (doc.readyState === 'interactive')
+          fn();
+      });
+    }
+  }
+
+  win.convertUML = function(className, converter, settings) {
+    var charts = doc.querySelectorAll("pre." + className),
+        arr = [],
+        i, j, maxItem, diagaram, text, curNode;
+
+    // Is there a settings object?
+    if (settings === void 0) {
+        settings = {};
+    }
+
+    // Make sure we are dealing with an array
+    for(i = 0, maxItem = charts.length; i < maxItem; i++) arr.push(charts[i])
+
+    // Find the UML source element and get the text
+    for (i = 0, maxItem = arr.length; i < maxItem; i++) {
+        childEl = arr[i].firstChild;
+        parentEl = childEl.parentNode;
+        text = "";
+        for (j = 0; j < childEl.childNodes.length; j++) {
+            curNode = childEl.childNodes[j];
+            whitespace = /^\s*$/;
+            if (curNode.nodeName === "#text" && !(whitespace.test(curNode.nodeValue))) {
+                text = curNode.nodeValue;
+                break;
+            }
+        }
+
+        // Do UML conversion and replace source
+        el = doc.createElement('div');
+        el.className = className;
+        parentEl.parentNode.insertBefore(el, parentEl);
+        parentEl.parentNode.removeChild(parentEl);
+        diagram = converter.parse(text);
+        diagram.drawSVG(el, settings);
+    }
+  }
+
+  onReady(function(){convertUML('uml-flowchart', flowchart);});
+  onReady(function(){convertUML('uml-sequence-diagram', Diagram, {theme: 'simple'});});
+})(window, document)
+</script>
+<title>javascript-fun-fun-function</title></head><body><article class="markdown-body"><h1 id="fun-fun-function">Fun Fun Function</h1>
+
+<ul>
+<li><a href="#1-object-creation-in-javascript">1. Object Creation in JavaScript</a>
+<ul>
+<li><a href="#11-bind-and-this">1.1. <code>bind</code> and <code>this</code></a></li>
+<li><a href="#12-examples-of-this-and-bind">1.2. Examples of <code>this</code> and <code>bind</code></a></li>
+<li><a href="#13-prototype-basics">1.3. Prototype basics</a></li>
+<li><a href="#14-the-new-keyword">1.4. The <code>new</code> keyword</a></li>
+<li><a href="#15-proto-vs-prototype">1.5. <code>__proto__</code> vs <code>prototype</code></a></li>
+<li><a href="#16-objectcreate()">1.6. <code>Object.create()</code></a></li>
+<li><a href="#17-class-keyword">1.7. <code>class</code> keyword</a></li>
+</ul>
+</li>
+<li><a href="#2-factory-functions">2. Factory Functions</a></li>
+<li><a href="#3-composition-over-inheritance">3. Composition over Inheritance</a></li>
+</ul>
+
+<h1 id="1-object-creation-in-javascript">1. Object Creation in JavaScript</h1>
+<p><a href="https://www.youtube.com/watch?v=GhbhD1HR5vk&amp;list=PL0zVEGEvSaeHBZFy6Q8731rcwk0Gtuxub" rel="nofollow">https://www.youtube.com/watch?v=GhbhD1HR5vk&amp;list=PL0zVEGEvSaeHBZFy6Q8731rcwk0Gtuxub</a></p>
+<h2 id="11-bind-and-this">1.1. <code>bind</code> and <code>this</code></h2>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> basic object creation</span>
+<span class="pl-k">let</span> dog <span class="pl-k">=</span> {
+  sound<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>woof<span class="pl-pds">'</span></span>,
+  <span class="pl-en">talk</span><span class="pl-k">:</span> <span class="pl-k">function</span>() {
+     <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-c1">this</span>.<span class="pl-smi">sound</span>);
+  }
+}
+
+<span class="pl-smi">dog</span>.<span class="pl-en">talk</span>() <span class="pl-c"><span class="pl-c">//</span> returns: woof</span>
+
+<span class="pl-c"><span class="pl-c">//</span> 'this' points to nothing</span>
+<span class="pl-c"><span class="pl-c">//</span> in JS 'this' refers to the context where it was called</span>
+<span class="pl-c"><span class="pl-c">//</span> (vs the context where it was defined)</span>
+<span class="pl-k">let</span> talkFunction <span class="pl-k">=</span> <span class="pl-smi">dog</span>.<span class="pl-smi">talk</span>;
+<span class="pl-en">talkFunction</span>(); <span class="pl-c"><span class="pl-c">//</span> returns: undefined</span>
+
+<span class="pl-c"><span class="pl-c">//</span> solve above problem by binding to an object</span>
+<span class="pl-c"><span class="pl-c">//</span> here: bind 'dog' to 'this'</span>
+<span class="pl-k">let</span> boundFunction <span class="pl-k">=</span> <span class="pl-smi">talkFunction</span>.<span class="pl-en">bind</span>(dog);
+<span class="pl-en">boundFunction</span>(); <span class="pl-c"><span class="pl-c">//</span> returns: woof</span></pre></div>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> real life example:</span>
+<span class="pl-k">let</span> button <span class="pl-k">=</span> <span class="pl-c1">document</span>.<span class="pl-c1">getElementById</span>(<span class="pl-s"><span class="pl-pds">'</span>myNiceButton<span class="pl-pds">'</span></span>);
+<span class="pl-smi">button</span>.<span class="pl-c1">addEventListener</span>(<span class="pl-s"><span class="pl-pds">'</span>click<span class="pl-pds">'</span></span>, <span class="pl-smi">dog</span>.<span class="pl-smi">talk</span>); <span class="pl-c"><span class="pl-c">//</span> -&gt; 'this' would refer to the button</span>
+<span class="pl-c"><span class="pl-c">//</span> solution:</span>
+<span class="pl-smi">button</span>.<span class="pl-c1">addEventListener</span>(<span class="pl-s"><span class="pl-pds">'</span>click<span class="pl-pds">'</span></span>, <span class="pl-smi">dog</span>.<span class="pl-smi">talk</span>.<span class="pl-en">bind</span>(dog));</pre></div>
+<h2 id="12-examples-of-this-and-bind">1.2. Examples of <code>this</code> and <code>bind</code></h2>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> rather than doing:</span>
+<span class="pl-k">function</span> <span class="pl-en">talk1</span>(<span class="pl-smi">sound</span>) {
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(sound);
+}
+
+<span class="pl-en">talk1</span>(<span class="pl-s"><span class="pl-pds">'</span>wooof<span class="pl-pds">'</span></span>); <span class="pl-c"><span class="pl-c">//</span> returns: wooof</span>
+
+<span class="pl-c"><span class="pl-c">//</span> do below:</span>
+<span class="pl-k">function</span> <span class="pl-en">talk2</span>() {
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-c1">this</span>.<span class="pl-smi">sound</span>);
+}
+
+<span class="pl-en">talk2</span>(); <span class="pl-c"><span class="pl-c">//</span> &lt;- 'this' refers to the global object</span>
+
+
+
+<span class="pl-c"><span class="pl-c">//</span> 'this' refers to bound object; here: boromir</span>
+<span class="pl-k">let</span> boromir <span class="pl-k">=</span> {
+  speak<span class="pl-k">:</span> talk2,
+  sound<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>One does not simply walk into mordor<span class="pl-pds">"</span></span>
+}
+<span class="pl-k">let</span> talkBoundToBoromir <span class="pl-k">=</span> <span class="pl-smi">talk2</span>.<span class="pl-en">bind</span>(boromir);
+<span class="pl-en">talkBoundToBoromir</span>() <span class="pl-c"><span class="pl-c">//</span> returns: One does not simply walk into mordor</span>
+
+
+
+<span class="pl-c"><span class="pl-c">//</span> 'this' refers to boromir</span>
+<span class="pl-smi">boromir</span>.<span class="pl-en">speak</span>(); <span class="pl-c"><span class="pl-c">//</span> &lt;- 'talk2' assigned to a property</span>
+
+
+
+<span class="pl-c"><span class="pl-c">//</span> 'this' refers to global object</span>
+<span class="pl-k">let</span> blabber <span class="pl-k">=</span> <span class="pl-smi">boromir</span>.<span class="pl-smi">speak</span>;
+<span class="pl-en">blabber</span>(); <span class="pl-c"><span class="pl-c">//</span> returns: undefined</span>
+
+<span class="pl-c"><span class="pl-c">//</span> solution:</span>
+boromir <span class="pl-k">=</span> {
+  sound<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>One does not simply walk into mordor<span class="pl-pds">"</span></span>
+}
+<span class="pl-c"><span class="pl-c">//</span> make new bound function</span>
+<span class="pl-smi">boromir</span>.<span class="pl-smi">speak</span> <span class="pl-k">=</span> <span class="pl-smi">talk2</span>.<span class="pl-en">bind</span>(boromir); <span class="pl-c"><span class="pl-c">//</span> &lt;- bind to boromir object</span>
+blabber <span class="pl-k">=</span> <span class="pl-smi">boromir</span>.<span class="pl-smi">speak</span>;
+<span class="pl-en">blabber</span>(); <span class="pl-c"><span class="pl-c">//</span> returns One does not simply walk into mordor</span>
+
+
+
+<span class="pl-c"><span class="pl-c">//</span> 'this' is context-sensitive</span>
+<span class="pl-c"><span class="pl-c">//</span> (Don't write this kind of code -&gt; too confusing)</span>
+boromir <span class="pl-k">=</span> {
+  blabber<span class="pl-k">:</span> talk2,
+  sound<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>One does not simply walk into mordor<span class="pl-pds">"</span></span>
+}
+<span class="pl-k">let</span> gollum <span class="pl-k">=</span> {
+  jabber<span class="pl-k">:</span> <span class="pl-smi">boromir</span>.<span class="pl-smi">blabber</span>,
+  sound<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>My preciousssssss...<span class="pl-pds">"</span></span>
+}
+<span class="pl-smi">gollum</span>.<span class="pl-en">jabber</span>(); <span class="pl-c"><span class="pl-c">//</span> returns: My preciousssssss...</span></pre></div>
+<h2 id="13-prototype-basics">1.3. Prototype basics</h2>
+<ul>
+<li>Inheritance in JS is achieved through prototypes</li>
+<li>Prototypes do not create a <em>copy</em> of the original object, but a <strong>delegate</strong> to it</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">talk</span>() {
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-c1">this</span>.<span class="pl-smi">sound</span>);
+}
+
+<span class="pl-c"><span class="pl-c">//</span> prototype:</span>
+<span class="pl-k">let</span> animal <span class="pl-k">=</span> {
+  <span class="pl-c"><span class="pl-c">//</span> talk: talk</span>
+  talk <span class="pl-c"><span class="pl-c">//</span> ES6: same as above</span>
+}
+<span class="pl-smi">animal</span>.<span class="pl-en">talk</span>(); <span class="pl-c"><span class="pl-c">//</span> undefined</span>
+
+<span class="pl-k">let</span> cat <span class="pl-k">=</span> {
+  sound<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>meow!<span class="pl-pds">'</span></span>
+}
+
+<span class="pl-k">let</span> dog <span class="pl-k">=</span> {
+  sound<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>woof!<span class="pl-pds">'</span></span>
+}
+
+<span class="pl-c1">Object</span>.<span class="pl-en">setPrototypeOf</span>(cat, animal); <span class="pl-c"><span class="pl-c">//</span> set prototype of cat to be animal</span>
+<span class="pl-c1">Object</span>.<span class="pl-en">setPrototypeOf</span>(dog, animal);
+<span class="pl-smi">cat</span>.<span class="pl-en">talk</span>(); <span class="pl-c"><span class="pl-c">//</span> meow!</span>
+<span class="pl-smi">dog</span>.<span class="pl-en">talk</span>(); <span class="pl-c"><span class="pl-c">//</span> woof!</span>
+
+
+
+<span class="pl-c"><span class="pl-c">//</span> set a prototype chain</span>
+<span class="pl-k">let</span> prarieDog <span class="pl-k">=</span> {
+  <span class="pl-en">howl</span><span class="pl-k">:</span> <span class="pl-k">function</span>() {
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-c1">this</span>.<span class="pl-smi">sound</span>.<span class="pl-c1">toUpperCase</span>())
+  }
+}
+
+<span class="pl-c1">Object</span>.<span class="pl-en">setPrototypeOf</span>(prarieDog, dog);
+<span class="pl-smi">prarieDog</span>.<span class="pl-en">howl</span>(); <span class="pl-c"><span class="pl-c">//</span> WOOF!</span>
+
+
+
+<span class="pl-c"><span class="pl-c">//</span> prototypes create delegates</span>
+<span class="pl-c1">Object</span>.<span class="pl-en">setPrototypeOf</span>(dog, animal);
+<span class="pl-smi">animal</span>.<span class="pl-en">talk</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>i am a little teapot<span class="pl-pds">'</span></span>);
+}
+<span class="pl-smi">dog</span>.<span class="pl-en">talk</span>(); <span class="pl-c"><span class="pl-c">//</span> i am a little teapot</span></pre></div>
+<h2 id="14-the-new-keyword">1.4. The <code>new</code> keyword</h2>
+<ul>
+<li>here: <code>new</code> applied to functions (not applied to classes)</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> Constructor</span>
+<span class="pl-k">function</span> <span class="pl-en">Person</span>(<span class="pl-smi">saying</span>) {
+  <span class="pl-c1">this</span>.<span class="pl-smi">saying</span> <span class="pl-k">=</span> saying;
+}
+
+<span class="pl-smi">Person</span>.<span class="pl-c1">prototype</span>.<span class="pl-en">talk</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(){
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>I say:<span class="pl-pds">'</span></span>, <span class="pl-c1">this</span>.<span class="pl-smi">saying</span>)
+};
+
+<span class="pl-k">var</span> crockforg <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Person</span>(<span class="pl-s"><span class="pl-pds">'</span>SEMICOLANS!!!1one1<span class="pl-pds">'</span></span>);
+<span class="pl-smi">crockforg</span>.<span class="pl-en">talk</span>();</pre></div>
+<p>What does <code>new</code> do?</p>
+<ol>
+<li>Creates a new object</li>
+<li>Looks at whatever we have called <code>new</code> on (<code>Person</code> = <em>Constructor</em>), checks that object's prototype property (<code>Person.prototype</code>), and sets the prototype of the new object to be that</li>
+<li>Looks again at the constructor (<code>Person</code>), and calls the function in the object created in step 1 assigned to the <code>this</code> variable (<code>this.saying</code>)</li>
+<li>Returns the object</li>
+</ol>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">mynew</span>(<span class="pl-en">constructor</span>) {
+  <span class="pl-c"><span class="pl-c">//</span> Step 1: create object</span>
+  <span class="pl-k">var</span> obj <span class="pl-k">=</span> {};
+
+  <span class="pl-c"><span class="pl-c">//</span> Step 2: set prototype</span>
+  <span class="pl-c1">Object</span>.<span class="pl-en">setPrototypeOf</span>(obj, <span class="pl-en">constructor</span>.prototype)
+
+  <span class="pl-c"><span class="pl-c">//</span> Step 3: execute constructor with 'this'</span>
+  <span class="pl-c"><span class="pl-c">//</span> var argsArray = Array.from(arguments); // ES6</span>
+  var argsArray = Array.prototype.slice.apply(arguments) <span class="pl-c"><span class="pl-c">//</span> ES5</span>
+  constructor.apply(obj, argsArray.slice(1));
+
+  <span class="pl-c"><span class="pl-c">//</span> Step 4: return the created objects</span>
+  return obj;
+}
+
+<span class="pl-k">var</span> crockforg <span class="pl-k">=</span> <span class="pl-en">mynew</span>(Person, <span class="pl-s"><span class="pl-pds">'</span>SEMICOLANS!!!1one1<span class="pl-pds">'</span></span>);
+<span class="pl-smi">crockforg</span>.<span class="pl-en">talk</span>();</pre></div>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">Person</span>(<span class="pl-smi">saying</span>) {
+  <span class="pl-c1">this</span>.<span class="pl-smi">saying</span> <span class="pl-k">=</span> saying;
+  <span class="pl-k">return</span> {
+    dumbObject<span class="pl-k">:</span> <span class="pl-c1">true</span>
+  }
+}
+
+<span class="pl-smi">Person</span>.<span class="pl-c1">prototype</span>.<span class="pl-en">talk</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(){
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>I say:<span class="pl-pds">'</span></span>, <span class="pl-c1">this</span>.<span class="pl-smi">saying</span>)
+};
+
+<span class="pl-c"><span class="pl-c">//</span> CORRECT IMPLEMENTATION</span>
+<span class="pl-k">function</span> <span class="pl-en">mynew</span>(<span class="pl-en">constructor</span>) {
+  <span class="pl-c"><span class="pl-c">//</span> Step 1: create object</span>
+  <span class="pl-k">var</span> obj <span class="pl-k">=</span> {};
+
+  <span class="pl-c"><span class="pl-c">//</span> Step 2: set prototype</span>
+  <span class="pl-c1">Object</span>.<span class="pl-en">setPrototypeOf</span>(obj, <span class="pl-en">constructor</span>.prototype)
+
+  <span class="pl-c"><span class="pl-c">//</span> Step 3: execute constructor with 'this'</span>
+  <span class="pl-c"><span class="pl-c">//</span> var argsArray = Array.from(arguments); // ES6</span>
+  var argsArray = Array.prototype.slice.apply(arguments) <span class="pl-c"><span class="pl-c">//</span> ES5</span>
+  
+  <span class="pl-c"><span class="pl-c">//</span> Step 4: return the created objects</span>
+  return constructor.apply(obj, argsArray.slice(1)) || obj;
+}
+
+<span class="pl-k">var</span> crockforg <span class="pl-k">=</span> <span class="pl-en">mynew</span>(Person, <span class="pl-s"><span class="pl-pds">'</span>SEMICOLANS!!!1one1<span class="pl-pds">'</span></span>);
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(crockforg); <span class="pl-c"><span class="pl-c">//</span> { dumbObject: true }</span></pre></div>
+<h2 id="15-__proto__-vs-prototype">1.5. <code>__proto__</code> vs <code>prototype</code></h2>
+<h3 id="151-__proto__">1.5.1. <code>__proto__</code></h3>
+<ul>
+<li><code>__proto__</code> is the property on an object that points to the prototype that has been set for that object (OBJECT DELEGATION)</li>
+<li>Example: borrow pen from friend's friend's friend</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">let</span> cat <span class="pl-k">=</span> { breed<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>munchkin<span class="pl-pds">'</span></span> }
+<span class="pl-k">let</span> myCat <span class="pl-k">=</span> { name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Fluffykins<span class="pl-pds">'</span></span> }
+<span class="pl-c1">Object</span>.<span class="pl-en">setPrototypeOf</span>(myCat, cat);
+
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">myCat</span>.<span class="pl-c1">name</span>, <span class="pl-smi">myCat</span>.<span class="pl-smi">breed</span>); <span class="pl-c"><span class="pl-c">//</span> returns: Fluffykins munchkin</span>
+
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">myCat</span>.<span class="pl-smi">__proto__</span>); <span class="pl-c"><span class="pl-c">//</span> returns: { breed: 'munchkin' }</span>
+
+<span class="pl-c"><span class="pl-c">//</span> __proto__ is a REFERENCE to the object, NOT an INSTANCE</span>
+<span class="pl-smi">cat</span>.<span class="pl-smi">tailLength</span> <span class="pl-k">=</span> <span class="pl-c1">14</span>;
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">myCat</span>.<span class="pl-smi">__proto__</span>); <span class="pl-c"><span class="pl-c">//</span> returns: { breed: 'munchkin', tailLength: 14 }</span></pre></div>
+<h3 id="152-prototype">1.5.2. <code>prototype</code></h3>
+<ul>
+<li><code>prototype</code> is a property on a function and it is set if you're using the <code>new</code> keyword</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> Constructor</span>
+<span class="pl-k">function</span> <span class="pl-en">Dog</span>() {}
+
+<span class="pl-smi">Dog</span>.<span class="pl-c1">prototype</span>.<span class="pl-smi">breed</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>Bulldog<span class="pl-pds">'</span></span>; <span class="pl-c"><span class="pl-c">//</span> 'prototype' can be ONLY created on functions</span>
+
+<span class="pl-k">let</span> myDoggie <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Dog</span>();
+
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">myDoggie</span>.<span class="pl-c1">prototype</span>); <span class="pl-c"><span class="pl-c">//</span> no prototype on myDoggie // returns: undefined</span>
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">myDoggie</span>.<span class="pl-smi">__proto__</span>); <span class="pl-c"><span class="pl-c">//</span> refers to prototype of Dog // returns: Dog { breed: 'Bulldog' }</span>
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">Dog</span>.<span class="pl-c1">prototype</span>) <span class="pl-c"><span class="pl-c">//</span> however there is a prototype on Dog // returns: Dog { breed: 'Bulldog' }</span>
+
+
+
+<span class="pl-k">function</span> <span class="pl-en">Giraffe</span>() {} <span class="pl-c"><span class="pl-c">//</span> constructor function</span>
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">Giraffe</span>.<span class="pl-c1">prototype</span>) <span class="pl-c"><span class="pl-c">//</span> has a prototype property // returns: Giraffe {}</span>
+
+<span class="pl-k">let</span> koala <span class="pl-k">=</span> {} <span class="pl-c"><span class="pl-c">//</span> simple object</span>
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">koala</span>.<span class="pl-c1">prototype</span>) <span class="pl-c"><span class="pl-c">//</span> has NO prototype property // returns: undefined</span>
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">koala</span>.<span class="pl-smi">__proto__</span>) <span class="pl-c"><span class="pl-c">//</span> but has a __proto__ // returns: {}</span>
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">koala</span>.<span class="pl-smi">__proto__</span> <span class="pl-k">===</span> <span class="pl-c1">Object</span>.<span class="pl-c1">prototype</span> ) <span class="pl-c"><span class="pl-c">//</span> -&gt; refers to the global object prototype // returns: true</span>
+
+<span class="pl-c1">Object</span>.<span class="pl-c1">prototype</span>.<span class="pl-smi">waffle</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>hohoho<span class="pl-pds">'</span></span>;
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">koala</span>.<span class="pl-smi">waffle</span>); <span class="pl-c"><span class="pl-c">//</span> returns: hohoho</span>
+<span class="pl-c"><span class="pl-c">//</span> this means 'Object' is acutally a function ('prototype' can be ONLY created on functions)</span>
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-c1">Object</span>()) <span class="pl-c"><span class="pl-c">//</span> returns: {}</span></pre></div>
+<h2 id="16-objectcreate">1.6. <code>Object.create()</code></h2>
+<h3 id="161-what-is-objectcreate">1.6.1. What is <code>Object.create()</code></h3>
+<p><code>Object.create()</code> is a static method that creates a new object with the prototype set to a certain object</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">const</span> <span class="pl-c1">cat</span> <span class="pl-k">=</span> {
+  <span class="pl-en">init</span><span class="pl-k">:</span> <span class="pl-k">function</span>(<span class="pl-smi">sound</span>) {
+    <span class="pl-c1">this</span>.<span class="pl-smi">sound</span> <span class="pl-k">=</span> sound;
+  },
+  <span class="pl-en">makeSound</span><span class="pl-k">:</span> <span class="pl-k">function</span>() {
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-c1">this</span>.<span class="pl-smi">sound</span>);
+  }
+}
+
+<span class="pl-k">const</span> <span class="pl-c1">mark</span> <span class="pl-k">=</span> <span class="pl-c1">Object</span>.<span class="pl-en">create</span>(cat);
+<span class="pl-smi">mark</span>.<span class="pl-en">init</span>(<span class="pl-s"><span class="pl-pds">'</span>mewwwww<span class="pl-pds">'</span></span>); <span class="pl-c"><span class="pl-c">//</span> gets the property from prototype of cat</span>
+<span class="pl-smi">mark</span>.<span class="pl-en">makeSound</span>(); <span class="pl-c"><span class="pl-c">//</span> gets the property from prototype of cat // returns: mewwwww</span>
+
+<span class="pl-k">const</span> <span class="pl-c1">waffles</span> <span class="pl-k">=</span> <span class="pl-c1">Object</span>.<span class="pl-en">create</span>(cat);
+<span class="pl-smi">waffles</span>.<span class="pl-en">init</span>(<span class="pl-s"><span class="pl-pds">'</span>mrrrrowww<span class="pl-pds">'</span></span>); <span class="pl-c"><span class="pl-c">//</span> gets the property from prototype of cat</span>
+<span class="pl-smi">waffles</span>.<span class="pl-en">makeSound</span>(); <span class="pl-c"><span class="pl-c">//</span> gets the property from prototype of cat // returns: mrrrrowww</span>
+
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>Is mark a cat?<span class="pl-pds">'</span></span>, <span class="pl-smi">cat</span>.<span class="pl-en">isPrototypeOf</span>(mark)); <span class="pl-c"><span class="pl-c">//</span> returns true</span></pre></div>
+<p>Replicating <code>Object.create()</code></p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">const</span> <span class="pl-c1">cat</span> <span class="pl-k">=</span> {
+  <span class="pl-en">makeSound</span><span class="pl-k">:</span> <span class="pl-k">function</span>() {
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-c1">this</span>.<span class="pl-smi">sound</span>)
+  }
+}
+
+<span class="pl-k">function</span> <span class="pl-en">objectCreate</span>(<span class="pl-smi">proto</span>) {
+  <span class="pl-k">const</span> <span class="pl-c1">obj</span> <span class="pl-k">=</span> {};
+  <span class="pl-c1">Object</span>.<span class="pl-en">setPrototypeOf</span>(obj, proto);
+  <span class="pl-k">return</span> obj;
+}
+
+<span class="pl-k">const</span> <span class="pl-c1">waffles</span> <span class="pl-k">=</span> <span class="pl-en">objectCreate</span>(cat);
+<span class="pl-smi">waffles</span>.<span class="pl-smi">sound</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>mrrrrowww<span class="pl-pds">'</span></span>;
+<span class="pl-smi">waffles</span>.<span class="pl-en">makeSound</span>(); <span class="pl-c"><span class="pl-c">//</span> returns: mrrrowww</span></pre></div>
+<h2 id="17-class-keyword">1.7. <code>class</code> keyword</h2>
+<ul>
+<li><code>class</code> is just a very thin layer on top of the prototyping inheritance (has no real class-based inheritance as in other languages)</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">Mammal</span> {
+  <span class="pl-c"><span class="pl-c">//</span> no private members in JS (as in other programming languages)</span>
+  <span class="pl-c"><span class="pl-c">//</span> convention is to add _ to indicate the member is private</span>
+  <span class="pl-en">constructor</span>(<span class="pl-smi">sound</span>) {
+    <span class="pl-c1">this</span>.<span class="pl-smi">_sound</span> <span class="pl-k">=</span> sound;
+  }
+
+  <span class="pl-en">talk</span>() {
+    <span class="pl-k">return</span> <span class="pl-c1">this</span>.<span class="pl-smi">_sound</span>;
+  }
+}
+
+<span class="pl-c"><span class="pl-c">//</span> INHERITANCE</span>
+<span class="pl-k">class</span> <span class="pl-en">Dog</span> <span class="pl-k">extends</span> <span class="pl-e">Mammal</span> {
+  <span class="pl-en">constructor</span>() {
+    <span class="pl-c1">super</span>(<span class="pl-s"><span class="pl-pds">'</span>woffeliwofffff<span class="pl-pds">'</span></span>); <span class="pl-c"><span class="pl-c">//</span> calls the constructor of inherited class</span>
+  }
+}
+
+<span class="pl-k">let</span> fluffykins <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Mammal</span>(<span class="pl-s"><span class="pl-pds">'</span>woof!<span class="pl-pds">'</span></span>);
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(fluffykins); <span class="pl-c"><span class="pl-c">//</span> returns: Mammal { sound: 'woof!' }</span>
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">fluffykins</span>.<span class="pl-en">talk</span>()); <span class="pl-c"><span class="pl-c">//</span> returns: woof!</span>
+
+<span class="pl-k">let</span> doggy <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Dog</span>();
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">doggy</span>.<span class="pl-en">talk</span>()); <span class="pl-c"><span class="pl-c">//</span> returns: woffeliwofffff</span>
+
+<span class="pl-c"><span class="pl-c">//</span> can access variables of a class from outside</span>
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">fluffykins</span>.<span class="pl-smi">_sound</span>); <span class="pl-c"><span class="pl-c">//</span> returns: woof!</span>
+<span class="pl-c"><span class="pl-c">//</span> can even change it</span>
+<span class="pl-smi">fluffykins</span>.<span class="pl-smi">_sound</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>;
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">fluffykins</span>.<span class="pl-smi">_sound</span>); <span class="pl-c"><span class="pl-c">//</span> returns: 1</span>
+
+
+
+<span class="pl-c"><span class="pl-c">//</span> JS has no real `class` (it is just an alias for a constructor)</span>
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-k">typeof</span> Dog); <span class="pl-c"><span class="pl-c">//</span> returns: function</span>
+
+<span class="pl-k">let</span> x <span class="pl-k">=</span> <span class="pl-smi">Dog</span>.<span class="pl-c1">prototype</span>.<span class="pl-smi">talk</span>.<span class="pl-en">bind</span>({
+  _sound<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>ROAR<span class="pl-pds">'</span></span>
+})();
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(x); <span class="pl-c"><span class="pl-c">//</span> returns: ROAR</span>
+
+<span class="pl-c"><span class="pl-c">//</span> can even do this</span>
+<span class="pl-k">let</span> y <span class="pl-k">=</span> <span class="pl-smi">Dog</span>.<span class="pl-c1">prototype</span>.<span class="pl-en">isPrototypeOf</span>(doggy);
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(y); <span class="pl-c"><span class="pl-c">//</span> returns: true</span></pre></div>
+<h1 id="2-factory-functions">2. Factory Functions</h1>
+<p><a href="https://medium.com/humans-create-software/factory-functions-in-javascript-video-d38e49802555" rel="nofollow">https://medium.com/humans-create-software/factory-functions-in-javascript-video-d38e49802555</a></p>
+<ul>
+<li><em>Factories</em> are simply functions that create objects.</li>
+<li>You can use factories instead of using <em>classes</em>, and factories are simpler than classes and easier to reason about.</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">Dog</span> {
+  <span class="pl-en">constructor</span>() {
+    <span class="pl-c1">this</span>.<span class="pl-smi">sound</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>woof<span class="pl-pds">'</span></span>
+  }
+  <span class="pl-en">talk</span>() {
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-c1">this</span>.<span class="pl-smi">sound</span>)
+  }
+}
+<span class="pl-k">const</span> <span class="pl-c1">sniffles</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Dog</span>()
+<span class="pl-smi">sniffles</span>.<span class="pl-en">talk</span>() <span class="pl-c"><span class="pl-c">//</span> Outputs: "woof"</span>
+
+<span class="pl-c"><span class="pl-c">//</span> Problem:</span>
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>button.myButton<span class="pl-pds">'</span></span>).<span class="pl-c1">click</span>(<span class="pl-smi">sniffles</span>.<span class="pl-smi">talk</span>) <span class="pl-c"><span class="pl-c">//</span> &lt;-- this will break, because 'this' points to the button</span>
+
+<span class="pl-c"><span class="pl-c">//</span> Solution:</span>
+<span class="pl-c"><span class="pl-c">//</span> Method (1): use bind on sniffles</span>
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>button.myButton<span class="pl-pds">'</span></span>).<span class="pl-c1">click</span>(<span class="pl-smi">sniffles</span>.<span class="pl-smi">talk</span>.<span class="pl-en">bind</span>(sniffles))
+<span class="pl-c"><span class="pl-c">//</span> OR Method (2): wrap the talk call in a function</span>
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>button.myButton<span class="pl-pds">'</span></span>).<span class="pl-c1">click</span>( <span class="pl-smi">_</span> <span class="pl-k">=&gt;</span> <span class="pl-smi">sniffles</span>.<span class="pl-en">talk</span>() )
+
+<span class="pl-c"><span class="pl-c">//</span> however syntax is very unintuitive</span>
+<span class="pl-c"><span class="pl-c">//</span> better way is to use FACTORY FUNCTIONS</span>
+
+<span class="pl-k">const</span> <span class="pl-c1">dog</span> <span class="pl-k">=</span> () <span class="pl-k">=&gt;</span> {
+  <span class="pl-k">const</span> <span class="pl-c1">sound</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>woof<span class="pl-pds">'</span></span>; <span class="pl-c"><span class="pl-c">//</span> &lt;-- simple variable</span>
+  <span class="pl-k">return</span> { <span class="pl-c"><span class="pl-c">//</span> &lt;-- returns a simple object literal with one property</span>
+    <span class="pl-en">talk</span><span class="pl-k">:</span> () <span class="pl-k">=&gt;</span> <span class="pl-en">console</span>.<span class="pl-c1">log</span>(sound)
+    <span class="pl-c"><span class="pl-c">//</span> because of the awesomeness of closures, 'talk' has access to the variable 'sound'</span>
+    <span class="pl-c"><span class="pl-c">//</span> code outside of 'dog' has no access to it (basically makes it private)</span>
+  }
+};
+
+<span class="pl-c"><span class="pl-c">//</span> we can use simply</span>
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>button.myButton<span class="pl-pds">'</span></span>).<span class="pl-c1">click</span>(<span class="pl-smi">sniffles</span>.<span class="pl-smi">talk</span>)</pre></div>
+<ul>
+<li>However use <em>classes</em>, when you are creating a lot of objects, because classes have a <strong>better performance</strong>
+<ul>
+<li>Using a factory takes around 0.0004 milliseconds, while using a class takes 0.0002 milliseconds.</li>
+<li>This means that if you are creating 10,000 instances, using a class will earn you 2ms over factories, which isn’t going to matter. If you’re creating 10,000 objects or less, you should stick to factories.</li>
+<li>If you’re creating 100,000 instances per second, classes might be for you, but you should really ask yourself if the problem is that you’re creating a hundred thousance instances per second in the first place.</li>
+</ul>
+</li>
+</ul>
+<h1 id="3-composition-over-inheritance">3. Composition over Inheritance</h1>
+<p><a href="https://www.youtube.com/watch?v=wfMtDGfHWpA&amp;list=PL0zVEGEvSaeGPBRt-y2QZ3wh64XAe40jx&amp;index=2" rel="nofollow">https://www.youtube.com/watch?v=wfMtDGfHWpA&amp;list=PL0zVEGEvSaeGPBRt-y2QZ3wh64XAe40jx&amp;index=2</a></p>
+<ul>
+<li><em>Inheritance</em> is when you design your types around <strong>what they are</strong></li>
+<li><em>Composition</em> is when you design your types around <strong>what they do</strong></li>
+</ul>
+<p><strong>Inheritance</strong></p>
+<div class="highlight highlight-source-js"><pre>Robot
+  .<span class="pl-en">drive</span>()
+
+  MurderRobot
+    .<span class="pl-en">kill</span>()
+
+  CleaningRobot
+    .<span class="pl-en">clean</span>()
+
+Animal
+  .<span class="pl-en">poop</span>()
+
+  Dog
+    .<span class="pl-en">bark</span>()
+
+  Cat
+    .<span class="pl-en">meow</span>()
+
+<span class="pl-c"><span class="pl-c">//</span> What to do, when we need a MurderRobotDog (don't need '.poop()')</span>
+<span class="pl-c"><span class="pl-c">//</span> --&gt; doesn't fit into this inheritance hierarchy</span></pre></div>
+<p><strong>Composition</strong></p>
+<pre><code>dog            = pooper + barker;
+cat            = pooper + meower;
+cleaningRobo   = driver + cleaner;
+murderRobot    = driver + killer;
+murderRobotDog = driver + killer + barker;
+</code></pre>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">const</span> <span class="pl-c1">barker</span> <span class="pl-k">=</span> (<span class="pl-smi">state</span>) <span class="pl-k">=&gt;</span> ({
+  <span class="pl-en">bark</span><span class="pl-k">:</span> () <span class="pl-k">=&gt;</span> <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>Woof, I am <span class="pl-pds">'</span></span> <span class="pl-k">+</span> <span class="pl-smi">state</span>.<span class="pl-c1">name</span>)
+});
+
+<span class="pl-k">const</span> <span class="pl-c1">driver</span> <span class="pl-k">=</span> (<span class="pl-smi">state</span>) <span class="pl-k">=&gt;</span> ({
+  <span class="pl-en">drive</span><span class="pl-k">:</span> () <span class="pl-k">=&gt;</span> <span class="pl-smi">state</span>.<span class="pl-smi">position</span> <span class="pl-k">=</span> <span class="pl-smi">state</span>.<span class="pl-smi">postion</span> <span class="pl-k">+</span> <span class="pl-smi">state</span>.<span class="pl-smi">speed</span>
+});
+
+<span class="pl-en">barker</span>({name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>karo<span class="pl-pds">'</span></span>}).<span class="pl-en">bark</span>() <span class="pl-c"><span class="pl-c">//</span> Woof, I am karo</span>
+
+
+
+<span class="pl-c"><span class="pl-c">//</span> factory function (ES6)</span>
+<span class="pl-k">const</span> <span class="pl-c1">murderRobotDog</span> <span class="pl-k">=</span> (<span class="pl-smi">name</span>) <span class="pl-k">=&gt;</span> {
+  <span class="pl-k">let</span> state <span class="pl-k">=</span> {
+    name,
+    speed<span class="pl-k">:</span> <span class="pl-c1">100</span>,
+    postion<span class="pl-k">:</span> <span class="pl-c1">0</span>
+  }
+  <span class="pl-k">return</span> <span class="pl-c1">Object</span>.<span class="pl-en">assign</span>(
+    {},
+    <span class="pl-en">barker</span>(state),
+    <span class="pl-en">driver</span>(state),
+    <span class="pl-en">killer</span>(state)
+  )
+}
+
+<span class="pl-en">murderRobotDog</span>(<span class="pl-s"><span class="pl-pds">'</span>sniffles<span class="pl-pds">'</span></span>).<span class="pl-en">bark</span>() <span class="pl-c"><span class="pl-c">//</span> Woof, I am sniffles</span></pre></div>
+<ul>
+<li>When to use composition/inheritance?
+<ul>
+<li>most developers say you should favor composition over inheritance</li>
+<li>basic guidance:
+<ul>
+<li><strong>'is-a'</strong> relationship --&gt; use <em>inheritance</em> (eg. Mike <strong>'is-a'</strong> Person)</li>
+<li><strong>'has-a'</strong> relationship --&gt; use <em>composition</em> (eg. Car <strong>'has-a(n)'</strong> Engine)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></article></body></html><script async>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
