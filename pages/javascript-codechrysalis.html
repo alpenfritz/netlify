@@ -813,17 +813,36 @@ MathJax.Hub.Config({
 <title>javascript-codechrysalis</title></head><body><article class="markdown-body"><h1 id="code-chrysalis-notes">Code Chrysalis Notes</h1>
 
 <ul>
-<li><a href="#1-scopes-and-closures">1. Scopes and Closures</a>
+<li><a href="#1-scopes-and-closures">1. Scopes and Closures</a></li>
+<li><a href="#2-variable-hoisting">2. Variable Hoisting</a></li>
+<li><a href="#3-classes-and-prototypes">3. Classes and Prototypes</a>
 <ul>
-<li><a href="#11-definitions">1.1. Definitions</a></li>
-<li><a href="#12-basic-examples">1.2. Basic Examples</a></li>
-<li><a href="#13-static-(lexical)-vs-dynamic-scoping">1.3. Static (Lexical) vs Dynamic Scoping</a></li>
-<li><a href="#14-scoping-examples">1.4. Scoping Examples</a></li>
+<li><a href="#31-class-declaration-and-instantiation">3.1. Class declaration and Instantiation</a></li>
+<li><a href="#32-prototypes">3.2. Prototypes</a></li>
+<li><a href="#33-what-does-class-do">3.3. What does <code>class</code> do?</a></li>
+<li><a href="#34-class-expressions">3.4. Class expressions</a></li>
+<li><a href="#35-class-body">3.5. Class Body</a></li>
+<li><a href="#36-sub-classes">3.6. Sub classes</a></li>
+<li><a href="#37-species">3.7. Species</a></li>
+<li><a href="#38-mix-ins">3.8. Mix-ins</a></li>
 </ul>
 </li>
-<li><a href="#2-variable-hoisting">2. Variable Hoisting</a></li>
-<li><a href="#3-classes-and-prototypes">3. Classes and Prototypes</a></li>
-<li><a href="#4-polymorphism-and-inheritance">4. Polymorphism and Inheritance</a></li>
+<li><a href="#4-polymorphism-and-inheritance">4. Polymorphism and Inheritance</a>
+<ul>
+<li><a href="#41-creating-a-super-class-and-sub-classes">4.1. Creating a super class and sub classes</a></li>
+<li><a href="#42-prototype-chaining">4.2. Prototype chaining</a></li>
+<li><a href="#43-constructor-chaining">4.3. Constructor Chaining</a></li>
+</ul>
+</li>
+<li><a href="#5-instatiation-patterns">5. Instatiation Patterns</a>
+<ul>
+<li><a href="#51-functional-instantiation">5.1. Functional Instantiation</a></li>
+<li><a href="#52-functional-shared-instantiation">5.2. Functional Shared Instantiation</a></li>
+<li><a href="#53-prototypal-instantiation">5.3. Prototypal Instantiation</a></li>
+<li><a href="#54-pseudoclassical-instantiation">5.4. Pseudoclassical Instantiation</a></li>
+</ul>
+</li>
+<li><a href="#6-data-modeling-stacks-and-queues">6. Data Modeling: Stacks and Queues</a></li>
 </ul>
 
 <h1 id="1-scopes-and-closures">1. Scopes and Closures</h1>
@@ -1207,8 +1226,11 @@ name <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span
 <li>In strict mode, an error will occur if you assign a variable a value without first declaring the variable. Always declare your variables.</li>
 </ul>
 <h1 id="3-classes-and-prototypes">3. Classes and Prototypes</h1>
+<p><a href="http://exploringjs.com/es6/ch_classes.html" rel="nofollow">http://exploringjs.com/es6/ch_classes.html</a></p>
+<h2 id="31-class-declaration-and-instantiation">3.1. Class declaration and Instantiation</h2>
 <p><strong>How to construct classes in JS</strong></p>
 <div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> ES6: 'class' and 'constructor' keywords</span>
+<span class="pl-c"><span class="pl-c">//</span> class declaration</span>
 <span class="pl-k">class</span> <span class="pl-en">Car</span> {
   <span class="pl-en">constructor</span>() {
       <span class="pl-c1">this</span>.<span class="pl-smi">gas</span> <span class="pl-k">=</span> <span class="pl-c1">1.0</span>;
@@ -1241,6 +1263,7 @@ name <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span
 <span class="pl-smi">carB</span>.<span class="pl-en">drive</span>();
 <span class="pl-smi">carB</span>.<span class="pl-en">drive</span>();
 <span class="pl-smi">carB</span>.<span class="pl-en">readOdometer</span>();</pre></div>
+<h2 id="32-prototypes">3.2. Prototypes</h2>
 <p><strong>Under the hood</strong></p>
 <div class="highlight highlight-source-js"><pre><span class="pl-k">&gt;</span> <span class="pl-smi">carA</span>.<span class="pl-en">hasOwnProperty</span>(<span class="pl-s"><span class="pl-pds">'</span>drive<span class="pl-pds">'</span></span>)
 <span class="pl-c1">false</span>
@@ -1261,6 +1284,7 @@ Car {}
 
 <span class="pl-k">&gt;</span> <span class="pl-smi">Car</span>.<span class="pl-c1">prototype</span>.<span class="pl-smi">drive</span> <span class="pl-c"><span class="pl-c">//</span> The class keyword adds the methods to the prototype</span>
 [<span class="pl-c1">Function</span><span class="pl-k">:</span> drive]</pre></div>
+<h2 id="33-what-does-class-do">3.3. What does <code>class</code> do?</h2>
 <p><strong>Breaking it down</strong></p>
 <div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> classes are really just constructor functions with 'prototype' members</span>
 <span class="pl-k">&gt;</span> <span class="pl-k">typeof</span> Car
@@ -1289,7 +1313,188 @@ Car {}
 
 <span class="pl-k">var</span> carA <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Car</span>();
 <span class="pl-k">var</span> carB <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Car</span>();</pre></div>
+<h2 id="34-class-expressions">3.4. Class expressions</h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes</a></p>
+<ul>
+<li>A <strong>class expression</strong> is another way to define a class.</li>
+<li>Class expressions can be <em>named</em> or <em>unnamed</em>.
+<ul>
+<li>The name given to a named class expression is local to the class's body. (it can be retrieved through the class's (not an instance's) <code>.name</code> property)</li>
+</ul>
+</li>
+<li>Class expressions and class declarations are NOT hoisted</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> unnamed</span>
+<span class="pl-k">var</span> Rectangle <span class="pl-k">=</span> <span class="pl-k">class</span> {
+  <span class="pl-en">constructor</span>(<span class="pl-smi">height</span>, <span class="pl-smi">width</span>) {
+    <span class="pl-c1">this</span>.<span class="pl-c1">height</span> <span class="pl-k">=</span> height;
+    <span class="pl-c1">this</span>.<span class="pl-c1">width</span> <span class="pl-k">=</span> width;
+  }
+};
+
+<span class="pl-c"><span class="pl-c">//</span> named</span>
+<span class="pl-k">var</span> Rectangle <span class="pl-k">=</span> <span class="pl-k">class</span> <span class="pl-en">Rectangle</span> {
+  <span class="pl-en">constructor</span>(<span class="pl-smi">height</span>, <span class="pl-smi">width</span>) {
+    <span class="pl-c1">this</span>.<span class="pl-c1">height</span> <span class="pl-k">=</span> height;
+    <span class="pl-c1">this</span>.<span class="pl-c1">width</span> <span class="pl-k">=</span> width;
+  }
+};
+
+<span class="pl-c"><span class="pl-c">//</span> class declaration</span>
+<span class="pl-k">class</span> <span class="pl-en">Rectangle</span> {
+  <span class="pl-en">constructor</span>(<span class="pl-smi">height</span>, <span class="pl-smi">width</span>) {
+    <span class="pl-c1">this</span>.<span class="pl-c1">height</span> <span class="pl-k">=</span> height;
+    <span class="pl-c1">this</span>.<span class="pl-c1">width</span> <span class="pl-k">=</span> width;
+  }
+}</pre></div>
+<h2 id="35-class-body">3.5. Class Body</h2>
+<p><strong>Prototype Methods</strong></p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">Rectangle</span> {
+  <span class="pl-en">constructor</span>(<span class="pl-smi">height</span>, <span class="pl-smi">width</span>) {
+    <span class="pl-c1">this</span>.<span class="pl-c1">height</span> <span class="pl-k">=</span> height;
+    <span class="pl-c1">this</span>.<span class="pl-c1">width</span> <span class="pl-k">=</span> width;
+  }
+  <span class="pl-c"><span class="pl-c">//</span> Getter</span>
+  <span class="pl-k">get</span> <span class="pl-en">area</span>() {
+    <span class="pl-k">return</span> <span class="pl-c1">this</span>.<span class="pl-en">calcArea</span>();
+  }
+  <span class="pl-c"><span class="pl-c">//</span> Method</span>
+  <span class="pl-en">calcArea</span>() {
+    <span class="pl-k">return</span> <span class="pl-c1">this</span>.<span class="pl-c1">height</span> <span class="pl-k">*</span> <span class="pl-c1">this</span>.<span class="pl-c1">width</span>;
+  }
+}
+
+<span class="pl-k">const</span> <span class="pl-c1">square</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Rectangle</span>(<span class="pl-c1">10</span>, <span class="pl-c1">10</span>);
+
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">square</span>.<span class="pl-smi">area</span>); <span class="pl-c"><span class="pl-c">//</span> 100</span></pre></div>
+<p><strong>Static methods</strong></p>
+<ul>
+<li>The <code>static</code> keyword defines a static method for a class.</li>
+<li>Static methods are called without instantiating their class and cannot be called through a class instance.</li>
+<li>Static methods are often used to create <strong>utility functions</strong> for an application.</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">Point</span> {
+  <span class="pl-en">constructor</span>(<span class="pl-smi">x</span>, <span class="pl-smi">y</span>) {
+    <span class="pl-c1">this</span>.<span class="pl-c1">x</span> <span class="pl-k">=</span> x;
+    <span class="pl-c1">this</span>.<span class="pl-c1">y</span> <span class="pl-k">=</span> y;
+  }
+
+  <span class="pl-k">static</span> <span class="pl-en">distance</span>(<span class="pl-smi">a</span>, <span class="pl-smi">b</span>) {
+    <span class="pl-k">const</span> <span class="pl-c1">dx</span> <span class="pl-k">=</span> <span class="pl-smi">a</span>.<span class="pl-c1">x</span> <span class="pl-k">-</span> <span class="pl-smi">b</span>.<span class="pl-c1">x</span>;
+    <span class="pl-k">const</span> <span class="pl-c1">dy</span> <span class="pl-k">=</span> <span class="pl-smi">a</span>.<span class="pl-c1">y</span> <span class="pl-k">-</span> <span class="pl-smi">b</span>.<span class="pl-c1">y</span>;
+
+    <span class="pl-k">return</span> <span class="pl-c1">Math</span>.<span class="pl-c1">hypot</span>(dx, dy);
+  }
+}
+
+<span class="pl-k">const</span> <span class="pl-c1">p1</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Point</span>(<span class="pl-c1">5</span>, <span class="pl-c1">5</span>);
+<span class="pl-k">const</span> <span class="pl-c1">p2</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Point</span>(<span class="pl-c1">10</span>, <span class="pl-c1">10</span>);
+
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-c1">Point</span>.<span class="pl-en">distance</span>(p1, p2)); <span class="pl-c"><span class="pl-c">//</span> 7.0710678118654755</span></pre></div>
+<p><strong>Note:</strong> When a static or prototype method is called without an object valued <code>this</code>, then the <code>this</code> value will be <strong>undefined</strong> inside the called function. Autoboxing will not happen.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">Animal</span> { 
+  <span class="pl-en">speak</span>() {
+    <span class="pl-k">return</span> <span class="pl-c1">this</span>;
+  }
+  <span class="pl-k">static</span> <span class="pl-en">eat</span>() {
+    <span class="pl-k">return</span> <span class="pl-c1">this</span>;
+  }
+}
+
+<span class="pl-k">let</span> obj <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Animal</span>();
+<span class="pl-smi">obj</span>.<span class="pl-en">speak</span>(); <span class="pl-c"><span class="pl-c">//</span> Animal {}</span>
+<span class="pl-k">let</span> speak <span class="pl-k">=</span> <span class="pl-smi">obj</span>.<span class="pl-smi">speak</span>;
+<span class="pl-en">speak</span>(); <span class="pl-c"><span class="pl-c">//</span> undefined</span>
+
+<span class="pl-smi">Animal</span>.<span class="pl-en">eat</span>() <span class="pl-c"><span class="pl-c">//</span> class Animal</span>
+<span class="pl-k">let</span> eat <span class="pl-k">=</span> <span class="pl-smi">Animal</span>.<span class="pl-smi">eat</span>;
+<span class="pl-en">eat</span>(); <span class="pl-c"><span class="pl-c">//</span> undefined</span></pre></div>
+<p>If we write the above code using traditional function based classes, then autoboxing will happen based on the "this" value for which the function was called.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">Animal</span>() { } <span class="pl-c"><span class="pl-c">//</span> constructor function</span>
+
+<span class="pl-smi">Animal</span>.<span class="pl-c1">prototype</span>.<span class="pl-en">speak</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+  <span class="pl-k">return</span> <span class="pl-c1">this</span>;
+}
+
+<span class="pl-smi">Animal</span>.<span class="pl-en">eat</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+  <span class="pl-k">return</span> <span class="pl-c1">this</span>;
+}
+
+<span class="pl-k">let</span> obj <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Animal</span>();
+<span class="pl-k">let</span> speak <span class="pl-k">=</span> <span class="pl-smi">obj</span>.<span class="pl-smi">speak</span>;
+<span class="pl-en">speak</span>(); <span class="pl-c"><span class="pl-c">//</span> global object</span>
+
+<span class="pl-k">let</span> eat <span class="pl-k">=</span> <span class="pl-smi">Animal</span>.<span class="pl-smi">eat</span>;
+<span class="pl-en">eat</span>(); <span class="pl-c"><span class="pl-c">//</span> global object</span></pre></div>
+<h2 id="36-sub-classes">3.6. Sub classes</h2>
+<ul>
+<li>One may also extend traditional function-based "classes"</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">Animal</span> (<span class="pl-smi">name</span>) {
+  <span class="pl-c1">this</span>.<span class="pl-c1">name</span> <span class="pl-k">=</span> name;  
+}
+
+<span class="pl-smi">Animal</span>.<span class="pl-c1">prototype</span>.<span class="pl-en">speak</span> <span class="pl-k">=</span> <span class="pl-k">function</span> () {
+  <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-c1">this</span>.<span class="pl-c1">name</span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span> makes a noise.<span class="pl-pds">'</span></span>);
+}
+
+<span class="pl-k">class</span> <span class="pl-en">Dog</span> <span class="pl-k">extends</span> <span class="pl-e">Animal</span> {
+  <span class="pl-en">speak</span>() {
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-c1">this</span>.<span class="pl-c1">name</span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span> barks.<span class="pl-pds">'</span></span>);
+  }
+}
+
+<span class="pl-k">var</span> d <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Dog</span>(<span class="pl-s"><span class="pl-pds">'</span>Mitzie<span class="pl-pds">'</span></span>);
+<span class="pl-smi">d</span>.<span class="pl-en">speak</span>(); <span class="pl-c"><span class="pl-c">//</span> Mitzie barks.</span></pre></div>
+<ul>
+<li>Note that classes cannot extend regular (non-constructible) objects. If you want to inherit from a regular object, you can instead use <code>Object.setPrototypeOf()</code></li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> Animal <span class="pl-k">=</span> {
+  <span class="pl-en">speak</span>() {
+    <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-c1">this</span>.<span class="pl-c1">name</span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span> makes a noise.<span class="pl-pds">'</span></span>);
+  }
+};
+
+<span class="pl-k">class</span> <span class="pl-en">Dog</span> {
+  <span class="pl-en">constructor</span>(<span class="pl-smi">name</span>) {
+    <span class="pl-c1">this</span>.<span class="pl-c1">name</span> <span class="pl-k">=</span> name;
+  }
+}
+
+<span class="pl-c"><span class="pl-c">//</span> If you do not do this you will get a TypeError when you invoke speak</span>
+<span class="pl-c1">Object</span>.<span class="pl-en">setPrototypeOf</span>(<span class="pl-smi">Dog</span>.<span class="pl-c1">prototype</span>, Animal);
+
+<span class="pl-k">var</span> d <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Dog</span>(<span class="pl-s"><span class="pl-pds">'</span>Mitzie<span class="pl-pds">'</span></span>);
+<span class="pl-smi">d</span>.<span class="pl-en">speak</span>(); <span class="pl-c"><span class="pl-c">//</span> Mitzie makes a noise.</span></pre></div>
+<h2 id="37-species">3.7. Species</h2>
+<p>You might want to return <code>Array</code> objects in your derived array class <code>MyArray</code>. The species pattern lets you override default constructors.</p>
+<p>For example, when using methods such as <code>map()</code> that returns the default constructor, you want these methods to return a parent <code>Array</code> object, instead of the <code>MyArray</code> object. The <code>Symbol.species</code> symbol lets you do this:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">MyArray</span> <span class="pl-k">extends</span> <span class="pl-e">Array</span> {
+  <span class="pl-c"><span class="pl-c">//</span> Overwrite species to the parent Array constructor</span>
+  <span class="pl-k">static</span> <span class="pl-k">get</span> [<span class="pl-c1">Symbol</span>.<span class="pl-smi">species</span>]() { <span class="pl-k">return</span> <span class="pl-c1">Array</span>; }
+}
+
+<span class="pl-k">var</span> a <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">MyArray</span>(<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">3</span>);
+<span class="pl-k">var</span> mapped <span class="pl-k">=</span> <span class="pl-smi">a</span>.<span class="pl-en">map</span>(<span class="pl-smi">x</span> <span class="pl-k">=&gt;</span> x <span class="pl-k">*</span> x);
+
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(mapped <span class="pl-k">instanceof</span> MyArray); <span class="pl-c"><span class="pl-c">//</span> false</span>
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(mapped <span class="pl-k">instanceof</span> <span class="pl-c1">Array</span>);   <span class="pl-c"><span class="pl-c">//</span> true</span></pre></div>
+<h2 id="38-mix-ins">3.8. Mix-ins</h2>
+<p>Abstract subclasses or <code>mix-ins</code> are templates for classes. An ECMAScript class can only have a single superclass, so multiple inheritance from tooling classes, for example, is not possible. The functionality must be provided by the superclass.</p>
+<p>A function with a superclass as input and a subclass extending that superclass as output can be used to implement mix-ins in ECMAScript</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-en">calculatorMixin</span> <span class="pl-k">=</span> <span class="pl-smi">Base</span> <span class="pl-k">=&gt;</span> <span class="pl-k">class</span> <span class="pl-k">extends</span> <span class="pl-e">Base</span> {
+  <span class="pl-en">calc</span>() { }
+};
+
+<span class="pl-k">var</span> <span class="pl-en">randomizerMixin</span> <span class="pl-k">=</span> <span class="pl-smi">Base</span> <span class="pl-k">=&gt;</span> <span class="pl-k">class</span> <span class="pl-k">extends</span> <span class="pl-e">Base</span> {
+  <span class="pl-en">randomize</span>() { }
+};
+
+<span class="pl-c"><span class="pl-c">//</span> A class that uses these mix-ins can then be written like this</span>
+<span class="pl-k">class</span> <span class="pl-en">Foo</span> { }
+<span class="pl-k">class</span> <span class="pl-en">Bar</span> <span class="pl-k">extends</span> <span class="pl-e">calculatorMixin</span>(<span class="pl-en">randomizerMixin</span>(Foo)) { }</pre></div>
 <h1 id="4-polymorphism-and-inheritance">4. Polymorphism and Inheritance</h1>
+<h2 id="41-creating-a-super-class-and-sub-classes">4.1. Creating a super class and sub classes</h2>
 <p><strong>Create a <em>super class</em></strong></p>
 <div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">MusicPlayer</span> {
   <span class="pl-en">constructor</span>() {
@@ -1339,7 +1544,7 @@ Car {}
     <span class="pl-c1">this</span>.<span class="pl-en">stopMotor</span>();
   }
 } </pre></div>
-<p><strong><em>Prototype chaining</em></strong></p>
+<h2 id="42-prototype-chaining">4.2. Prototype chaining</h2>
 <div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> myPlayer <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">CassettePlayer</span>();
 <span class="pl-smi">myPlayer</span>.<span class="pl-c1">start</span>();
 <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-smi">myPlayer</span>.<span class="pl-c1">getTime</span>());</pre></div>
@@ -1350,7 +1555,7 @@ Car {}
 <li>It will check <code>myPlayer.__proto__.__proto__.getTime()</code>, which refers to <code>MusicPlayer</code> → does have the method, it will <code>call()</code> that method using <code>this = myPlayer</code></li>
 </ol>
 <p>This allows us to re-use common code, by implementing it on a <em>super class</em>, but refine that behavior on <em>sub classes</em>. This principle is called <strong><em>polymorphism</em></strong>.</p>
-<p><strong><em>Constructor Chaining</em></strong></p>
+<h2 id="43-constructor-chaining">4.3. Constructor Chaining</h2>
 <div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">CdPlayer</span> {
   <span class="pl-en">constructor</span>(<span class="pl-smi">cd</span>) {
     <span class="pl-c1">super</span>(); <span class="pl-c"><span class="pl-c">//</span> required to be on 1st line</span>
@@ -1370,4 +1575,225 @@ Car {}
 <li>The <code>constructor</code> for <code>MusicPlayer</code> returns</li>
 <li>The <code>constructor</code> for <code>CdPlayer</code> resumes</li>
 <li>When the <code>constructor</code> for <code>CdPlayer</code> returns, we have an Object!</li>
-</ol></article></body></html><script async>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</ol>
+<h1 id="5-instatiation-patterns">5. Instatiation Patterns</h1>
+<p><a href="https://medium.com/dailyjs/instantiation-patterns-in-javascript-8fdcf69e8f9b" rel="nofollow">https://medium.com/dailyjs/instantiation-patterns-in-javascript-8fdcf69e8f9b</a></p>
+<p>There are four instantiation patterns in JavaScript. They are:</p>
+<ol>
+<li>Functional</li>
+<li>Functional-shared</li>
+<li>Prototypal</li>
+<li>Pseudoclassical</li>
+</ol>
+<h2 id="51-functional-instantiation">5.1. Functional Instantiation</h2>
+<p>With functional instantiation, we first create a function. Inside the function we create an empty object and add properties and methods to it. We then return this object.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>easy to understand</li>
+<li>properties are private since they are contained within the closure scope​</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Since all the methods are contained within the function, if you create a second instance of that object, you will have duplicated all the properties and methods in memory</li>
+<li>If you create a new object using this method, then change any of the methods and create a new instance, the two objects will be <em>referencing different methods</em></li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-en">Animal</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">species</span>, <span class="pl-smi">name</span>) {
+  <span class="pl-k">var</span> obj <span class="pl-k">=</span> {};
+
+  <span class="pl-smi">obj</span>.<span class="pl-smi">species</span> <span class="pl-k">=</span> species;
+  <span class="pl-smi">obj</span>.<span class="pl-c1">name</span> <span class="pl-k">=</span> name;
+
+  <span class="pl-smi">obj</span>.<span class="pl-en">makeSound</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> code goes here</span>
+  }
+
+  <span class="pl-smi">obj</span>.<span class="pl-en">eat</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> code goes here</span>
+  }
+
+  <span class="pl-smi">obj</span>.<span class="pl-en">sleep</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> code goes here</span>
+  }
+
+  <span class="pl-k">return</span> obj;
+}
+
+<span class="pl-c"><span class="pl-c">//</span> implementation of functional instantiation</span>
+<span class="pl-k">var</span> tiger <span class="pl-k">=</span> <span class="pl-en">Animal</span>(<span class="pl-s"><span class="pl-pds">'</span>tiger<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>tigger<span class="pl-pds">'</span></span>);
+<span class="pl-smi">tiger</span>.<span class="pl-en">eat</span>();
+<span class="pl-smi">tiger</span>.<span class="pl-en">makeSound</span>();</pre></div>
+<h2 id="52-functional-shared-instantiation">5.2. Functional Shared Instantiation</h2>
+<p>Just like functional instantiation, we start with a function with an empty object inside and define properties within the function. Methods are defined in another object. We then extend our object with these methods. In the end, we return the object.</p>
+<p>Every object created by functional shared instantiation will have a pointer to the same methods without duplication.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Removes the duplication of methods that was found in functional instantiation which improves memory management.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>The pointers to the shared methods are created when the object is instantiated. If you modify the methods and then create new objects, they original object and the new object will refer to different methods.</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-en">Animal</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">species</span>, <span class="pl-smi">name</span>) {
+  <span class="pl-k">var</span> obj <span class="pl-k">=</span> {};
+
+  <span class="pl-smi">obj</span>.<span class="pl-smi">species</span> <span class="pl-k">=</span> species;
+  <span class="pl-smi">obj</span>.<span class="pl-c1">name</span> <span class="pl-k">=</span> name;
+
+  <span class="pl-en">extend</span>(obj, objMethods);
+
+  <span class="pl-k">return</span> obj;
+}
+
+<span class="pl-k">var</span> <span class="pl-en">extend</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">obj</span>, <span class="pl-smi">methods</span>) {
+  <span class="pl-k">for</span> (<span class="pl-k">var</span> key <span class="pl-k">in</span> methods) {
+    obj[key] <span class="pl-k">=</span> methods[key];
+  }
+}
+
+<span class="pl-k">var</span> objMethods <span class="pl-k">=</span> {
+  <span class="pl-en">makeSound</span><span class="pl-k">:</span> <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> code goes here</span>
+  },
+  <span class="pl-en">eat</span><span class="pl-k">:</span> <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> code goes here</span>
+  },
+  <span class="pl-en">sleep</span><span class="pl-k">:</span> <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> code goes here</span>
+  }
+}
+
+<span class="pl-c"><span class="pl-c">//</span> implementation of functional shared instantiation</span>
+<span class="pl-k">var</span> tiger <span class="pl-k">=</span> <span class="pl-en">Animal</span>(<span class="pl-s"><span class="pl-pds">'</span>tiger<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>tigger<span class="pl-pds">'</span></span>);
+<span class="pl-smi">tiger</span>.<span class="pl-en">eat</span>();
+<span class="pl-smi">tiger</span>.<span class="pl-en">makeSound</span>();</pre></div>
+<h2 id="53-prototypal-instantiation">5.3. Prototypal Instantiation</h2>
+<p>Prototypal instantiation utilizes the prototype chain to create objects. Methods are attached to the object’s prototype using the Object.create method.</p>
+<p>To start you will create all the methods on a separate object. Then you create a function. Inside the function you use the Object.create method to attach the methods. You will also define any properties inside the function. Then you return the object.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Methods are attached to the object’s prototype instead of being returned within the object</li>
+<li>Every method is available to every object created without duplicating methods in memory.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>To use this method, you have to create an object, decorate it and then return it from the constructor function</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-en">Animal</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">species</span>, <span class="pl-smi">name</span>) {
+  <span class="pl-k">var</span> obj <span class="pl-k">=</span> <span class="pl-c1">Object</span>.<span class="pl-en">create</span>(objMethods);
+
+  <span class="pl-smi">obj</span>.<span class="pl-smi">species</span> <span class="pl-k">=</span> species;
+  <span class="pl-smi">obj</span>.<span class="pl-c1">name</span> <span class="pl-k">=</span> name;
+
+  <span class="pl-k">return</span> obj;
+}
+
+<span class="pl-k">var</span> objMethods <span class="pl-k">=</span> {
+  <span class="pl-en">makeSound</span><span class="pl-k">:</span> <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> code goes here</span>
+  },
+  <span class="pl-en">eat</span><span class="pl-k">:</span> <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> code goes here</span>
+  },
+  <span class="pl-en">sleep</span><span class="pl-k">:</span> <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> code goes here</span>
+  }
+}
+
+<span class="pl-c"><span class="pl-c">//</span> implementation of prototypal instantiation</span>
+<span class="pl-k">var</span> tiger <span class="pl-k">=</span> <span class="pl-en">Animal</span>(<span class="pl-s"><span class="pl-pds">'</span>tiger<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>tigger<span class="pl-pds">'</span></span>);
+<span class="pl-smi">tiger</span>.<span class="pl-en">eat</span>();
+<span class="pl-smi">tiger</span>.<span class="pl-en">makeSound</span>();</pre></div>
+<h2 id="54-pseudoclassical-instantiation">5.4. Pseudoclassical Instantiation</h2>
+<p>Pseudoclassical instantiation attempts to overcome the amount of typing required to create an object using prototypal instantiation. Like prototypal, Pseudoclassical instantiation uses the prototype chain.</p>
+<p>JavaScript provides most of the functionality that create with prototypal instantiation with the use of the keyword new. Pseudoclassical instantiation utilizes this when creating a new object.</p>
+<p>Instead of creating a new variable and assigning Object.create() to it, Pseudoclassical instantiation assigns it to “this”.</p>
+<p>To start you create a new function and create properties using the “this” keyword. Methods are assigned to the prototype. To create a new object, you use the keyword “new”.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>By utilizing functionality built into JavaScript, Pseudoclassical instantiation is the most optimized method of object creation.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>It is a little more complex in its design when compared to the other three methods.</li>
+</ul>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-en">Animal</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">species</span>, <span class="pl-smi">name</span>) {
+  <span class="pl-c1">this</span>.<span class="pl-smi">species</span> <span class="pl-k">=</span> species;
+  <span class="pl-c1">this</span>.<span class="pl-c1">name</span> <span class="pl-k">=</span> name;
+}
+
+<span class="pl-smi">Animal</span>.<span class="pl-c1">prototype</span>.<span class="pl-en">makeSound</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> code goes here</span>
+}
+<span class="pl-smi">Animal</span>.<span class="pl-c1">prototype</span>.<span class="pl-en">eat</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> code goes here</span>
+}
+<span class="pl-smi">Animal</span>.<span class="pl-c1">prototype</span>.<span class="pl-en">sleep</span> <span class="pl-k">=</span> <span class="pl-k">function</span>() {
+    <span class="pl-c"><span class="pl-c">//</span> code goes here</span>
+}
+
+<span class="pl-c"><span class="pl-c">//</span> implementation of pseudoclassical instantiation</span>
+<span class="pl-k">var</span> tiger <span class="pl-k">=</span> <span class="pl-en">Animal</span>(<span class="pl-s"><span class="pl-pds">'</span>tiger<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>tigger<span class="pl-pds">'</span></span>);
+<span class="pl-smi">tiger</span>.<span class="pl-en">eat</span>();
+<span class="pl-smi">tiger</span>.<span class="pl-en">makeSound</span>();</pre></div>
+<h1 id="6-data-modeling-stacks-and-queues">6. Data Modeling: Stacks and Queues</h1>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS" rel="nofollow">OOJS from MDN</a></li>
+<li><a href="https://medium.com/dailyjs/instantiation-patterns-in-javascript-8fdcf69e8f9b" rel="nofollow">Inheritance Patterns</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" rel="nofollow">Classes - MDN</a></li>
+<li><a href="http://exploringjs.com/es6/ch_classes.html" rel="nofollow">Boring article, but useful</a></li>
+<li><a href="https://medium.com/@robertgrosse/how-es6-classes-really-work-and-how-to-build-your-own-fd6085eb326a" rel="nofollow">ES6 Classes</a></li>
+</ul>
+<p><strong>JavaScript Class Patterns</strong></p>
+<p>JS was not born a traditionally OO language, but shortly afterwards, it was give some OO-like features that loosely emulated how Java defines classes. Because of this, many of the various ways that JS approached creating classes was pretty ugly. We will learn about the pseudoclassical style and the newest style provided by the ES6 class keyword.</p>
+<p><strong>What Is a Class?</strong></p>
+<p>A class is a blueprint or factory for creating those objects that organize your code. The two class patterns below will do these same things, but in slightly different ways:</p>
+<ol>
+<li>Define a constructor function that will always return an object, called an "instance" of the class, and will always define the properties on the instance.</li>
+<li>Define methods that are available on each instance.</li>
+<li>Setup inheritance relationships</li>
+</ol>
+<h3 id="61-pseudoclassical-style">6.1. Pseudoclassical Style</h3>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">const</span> <span class="pl-c1">UserAuthClass</span> <span class="pl-k">=</span> <span class="pl-k">function</span>(<span class="pl-smi">email</span>, <span class="pl-smi">password</span>) {
+  <span class="pl-c1">this</span>.<span class="pl-smi">userId</span> <span class="pl-k">=</span> <span class="pl-en">generateUniqueId</span>(email);
+  <span class="pl-c1">this</span>.<span class="pl-smi">email</span> <span class="pl-k">=</span> email;
+  <span class="pl-c1">this</span>.<span class="pl-smi">password</span> <span class="pl-k">=</span> <span class="pl-en">saltAndHashPW</span>(password);
+}
+
+<span class="pl-smi">UserAuthClass</span>.<span class="pl-c1">prototype</span> <span class="pl-k">=</span> {
+  <span class="pl-en">generateUniqueId</span><span class="pl-k">:</span> <span class="pl-k">function</span>(<span class="pl-smi">email</span>){<span class="pl-k">...</span>},
+  <span class="pl-en">saltAndHashPW</span><span class="pl-k">:</span> <span class="pl-k">function</span>(<span class="pl-smi">pw</span>){<span class="pl-k">...</span>},
+  <span class="pl-en">logout</span><span class="pl-k">:</span> <span class="pl-k">function</span>(){<span class="pl-k">...</span>}
+}
+
+<span class="pl-k">const</span> <span class="pl-c1">newUser</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">UserAuthClass</span>(<span class="pl-s"><span class="pl-pds">'</span>myname@gmail.com<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>myPass#21%yuM<span class="pl-pds">'</span></span>);
+
+<span class="pl-smi">newUser</span>.<span class="pl-smi">email</span>; <span class="pl-c"><span class="pl-c">//</span> =&gt; 'myname@gmail.com'</span>
+<span class="pl-smi">newUser</span>.<span class="pl-en">logout</span>(); <span class="pl-c"><span class="pl-c">//</span> =&gt; user logged out</span></pre></div>
+<h3 id="62-es6-class">6.2. ES6 Class</h3>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">UserAuthClass</span> {
+  <span class="pl-en">constructor</span>(<span class="pl-smi">email</span>, <span class="pl-smi">password</span>) {
+    <span class="pl-c1">this</span>.<span class="pl-smi">userId</span> <span class="pl-k">=</span> <span class="pl-en">generateUniqueId</span>(email);
+    <span class="pl-c1">this</span>.<span class="pl-smi">email</span> <span class="pl-k">=</span> email;
+    <span class="pl-c1">this</span>.<span class="pl-smi">password</span> <span class="pl-k">=</span> <span class="pl-en">saltAndHashPW</span>(password);
+  }
+
+  <span class="pl-en">generateUniqueId</span>(<span class="pl-smi">email</span>) {<span class="pl-k">...</span>}
+  <span class="pl-en">saltAndHashPW</span>(<span class="pl-smi">pw</span>) {<span class="pl-k">...</span>}
+  <span class="pl-en">logout</span>() {<span class="pl-k">...</span>}
+}
+
+<span class="pl-k">const</span> <span class="pl-c1">newUser</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">UserAuthClass</span>(<span class="pl-s"><span class="pl-pds">'</span>myname@gmail.com<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>myPass#21%yuM<span class="pl-pds">'</span></span>);
+
+<span class="pl-smi">newUser</span>.<span class="pl-smi">email</span>; <span class="pl-c"><span class="pl-c">//</span> =&gt; 'myname@gmail.com'</span>
+<span class="pl-smi">newUser</span>.<span class="pl-en">logout</span>(); <span class="pl-c"><span class="pl-c">//</span> =&gt; user logged out</span></pre></div>
+<h3 id="63-stacks-amp-queues">6.3. Stacks &amp; Queues</h3>
+<ul>
+<li>Stacks and queues are some of the most important data structures and are used everywhere. We use them to create lists that can be interacted with in a certain way.</li>
+<li>Can you think of a list you've used in your JavaScript past that you can only interact with in a certain way?</li>
+<li>Perhaps an array comes to mind! An array can be used as both a stack and a queue depending on the order that you remove items.</li>
+<li>For both a stack and queue, you input items in the same order as you would if you <code>push</code>'d them on to the array, meaning the newest ones get added to the end of the data structure.</li>
+<li>If it is a <em><strong>stack</strong></em>, you could only <code>pop</code> the items to get access to it, which will always be the next newest item.<br>
+While for a <em><strong>queue</strong></em> we can only <code>unshift</code> and get access to the oldest items first.</li>
+<li>You can imagine that you interact with a <strong>stack</strong> how you would interact with a <strong>stack of books</strong> where you can only take the top, the newest one added to the stack, off. And you can imagine that you interact with a <strong>queue</strong> as a <strong>cashier</strong> should at the grocery store - the person who was there first gets helped first.</li>
+<li>These basic interfaces are the underlying data structures that control how your code executes, how your back button works, and how your place in line for a concert ticket order is processed.</li>
+</ul></article></body></html><script async>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
